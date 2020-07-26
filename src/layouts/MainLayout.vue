@@ -19,7 +19,12 @@
         </q-toolbar-title>
 
         <div class="q-pa-md">
-          <q-toggle v-model="mode" label="Dark Mode"/>
+          <q-toggle
+            v-model="checked"
+            v-on:toggle="toggle()"
+            color="orange"
+            label="Dark Mode"
+            class="toggle_mode"/>
         </div>
       </q-toolbar>
     </q-header>
@@ -53,7 +58,6 @@
           :key="link.title"
           v-bind="link"
           clickable
-          v-ripple
         />
       </q-list>
 
@@ -123,6 +127,11 @@ import { defineComponent, ref } from '@vue/composition-api'
 
 export default defineComponent({
   name: 'MainLayout',
+  methods: {
+    toggle: function () {
+      this.$q.dark.toggle()
+    }
+  },
   components: { EssentialLink },
   setup () {
     const leftDrawerOpen = ref(false)
@@ -133,7 +142,7 @@ export default defineComponent({
   },
   data () {
     return {
-      mode: true
+      checked: true
     }
   }
 })
