@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh Lpr lFf" class="bg-grey-9 text-white">
     <q-header elevated>
       <q-toolbar class="bg-primary text-white">
         <q-btn
@@ -18,14 +18,6 @@
           Will Coates
         </q-toolbar-title>
 
-        <div class="q-pa-md">
-          <q-toggle
-            v-model="checked"
-            v-on:toggle="toggle()"
-            color="orange"
-            label="Dark Mode"
-            class="toggle_mode"/>
-        </div>
       </q-toolbar>
     </q-header>
 
@@ -33,10 +25,10 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      content-class="bg-grey-1"
+      content-class="bg-grey-8"
     >
     <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd">
-      <q-list>
+      <q-list dark>
         <q-item
           v-for="link in essentialLinks"
           :key="link.title"
