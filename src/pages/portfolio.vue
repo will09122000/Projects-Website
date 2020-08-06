@@ -2,81 +2,68 @@
   <q-page>
     <div class="q-pa-md">
       <div class="q-gutter-y-md">
-        <q-btn-toggle
-          v-model="year"
-          spread
+        <q-tabs
+          v-model="root"
           no-caps
-          toggle-color= "orange-7"
-          color="grey-2"
-          text-color="black"
-          :options="[
-            {label: 'GCSE', value: '1'},
-            {label: 'A-Level', value: '2'},
-            {label: 'First Year', value: '3'},
-            {label: 'Second Year', value: '4'},
-            {label: 'Third Year', value: '5'},
-            {label: 'Fourth Year', value: '6'},
-            {label: 'Personal', value: '7'}
-          ]"
-        />
+          mobile-arrows
+          outside-arrows
+          class="bg-secondary text-white"
+        >
+          <q-tab name="Personal" label="Personal" />
+          <q-tab name="GCSE" label="GCSE" />
+          <q-tab name="A-Level" label="A-Level" />
+          <q-tab name="1st Year" label="1st Year" />
+          <q-tab name="2nd Year" label="2nd Year" />
+          <q-tab name="3rd Year" label="3rd Year" />
+          <q-tab name="4th Year" label="4th Year" />
+        </q-tabs>
+
+        <q-separator />
+
+        <q-tab-panels v-model="root" animated class="bg-grey-9 text-white">
+          <q-tab-panel name="Personal">
+            <q-tabs
+              v-model="personal"
+              no-caps
+              mobile-arrows
+              outside-arrows
+            >
+              <q-tab name="Discord Bot" label="Discord Bot" />
+              <q-tab name="This Website" label="This Website" />
+            </q-tabs>
+            <q-separator />
+            <q-tab-panels v-model="personal" animated class="bg-purple-1 text-center">
+              <q-tab-panel name="Discord Bot" class="bg-grey-8">
+                <div class="text-h6">Discord Bot</div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </q-tab-panel>
+              <q-tab-panel name="This Website" class="bg-grey-8">
+                <div class="text-h6">This Website</div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </q-tab-panel>
+            </q-tab-panels>
+          </q-tab-panel>
+
+          <q-tab-panel name="GCSE">
+            <q-tabs
+              v-model="gcse"
+              no-caps
+              mobile-arrows
+              outside-arrows
+            >
+              <q-tab name="Test" label="Test" />
+            </q-tabs>
+            <q-separator />
+            <q-tab-panels v-model="personal" animated class="bg-purple-1 text-center">
+              <q-tab-panel name="Test" class="bg-grey-8">
+                <div class="text-h6">Discord Bot</div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </q-tab-panel>
+            </q-tab-panels>
+          </q-tab-panel>
+        </q-tab-panels>
+
       </div>
-      <q-card v-if="year == '1'" bordered class="q-mt-md bg-grey-5">
-        <q-card-section>
-          GCSE
-        </q-card-section>
-      </q-card>
-
-      <q-card v-if="year == '2'" bordered class="q-mt-md bg-grey-5">
-        <q-card-section>
-          A-Level
-        </q-card-section>
-      </q-card>
-
-      <q-card v-if="year == '3'" bordered class="q-mt-md bg-grey-5">
-        <div class="q-gutter-y-md">
-          <q-btn-toggle
-            v-model="first_year"
-            spread
-            no-caps
-            toggle-color= "orange-7"
-            color="grey-2"
-            text-color="black"
-            :options="[
-              {label: 'Countdown Simulator', value: '1'},
-              {label: 'Smart Alarm Clock', value: '2'},
-              {label: 'Barnabys Brewhouse', value: '3'},
-              {label: 'Beanbag Shop back end', value: '4'},
-              {label: 'Lift Algorithm', value: '5'},
-              {label: 'Task Manager', value: '6'}
-            ]"
-          />
-        </div>
-      </q-card>
-
-      <q-card v-if="year == '4'" bordered class="q-mt-md bg-grey-5">
-        <q-card-section>
-          Second Year
-        </q-card-section>
-      </q-card>
-
-      <q-card v-if="year == '5'" bordered class="q-mt-md bg-grey-5">
-        <q-card-section>
-          Third Year
-        </q-card-section>
-      </q-card>
-
-      <q-card v-if="year == '6'" bordered class="q-mt-md bg-grey-5">
-        <q-card-section>
-          Fourth Year
-        </q-card-section>
-      </q-card>
-
-      <q-card v-if="year == '7'" bordered class="q-mt-md bg-grey-5">
-        <q-card-section>
-          Personal
-        </q-card-section>
-      </q-card>
-
     </div>
   </q-page>
 </template>
@@ -85,8 +72,9 @@
 export default {
   data () {
     return {
-      year: '1',
-      first_year: '1'
+      root: 'Personal',
+      personal: 'Discord Bot',
+      gcse: 'Test'
     }
   }
 }

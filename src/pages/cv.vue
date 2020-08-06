@@ -1,6 +1,8 @@
 <template>
   <q-page class="row items-center justify-evenly">
-    <h1>CV</h1>
+    <!--
+    <iframe width=100% height=2500 allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="https://drive.google.com/file/d/11zPJtrU91zsxDiMMPWb9NOMqAdhOvnu44dx3-b66QSo/preview?"></iframe>
+    -->
   </q-page>
 </template>
 

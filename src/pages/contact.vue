@@ -9,7 +9,7 @@
 
         <q-item-section>Email:<br>will0912@icloud.com</q-item-section>
 
-        <q-btn icon="content_copy" size="sm" v-on:click="copy('will0912@icloud.com')"/>
+        <q-btn icon="content_copy" size="sm" v-on:click="copy('will0912@icloud.com')" class="bg-secondary"/>
       </q-item>
 
       <q-item>
@@ -17,8 +17,8 @@
           <q-avatar icon="phone" />
         </q-item-section>
 
-        <q-item-section>Mobile:<br>07411137158</q-item-section>
-        <q-btn icon="content_copy" size="sm" v-on:click="copy('07411137158')"/>
+        <q-item-section>Mobile:<br>07411137157</q-item-section>
+        <q-btn icon="content_copy" size="sm" v-on:click="copy('07411137158')" class="bg-secondary"/>
       </q-item>
 
       <q-separator />
@@ -29,7 +29,7 @@
         </q-item-section>
 
         <q-item-section>@Will09121</q-item-section>
-        <q-btn icon="open_in_new" size="sm" v-on:click="redirect('https://twitter.com/Will09121')"/>
+        <q-btn icon="open_in_new" size="sm" v-on:click="redirect('https://twitter.com/Will09121')" class="bg-secondary"/>
       </q-item>
 
       <q-item>
@@ -38,7 +38,7 @@
         </q-item-section>
 
         <q-item-section>Will0912 #7353</q-item-section>
-        <q-btn icon="content_copy" size="sm" v-on:click="copy('Will0912 #7353')"/>
+        <q-btn icon="content_copy" size="sm" v-on:click="copy('Will0912 #7353')" class="bg-secondary"/>
       </q-item>
 
     </q-list>
