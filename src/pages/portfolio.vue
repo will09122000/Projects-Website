@@ -35,7 +35,6 @@
             <q-tab-panels v-model="personal" animated class="bg-purple-1 text-center">
               <q-tab-panel name="Discord Bot" class="bg-grey-8">
                 <div class="text-h6">Discord Bot</div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </q-tab-panel>
               <q-tab-panel name="This Website" class="bg-grey-8">
                 <div class="text-h6">This Website</div>
@@ -51,13 +50,19 @@
               mobile-arrows
               outside-arrows
             >
-              <q-tab name="Test" label="Test" />
+            <q-tab name="A452" label="A452" />
+            <q-tab name="A453" label="A453" />
             </q-tabs>
             <q-separator />
-            <q-tab-panels v-model="personal" animated class="bg-purple-1 text-center">
-              <q-tab-panel name="Test" class="bg-grey-8">
-                <div class="text-h6">Discord Bot</div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <q-tab-panels v-model="gcse" animated class="bg-purple-1 text-center">
+              <q-tab-panel name="A452" class="bg-grey-8">
+                <div class="text-h6">A452 Coursework | SQL</div>
+                <iframe width=100% v-bind:height=windowHeight allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="https://drive.google.com/file/d/1_GeuFxHE6XqkyYT8qQeWCOJUkHqwx_LH/preview?"></iframe>
+              </q-tab-panel>
+              <q-tab-panel name="A453" class="bg-grey-8">
+                <div class="text-h6">A453 Coursework | Python</div>
+                {{ windowHeight }}
+                <iframe width=100% v-bind:height=windowHeight allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="https://drive.google.com/file/d/1GZrq59o7UloVOx84_u3ERT1n8Av1V003/preview?"></iframe>
               </q-tab-panel>
             </q-tab-panels>
           </q-tab-panel>
@@ -72,9 +77,10 @@
 export default {
   data () {
     return {
+      windowHeight: window.innerHeight * 0.8,
       root: 'Personal',
       personal: 'Discord Bot',
-      gcse: 'Test'
+      gcse: 'A452'
     }
   }
 }
