@@ -66,6 +66,43 @@
               </q-tab-panel>
             </q-tab-panels>
           </q-tab-panel>
+
+          <q-tab-panel name="1st Year">
+            <q-tabs
+              v-model="first_year"
+              no-caps
+              mobile-arrows
+              outside-arrows
+            >
+              <q-tab name="Countdown Simulator" label="Countdown Simulator" />
+              <q-tab name="Smart Alarm Clock" label="Smart Alarm Clock" />
+              <q-tab name="Barnaby's Brewhouse" label="Barnaby's Brewhouse" />
+              <q-tab name="Beanbag Store" label="Beanbag Store" />
+              <q-tab name="Task Manager" label="Task Manager" />
+              <q-tab name="Lift Algorithm" label="Lift Algorithm" />
+            </q-tabs>
+            <q-separator />
+            <q-tab-panels v-model="first_year" animated class="bg-purple-1 text-center">
+              <q-tab-panel name="Countdown Simulator" class="bg-grey-8">
+                <div class="text-h6">Countdown Simulator | Python</div>
+              </q-tab-panel>
+              <q-tab-panel name="Smart Alarm Clock" class="bg-grey-8">
+                <div class="text-h6">Smart Alarm Clock | Python</div>
+              </q-tab-panel>
+              <q-tab-panel name="Barnaby's Brewhouse" class="bg-grey-8">
+                <div class="text-h6">Barnaby's Brewhouse | Python</div>
+              </q-tab-panel>
+              <q-tab-panel name="Beanbag Store" class="bg-grey-8">
+                <div class="text-h6">Beanbag Store | Java</div>
+              </q-tab-panel>
+              <q-tab-panel name="Task Manager" class="bg-grey-8">
+                <div class="text-h6">Task Manager | PHP, Javascript</div>
+              </q-tab-panel>
+              <q-tab-panel name="Lift Algorithm" class="bg-grey-8">
+                <div class="text-h6">Lift Algorithm | Python</div>
+              </q-tab-panel>
+            </q-tab-panels>
+          </q-tab-panel>
         </q-tab-panels>
 
       </div>
@@ -80,7 +117,8 @@ export default {
       windowHeight: window.innerHeight * 0.8,
       root: 'Personal',
       personal: 'Discord Bot',
-      gcse: 'A452'
+      gcse: 'A452',
+      first_year: 'Countdown Simulator'
     }
   }
 }
