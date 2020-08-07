@@ -87,7 +87,20 @@
                 <div class="text-h6">Countdown Simulator | Python</div>
               </q-tab-panel>
               <q-tab-panel name="Smart Alarm Clock" class="bg-grey-8">
-                <div class="text-h6">Smart Alarm Clock | Python</div>
+                <div class="text-h6 inline" style="{display: inline-block}">Smart Alarm Clock | Python</div>
+                <q-btn class="test" color="primary" icon="code" label="View on GitHub"/>
+                <br>
+                This program is a smart alarm clock intended to be run 24/7. It enables
+                the user to schedule, edit and cancel alarms. The user is notified when
+                an alarm is up via an alarm sound, text to speech and a notification
+                which is displayed in the notifications column. The user is also
+                notified when the weather in the location selected has changed and when
+                there is a new news story. The web page will automatically refresh
+                every 5 minutes to keep the notifications, weather and news up to date
+                on screen.
+                <prism language="python" class="code">
+                  {{ smart_alarm_clock_code.data }}
+                </prism>
               </q-tab-panel>
               <q-tab-panel name="Barnaby's Brewhouse" class="bg-grey-8">
                 <div class="text-h6">Barnaby's Brewhouse | Python</div>
@@ -111,6 +124,9 @@
 </template>
 
 <script>
+import axios from 'axios'
+import Prism from 'vue-prism-component'
+
 export default {
   data () {
     return {
@@ -118,11 +134,34 @@ export default {
       root: 'Personal',
       personal: 'Discord Bot',
       gcse: 'A452',
-      first_year: 'Countdown Simulator'
+      first_year: 'Countdown Simulator',
+      smart_alarm_clock_code: null
     }
+  },
+  mounted () {
+    axios
+      .get('https://raw.githubusercontent.com/will09122000/Smart-Alarm-Clock/master/Smart_Alarm_Clock.py')
+      .then(response => (this.smart_alarm_clock_code = response))
+      .catch((e) => console.log(e))
+  },
+  components: {
+    Prism
   }
 }
 </script>
 
 <style>
+.code {
+  width:650px;
+  height:800px;
+}
+
+div.inline {
+  display: inline-block;
+  text-align: center;
+}
+
+.test {
+  float: right;
+}
 </style>
