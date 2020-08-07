@@ -145,6 +145,7 @@ export default {
       .catch((e) => console.log(e))
   },
   components: {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     Prism
   }
 }
