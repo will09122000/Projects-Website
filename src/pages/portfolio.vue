@@ -87,20 +87,26 @@
                 <div class="text-h6">Countdown Simulator | Python</div>
               </q-tab-panel>
               <q-tab-panel name="Smart Alarm Clock" class="bg-grey-8">
-                <div class="text-h6 inline" style="{display: inline-block}">Smart Alarm Clock | Python</div>
                 <q-btn class="test" color="primary" icon="code" label="View on GitHub"/>
-                <br>
-                This program is a smart alarm clock intended to be run 24/7. It enables
-                the user to schedule, edit and cancel alarms. The user is notified when
-                an alarm is up via an alarm sound, text to speech and a notification
-                which is displayed in the notifications column. The user is also
-                notified when the weather in the location selected has changed and when
-                there is a new news story. The web page will automatically refresh
-                every 5 minutes to keep the notifications, weather and news up to date
-                on screen.
+
+                <q-card dark bordered class="bg-grey-9 my-card">
+                  <q-card-section>
+                    <div class="text-h6">Smart Alarm Clock</div>
+                    <div class="text-subtitle2">Python</div>
+                  </q-card-section>
+
+                  <q-separator dark inset />
+
+                  <q-card-section>
+                    {{smart_alarm_clock_text}}
+                  </q-card-section>
+                </q-card>
+
+                <!--
                 <prism language="python" class="code">
                   {{ smart_alarm_clock_code.data }}
                 </prism>
+                -->
               </q-tab-panel>
               <q-tab-panel name="Barnaby's Brewhouse" class="bg-grey-8">
                 <div class="text-h6">Barnaby's Brewhouse | Python</div>
@@ -135,7 +141,8 @@ export default {
       personal: 'Discord Bot',
       gcse: 'A452',
       first_year: 'Countdown Simulator',
-      smart_alarm_clock_code: null
+      smart_alarm_clock_code: null,
+      smart_alarm_clock_text: 'This program is a smart alarm clock intended to be run 24/7. It enables the user to schedule, edit and cancel alarms. The user is notified when an alarm is up via an alarm sound, text to speech and a notification which is displayed in the notifications column. The user is also notified when the weather in the location selected has changed and when there is a new news story. The web page will automatically refresh every 5 minutes to keep the notifications, weather and news up to date on screen.'
     }
   },
   mounted () {
@@ -164,5 +171,10 @@ div.inline {
 
 .test {
   float: right;
+}
+
+.my-card {
+  width: 100%;
+  max-width: 250px;
 }
 </style>
