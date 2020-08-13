@@ -1,0 +1,27 @@
+{
+    "Personal": {
+      "EERC_Bot": {},
+      "Website": {}
+    },
+    "GCSE": {},
+    "A_Level": {
+      "Rowing_Monitor": {}
+    },
+    "First_Year": {
+        "Countdown_Simulator": {},
+        "Smart_Alarm_Clock": {
+            "Main": "This program is a smart alarm clock intended to be run 24/7. It enables the user to schedule, edit and cancel alarms. The user is notified when an alarm is up via an alarm sound, text to speech and a notification which is displayed in the notifications column. The user is also notified when the weather in the location selected has changed and when there is a new news story. The web page will automatically refresh every 5 minutes to keep the notifications, weather and news up to date on screen.",
+            "Notifications": "This module is responsible for all notification functionality. It displays the latest notifications in the centre column on the webpage ordered by time. The user can clear the notifications or filter the displayed notifications from three categories: alarms, weather and news.",
+            "Alarms": "This module is responsible for all alarm functionality. The user can add new alarms with the two optional options. First, they can select days of the week for the alarm to repeat on. Secondly, an alarm label which is displayed in notifications and read out to the user when the alarm goes off along with an alarm sound. The alarm is also logged when it goes off along with the appropriate data. The user edit the time of a regular alarm or repeating alarm once it's been set and delete alarms.",
+            "News": "This module is responsible for all news functionality. It uses newsapi to fetch the latest news stories every 60 seconds",
+            "Weather": "This module is responsible for all weather functionality. It uses openweathermap to fetch the current weather in the given location every 30 seconds. This data is then displayed on the main page. A notification is sent each time weather has been fetched and some data has changed, this is also logged. The user can change the location of the weather with the name of a Town or City."
+        },
+        "Barnaby's_Brewhouse": {},
+        "Beanbag_Store": {},
+        "Task_Manager": {},
+        "Lift_Algorithm": {}
+      },
+    "Second_Year": {},
+    "Thrid_Year": {},
+    "Fourth_Year": {}
+  }

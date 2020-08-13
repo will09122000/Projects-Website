@@ -61,7 +61,6 @@
               </q-tab-panel>
               <q-tab-panel name="A453" class="bg-grey-8">
                 <div class="text-h6">A453 Coursework | Python</div>
-                {{ windowHeight }}
                 <iframe width=100% v-bind:height=windowHeight allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="https://drive.google.com/file/d/1GZrq59o7UloVOx84_u3ERT1n8Av1V003/preview?"></iframe>
               </q-tab-panel>
             </q-tab-panels>
@@ -81,41 +80,90 @@
               <q-tab name="Task Manager" label="Task Manager" />
               <q-tab name="Lift Algorithm" label="Lift Algorithm" />
             </q-tabs>
+
             <q-separator />
             <q-tab-panels v-model="first_year" animated class="bg-purple-1 text-center">
               <q-tab-panel name="Countdown Simulator" class="bg-grey-8">
                 <div class="text-h6">Countdown Simulator | Python</div>
               </q-tab-panel>
+
               <q-tab-panel name="Smart Alarm Clock" class="bg-grey-8">
-                <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock')"/>
-                <q-card dark bordered class="bg-grey-9 my-card">
-                  <q-card-section>
-                    <div class="text-h6">Smart Alarm Clock</div>
-                    <div class="text-subtitle2">Python</div>
-                  </q-card-section>
-
-                  <q-separator dark inset />
-
-                  <q-card-section>
-                    {{smart_alarm_clock_text}}
-                  </q-card-section>
-                </q-card>
-
-                <!--
-                <prism language="python" class="code">
-                  {{ smart_alarm_clock_code.data }}
-                </prism>
-                -->
+                  <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/news.py')"/>
+                  <div class="row q-pa-md q-gutter-md">
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Smart Alarm Clock</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/Smart_Alarm_Clock.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Smart_Alarm_Clock.Main}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Notifications</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/notifications.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Smart_Alarm_Clock.Notifications}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Alarms</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/Smart_Alarm_Clock.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Smart_Alarm_Clock.Alarms}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Weather</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/weather.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Smart_Alarm_Clock.Weather}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">News</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/alarm.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Smart_Alarm_Clock.News}}
+                    </q-card-section>
+                  </q-card>
+                  </div>
+                  <q-img
+                    src="../assets/smart_alarm_clock_0.png"
+                    spinner-color="white"
+                  />
+                  <!--
+                  <prism language="python" class="code">
+                    {{ smart_alarm_clock_code.data }}
+                  </prism>
+                  -->
               </q-tab-panel>
+
               <q-tab-panel name="Barnaby's Brewhouse" class="bg-grey-8">
                 <div class="text-h6">Barnaby's Brewhouse | Python</div>
               </q-tab-panel>
+
               <q-tab-panel name="Beanbag Store" class="bg-grey-8">
                 <div class="text-h6">Beanbag Store | Java</div>
               </q-tab-panel>
+
               <q-tab-panel name="Task Manager" class="bg-grey-8">
                 <div class="text-h6">Task Manager | PHP, Javascript</div>
               </q-tab-panel>
+
               <q-tab-panel name="Lift Algorithm" class="bg-grey-8">
                 <div class="text-h6">Lift Algorithm | Python</div>
               </q-tab-panel>
@@ -130,8 +178,9 @@
 
 <script>
 import axios from 'axios'
-import Prism from 'vue-prism-component'
+// import Prism from 'vue-prism-component'
 import { openURL } from 'quasar'
+import TextJson from '../text.json'
 
 export default {
   methods: {
@@ -147,7 +196,8 @@ export default {
       gcse: 'A452',
       first_year: 'Countdown Simulator',
       smart_alarm_clock_code: null,
-      smart_alarm_clock_text: 'This program is a smart alarm clock intended to be run 24/7. It enables the user to schedule, edit and cancel alarms. The user is notified when an alarm is up via an alarm sound, text to speech and a notification which is displayed in the notifications column. The user is also notified when the weather in the location selected has changed and when there is a new news story. The web page will automatically refresh every 5 minutes to keep the notifications, weather and news up to date on screen.'
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      text: TextJson
     }
   },
   mounted () {
@@ -158,7 +208,7 @@ export default {
   },
   components: {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    Prism
+    // Prism
   }
 }
 </script>
@@ -175,7 +225,7 @@ div.inline {
 }
 
 .redirect {
-  float: right;
+
 }
 
 .my-card {
