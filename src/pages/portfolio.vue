@@ -87,8 +87,7 @@
                 <div class="text-h6">Countdown Simulator | Python</div>
               </q-tab-panel>
               <q-tab-panel name="Smart Alarm Clock" class="bg-grey-8">
-                <q-btn class="test" color="primary" icon="code" label="View on GitHub"/>
-
+                <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock')"/>
                 <q-card dark bordered class="bg-grey-9 my-card">
                   <q-card-section>
                     <div class="text-h6">Smart Alarm Clock</div>
@@ -132,8 +131,14 @@
 <script>
 import axios from 'axios'
 import Prism from 'vue-prism-component'
+import { openURL } from 'quasar'
 
 export default {
+  methods: {
+    redirect: function (text) {
+      openURL(text)
+    }
+  },
   data () {
     return {
       windowHeight: window.innerHeight * 0.8,
@@ -169,12 +174,12 @@ div.inline {
   text-align: center;
 }
 
-.test {
+.redirect {
   float: right;
 }
 
 .my-card {
   width: 100%;
-  max-width: 250px;
+  max-width: 300px;
 }
 </style>
