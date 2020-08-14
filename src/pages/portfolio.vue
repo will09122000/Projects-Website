@@ -84,11 +84,31 @@
             <q-separator />
             <q-tab-panels v-model="first_year" animated class="bg-purple-1 text-center">
               <q-tab-panel name="Countdown Simulator" class="bg-grey-8">
-                <div class="text-h6">Countdown Simulator | Python</div>
+                  <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator')"/>
+                  <div class="row q-pa-md q-gutter-md">
+                    <q-card dark bordered class="bg-grey-9">
+                      <q-card-section>
+                        <div class="text-h6">Countdown Simulator</div>
+                        <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
+                      </q-card-section>
+                      <q-separator dark inset />
+                      <q-card-section>
+                        <b>{{text.First_Year.Countdown_Simulator.a}}</b> <br>
+                        {{text.First_Year.Countdown_Simulator.b}} <br>
+                        {{text.First_Year.Countdown_Simulator.c}} <br>
+                        {{text.First_Year.Countdown_Simulator.d}} <br>
+                        {{text.First_Year.Countdown_Simulator.e}} <br>
+                      </q-card-section>
+                    </q-card>
+                  </div>
+                  <q-img
+                    src="../assets/countdown_simulator_0.png"
+                    spinner-color="white"
+                  />
               </q-tab-panel>
 
               <q-tab-panel name="Smart Alarm Clock" class="bg-grey-8">
-                  <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/news.py')"/>
+                  <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock')"/>
                   <div class="row q-pa-md q-gutter-md">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>

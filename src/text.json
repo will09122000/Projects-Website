@@ -8,7 +8,14 @@
       "Rowing_Monitor": {}
     },
     "First_Year": {
-        "Countdown_Simulator": {},
+        "Countdown_Simulator": {
+          "a": "A simulated game of Countdown from a command-line interface.",
+          "b": "The user is prompted 9 times to choose either a vowel or a consonant using the letters 'v' and 'c' as inputs. A random letter depending on their input is added to a list using the same probability distribution from the Countdown show.  The 9 letters for this function will be returned as a string.",
+          "c": "A list of words is created from 'words.txt' with punctuation removed and words less than 10 letters long. The argument for this function is expected to be the name of a text file as a string. The words will then be returned as a list.",
+          "d": "The next function will take the 9 letter string and return two lists. The first being all possible words that can be made from those 9 letters and the second being the longest words that can be made.",
+          "e": "The last main function asks the user to input their best guess as well as being given the chance to shuffle the letters. Their input is checked against all possible words to see if there is a match. If there is the program will print out: the number of points scored, statistics on how 'good' their word was, if they scored maximum points and lastly a list of the longest words."
+
+        },
         "Smart_Alarm_Clock": {
             "Main": "This program is a smart alarm clock intended to be run 24/7. It enables the user to schedule, edit and cancel alarms. The user is notified when an alarm is up via an alarm sound, text to speech and a notification which is displayed in the notifications column. The user is also notified when the weather in the location selected has changed and when there is a new news story. The web page will automatically refresh every 5 minutes to keep the notifications, weather and news up to date on screen.",
             "Notifications": "This module is responsible for all notification functionality. It displays the latest notifications in the centre column on the webpage ordered by time. The user can clear the notifications or filter the displayed notifications from three categories: alarms, weather and news.",
