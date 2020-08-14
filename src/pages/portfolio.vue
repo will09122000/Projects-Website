@@ -173,7 +173,88 @@
               </q-tab-panel>
 
               <q-tab-panel name="Barnaby's Brewhouse" class="bg-grey-8">
-                <div class="text-h6">Barnaby's Brewhouse | Python</div>
+                  <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse')"/>
+                  <div class="row q-pa-md q-gutter-md">
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Barnaby's Brewhouse</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/barnabys_brewhouse.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Barnabys_Brewhouse.Main}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Batch Management</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/batch_management.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Barnabys_Brewhouse.Batch_Management}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Tank Management</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/tank_management.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Barnabys_Brewhouse.Tank_Management}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Inventory</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/inventory.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Barnabys_Brewhouse.Inventory}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Order Management</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/order_management.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Barnabys_Brewhouse.Order_Management}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Beer Suggestion</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/beer_suggestion.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Barnabys_Brewhouse.Beer_Suggestion}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Sales Preditions</div>
+                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/sales_predictions.py')"/></div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Barnabys_Brewhouse.Sales_Preditions}}
+                    </q-card-section>
+                  </q-card>
+                  </div>
+                  <q-img
+                    src="../assets/smart_alarm_clock_0.png"
+                    spinner-color="white"
+                  />
+                  <!--
+                  <prism language="python" class="code">
+                    {{ smart_alarm_clock_code.data }}
+                  </prism>
+                  -->
               </q-tab-panel>
 
               <q-tab-panel name="Beanbag Store" class="bg-grey-8">
