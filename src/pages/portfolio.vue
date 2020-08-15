@@ -247,7 +247,7 @@
                   </q-card>
                   </div>
                   <q-img
-                    src="../assets/smart_alarm_clock_0.png"
+                    src="../assets/barnabys_brewhouse_0.png"
                     spinner-color="white"
                   />
                   <!--
