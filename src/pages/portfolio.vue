@@ -84,177 +84,191 @@
             <q-separator />
             <q-tab-panels v-model="first_year" animated class="bg-purple-1 text-center">
               <q-tab-panel name="Countdown Simulator" class="bg-grey-8">
-                  <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator')"/>
                   <div class="row q-pa-md q-gutter-md">
                     <q-card dark bordered class="bg-grey-9">
                       <q-card-section>
-                        <div class="text-h6">Countdown Simulator</div>
-                        <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
+                        <div class="text-h6 text-bold">Countdown Simulator</div>
                       </q-card-section>
                       <q-separator dark inset />
-                      <q-card-section>
-                        <b>{{text.First_Year.Countdown_Simulator.a}}</b> <br>
+                      <q-card-section class="q-mb-xl">
+                        {{text.First_Year.Countdown_Simulator.a}} <br>
                         {{text.First_Year.Countdown_Simulator.b}} <br>
                         {{text.First_Year.Countdown_Simulator.c}} <br>
                         {{text.First_Year.Countdown_Simulator.d}} <br>
                         {{text.First_Year.Countdown_Simulator.e}} <br>
                       </q-card-section>
+                      <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
                     </q-card>
                   </div>
                   <q-img
                     src="../assets/countdown_simulator_0.png"
                     spinner-color="white"
+                    class="max-width-200"
                   />
+                  <q-footer elevated>
+                    <q-toolbar class="bg-secondary text-white">
+                      <q-toolbar-title class="text-left text-body2">Countdown Simulator | Python</q-toolbar-title>
+                      <q-toolbar-title class="text-right text-body2">CA1 of ECM1400 Programming</q-toolbar-title>
+                      <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator')"/>
+                    </q-toolbar>
+                  </q-footer>
               </q-tab-panel>
 
               <q-tab-panel name="Smart Alarm Clock" class="bg-grey-8">
-                  <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock')"/>
-                  <div class="row q-pa-md q-gutter-md">
+                <div class="row q-pa-md q-gutter-md">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
                       <div class="text-h6">Smart Alarm Clock</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/Smart_Alarm_Clock.py')"/></div>
                     </q-card-section>
                     <q-separator dark inset />
-                    <q-card-section>
+                    <q-card-section class="q-mb-xl">
                       {{text.First_Year.Smart_Alarm_Clock.Main}}
                     </q-card-section>
+                    <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/Smart_Alarm_Clock.py')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
                       <div class="text-h6">Notifications</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/notifications.py')"/></div>
                     </q-card-section>
                     <q-separator dark inset />
-                    <q-card-section>
+                    <q-card-section class="q-mb-xl">
                       {{text.First_Year.Smart_Alarm_Clock.Notifications}}
                     </q-card-section>
+                    <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/notifications.py')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
                       <div class="text-h6">Alarms</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/Smart_Alarm_Clock.py')"/></div>
                     </q-card-section>
                     <q-separator dark inset />
-                    <q-card-section>
+                    <q-card-section class="q-mb-xl">
                       {{text.First_Year.Smart_Alarm_Clock.Alarms}}
                     </q-card-section>
+                    <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/Smart_Alarm_Clock.py')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
                       <div class="text-h6">Weather</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/weather.py')"/></div>
                     </q-card-section>
                     <q-separator dark inset />
-                    <q-card-section>
+                    <q-card-section class="q-mb-xl">
                       {{text.First_Year.Smart_Alarm_Clock.Weather}}
                     </q-card-section>
+                    <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/weather.py')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
                       <div class="text-h6">News</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/alarm.py')"/></div>
                     </q-card-section>
                     <q-separator dark inset />
-                    <q-card-section>
+                    <q-card-section class="q-mb-xl">
                       {{text.First_Year.Smart_Alarm_Clock.News}}
                     </q-card-section>
+                    <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/alarm.py')"/></div>
                   </q-card>
-                  </div>
-                  <q-img
-                    src="../assets/smart_alarm_clock_0.png"
-                    spinner-color="white"
-                  />
-                  <!--
-                  <prism language="python" class="code">
-                    {{ smart_alarm_clock_code.data }}
-                  </prism>
-                  -->
+                </div>
+                <q-img
+                  src="../assets/smart_alarm_clock_0.png"
+                  spinner-color="white"
+                />
+                <q-footer elevated>
+                  <q-toolbar class="bg-secondary text-white">
+                    <q-toolbar-title class="text-left text-body2">Smart Alarm Clock | Python, HTML, CSS</q-toolbar-title>
+                    <q-toolbar-title class="text-right text-body2">CA2 of ECM1400 Programming</q-toolbar-title>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock')"/>
+                  </q-toolbar>
+                </q-footer>
+                <!--
+                <prism language="python" class="code">
+                  {{ smart_alarm_clock_code.data }}
+                </prism>
+                -->
               </q-tab-panel>
 
               <q-tab-panel name="Barnaby's Brewhouse" class="bg-grey-8">
-                  <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse')"/>
-                  <div class="row q-pa-md q-gutter-md">
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Barnaby's Brewhouse</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/barnabys_brewhouse.py')"/></div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>
-                      {{text.First_Year.Barnabys_Brewhouse.Main}}
-                    </q-card-section>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Batch Management</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/batch_management.py')"/></div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>
-                      {{text.First_Year.Barnabys_Brewhouse.Batch_Management}}
-                    </q-card-section>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Tank Management</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/tank_management.py')"/></div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>
-                      {{text.First_Year.Barnabys_Brewhouse.Tank_Management}}
-                    </q-card-section>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Inventory</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/inventory.py')"/></div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>
-                      {{text.First_Year.Barnabys_Brewhouse.Inventory}}
-                    </q-card-section>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Order Management</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/order_management.py')"/></div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>
-                      {{text.First_Year.Barnabys_Brewhouse.Order_Management}}
-                    </q-card-section>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Beer Suggestion</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/beer_suggestion.py')"/></div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>
-                      {{text.First_Year.Barnabys_Brewhouse.Beer_Suggestion}}
-                    </q-card-section>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Sales Preditions</div>
-                      <div class="text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/sales_predictions.py')"/></div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>
-                      {{text.First_Year.Barnabys_Brewhouse.Sales_Preditions}}
-                    </q-card-section>
-                  </q-card>
-                  </div>
-                  <q-img
-                    src="../assets/barnabys_brewhouse_0.png"
-                    spinner-color="white"
-                  />
-                  <!--
-                  <prism language="python" class="code">
-                    {{ smart_alarm_clock_code.data }}
-                  </prism>
-                  -->
+                <div class="row q-pa-md q-gutter-md">
+                <q-card dark bordered class="bg-grey-9 my-card">
+                  <q-card-section>
+                    <div class="text-h6">Barnaby's Brewhouse</div>
+                  </q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section class="q-mb-xl">
+                    {{text.First_Year.Barnabys_Brewhouse.Main}}
+                  </q-card-section>
+                  <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/barnabys_brewhouse.py')"/></div>
+                </q-card>
+                <q-card dark bordered class="bg-grey-9 my-card">
+                  <q-card-section>
+                    <div class="text-h6">Batch Management</div>
+                  </q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section class="q-mb-xl">
+                    {{text.First_Year.Barnabys_Brewhouse.Batch_Management}}
+                  </q-card-section>
+                  <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/batch_management.py')"/></div>
+                </q-card>
+                <q-card dark bordered class="bg-grey-9 my-card">
+                  <q-card-section>
+                    <div class="text-h6">Tank Management</div>
+                  </q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section class="q-mb-xl">
+                    {{text.First_Year.Barnabys_Brewhouse.Tank_Management}}
+                  </q-card-section>
+                  <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/tank_management.py')"/></div>
+                </q-card>
+                <q-card dark bordered class="bg-grey-9 my-card">
+                  <q-card-section>
+                    <div class="text-h6">Inventory</div>
+                  </q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section class="q-mb-xl">
+                    {{text.First_Year.Barnabys_Brewhouse.Inventory}}
+                  </q-card-section>
+                  <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/inventory.py')"/></div>
+                </q-card>
+                <q-card dark bordered class="bg-grey-9 my-card">
+                  <q-card-section>
+                    <div class="text-h6">Order Management</div>
+                  </q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section class="q-mb-xl">
+                    {{text.First_Year.Barnabys_Brewhouse.Order_Management}}
+                  </q-card-section>
+                  <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/order_management.py')"/></div>
+                </q-card>
+                <q-card dark bordered class="bg-grey-9 my-card">
+                  <q-card-section>
+                    <div class="text-h6">Beer Suggestion</div>
+                  </q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section class="q-mb-xl">
+                    {{text.First_Year.Barnabys_Brewhouse.Beer_Suggestion}}
+                  </q-card-section>
+                  <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/beer_suggestion.py')"/></div>
+                </q-card>
+                <q-card dark bordered class="bg-grey-9 my-card">
+                  <q-card-section>
+                    <div class="text-h6">Sales Preditions</div>
+                  </q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section class="q-mb-xl">
+                    {{text.First_Year.Barnabys_Brewhouse.Sales_Preditions}}
+                  </q-card-section>
+                  <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/sales_predictions.py')"/></div>
+                </q-card>
+                </div>
+                <q-img
+                  src="../assets/barnabys_brewhouse_0.png"
+                  spinner-color="white"
+                />
+                <q-footer elevated>
+                  <q-toolbar class="bg-secondary text-white">
+                    <q-toolbar-title class="text-left text-body2">Barnaby's Brewhouse | Python, HTML, CSS</q-toolbar-title>
+                    <q-toolbar-title class="text-right text-body2">CA3 of ECM1400 Programming</q-toolbar-title>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse')"/>
+                  </q-toolbar>
+                </q-footer>
               </q-tab-panel>
 
               <q-tab-panel name="Beanbag Store" class="bg-grey-8">
@@ -325,12 +339,12 @@ div.inline {
   text-align: center;
 }
 
-.redirect {
-
-}
-
 .my-card {
   width: 100%;
   max-width: 300px;
+}
+
+.q-img {
+  max-width: 1500px;
 }
 </style>

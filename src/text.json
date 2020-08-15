@@ -9,7 +9,7 @@
     },
     "First_Year": {
         "Countdown_Simulator": {
-          "a": "A simulated game of Countdown from a command-line interface.",
+          "a": "This was my first programming coursework at Univeristy, it is a simulated game of Countdown from a command-line interface.",
           "b": "The user is prompted 9 times to choose either a vowel or a consonant using the letters 'v' and 'c' as inputs. A random letter depending on their input is added to a list using the same probability distribution from the Countdown show.  The 9 letters for this function will be returned as a string.",
           "c": "A list of words is created from 'words.txt' with punctuation removed and words less than 10 letters long. The argument for this function is expected to be the name of a text file as a string. The words will then be returned as a list.",
           "d": "The next function will take the 9 letter string and return two lists. The first being all possible words that can be made from those 9 letters and the second being the longest words that can be made.",
