@@ -106,9 +106,12 @@
                     :maximized="maximizedToggle"
                   >
                     <q-card class="bg-grey-8 text-white">
-                      <q-bar>
+                      <q-bar class="bg-secondary">
+                        <div class="text-body-2">
+                          Countdown Simulator | Python
+                        </div>
                         <q-space />
-                        <q-btn dense flat icon="close" v-close-popup>
+                        <q-btn flat icon="close" v-close-popup>
                           <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
                         </q-btn>
                       </q-bar>
@@ -116,6 +119,7 @@
                         <img
                           src="../assets/countdown_simulator_0.png"
                           spinner-color="white"
+                          :width="windowWidth"
                         />
                       </q-card-section>
                     </q-card>
@@ -125,9 +129,7 @@
                     spinner-color="white"
                     class="max-width-200"
                   >
-                    <div class="absolute-bottom-right">
-                      <q-btn icon="open_in_full" color="primary" @click="dialog = true" />
-                    </div>
+                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
                   </q-img>
                   <q-footer elevated>
                     <q-toolbar class="bg-secondary text-white">
@@ -191,10 +193,37 @@
                     <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/alarm.py')"/></div>
                   </q-card>
                 </div>
+                <q-dialog
+                    v-model="dialog"
+                    persistent
+                    :maximized="maximizedToggle"
+                >
+                  <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                      <div class="text-body-2">
+                        Smart Alarm Clock | Python, HTML, CSS
+                      </div>
+                      <q-space />
+                      <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                      </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                      <img
+                        src="../assets/smart_alarm_clock_0.png"
+                        spinner-color="white"
+                        :width="windowWidth"
+                      />
+                    </q-card-section>
+                  </q-card>
+                </q-dialog>
                 <q-img
                   src="../assets/smart_alarm_clock_0.png"
                   spinner-color="white"
-                />
+                  class="max-width-200"
+                >
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                </q-img>
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <q-toolbar-title class="text-left text-body2">Smart Alarm Clock | Python, HTML, CSS</q-toolbar-title>
@@ -282,10 +311,37 @@
                   <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/sales_predictions.py')"/></div>
                 </q-card>
                 </div>
+                <q-dialog
+                    v-model="dialog"
+                    persistent
+                    :maximized="maximizedToggle"
+                >
+                  <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                      <div class="text-body-2">
+                        Barnaby's Brewhouse | Python, HTML, CSS
+                      </div>
+                      <q-space />
+                      <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                      </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                      <img
+                        src="../assets/barnabys_brewhouse_0.png"
+                        spinner-color="white"
+                        :width="windowWidth"
+                      />
+                    </q-card-section>
+                  </q-card>
+                </q-dialog>
                 <q-img
                   src="../assets/barnabys_brewhouse_0.png"
                   spinner-color="white"
-                />
+                  class="max-width-200"
+                >
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                </q-img>
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <q-toolbar-title class="text-left text-body2">Barnaby's Brewhouse | Python, HTML, CSS</q-toolbar-title>
@@ -305,7 +361,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Beanbag_Store.Main}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/barnabys_brewhouse.py')"/></div>
+                    <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Beanbag-Store/tree/master/src/beanbags')"/></div>
                   </q-card>
                 </div>
                 <q-footer elevated>
@@ -318,7 +374,65 @@
               </q-tab-panel>
 
               <q-tab-panel name="Task Manager" class="bg-grey-8">
-                <div class="text-h6">Task Manager | PHP, Javascript</div>
+                <div class="row q-pa-md q-gutter-md">
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Task Manager</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Task_Manager.Main}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Batch Management</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Barnabys_Brewhouse.Batch_Management}}
+                    </q-card-section>
+                    <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/batch_management.py')"/></div>
+                  </q-card>
+                </div>
+                <q-dialog
+                    v-model="dialog"
+                    persistent
+                    :maximized="maximizedToggle"
+                >
+                  <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                      <div class="text-body-2">
+                        Task Manager | PHP, Javascript
+                      </div>
+                      <q-space />
+                      <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                      </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                      <img
+                        src="../assets/barnabys_brewhouse_0.png"
+                        spinner-color="white"
+                        :width="windowWidth"
+                      />
+                    </q-card-section>
+                  </q-card>
+                </q-dialog>
+                <q-img
+                  src="../assets/barnabys_brewhouse_0.png"
+                  spinner-color="white"
+                  class="max-width-200"
+                >
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                </q-img>
+                <q-footer elevated>
+                  <q-toolbar class="bg-secondary text-white">
+                    <q-toolbar-title class="text-left text-body2">Task Manager | PHP, Javascript</q-toolbar-title>
+                    <q-toolbar-title class="text-right text-body2">CA1 of ECM1417 Web Development</q-toolbar-title>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Task-Manager')"/>
+                  </q-toolbar>
+                </q-footer>
               </q-tab-panel>
 
               <q-tab-panel name="Lift Algorithm" class="bg-grey-8">
@@ -351,6 +465,7 @@ export default {
   data () {
     return {
       windowHeight: window.innerHeight * 0.8,
+      windowWidth: window.innerWidth,
       root: 'Personal',
       personal: 'Discord Bot',
       gcse: 'A452',
