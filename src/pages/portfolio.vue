@@ -100,11 +100,35 @@
                       <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
                     </q-card>
                   </div>
-                  <img
+                  <q-dialog
+                    v-model="dialog"
+                    persistent
+                    :maximized="maximizedToggle"
+                  >
+                    <q-card class="bg-grey-8 text-white">
+                      <q-bar>
+                        <q-space />
+                        <q-btn dense flat icon="close" v-close-popup>
+                          <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                        </q-btn>
+                      </q-bar>
+                      <q-card-section class="row justify-center">
+                        <img
+                          src="../assets/countdown_simulator_0.png"
+                          spinner-color="white"
+                        />
+                      </q-card-section>
+                    </q-card>
+                  </q-dialog>
+                  <q-img
                     src="../assets/countdown_simulator_0.png"
                     spinner-color="white"
                     class="max-width-200"
-                  />
+                  >
+                    <div class="absolute-bottom-right">
+                      <q-btn icon="open_in_full" color="primary" @click="dialog = true" />
+                    </div>
+                  </q-img>
                   <q-footer elevated>
                     <q-toolbar class="bg-secondary text-white">
                       <q-toolbar-title class="text-left text-body2">Countdown Simulator | Python</q-toolbar-title>
@@ -314,7 +338,6 @@ import axios from 'axios'
 // import Prism from 'vue-prism-component'
 import { openURL } from 'quasar'
 import TextJson from '../text.json'
-import VueExpandableImage from 'vue-expandable-image'
 
 export default {
   methods: {
@@ -335,7 +358,9 @@ export default {
       smart_alarm_clock_code: null,
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       text: TextJson,
-      path: '../assets/countdown_simulator_0.png'
+      path: '../assets/countdown_simulator_0.png',
+      dialog: false,
+      maximizedToggle: true
     }
   },
   mounted () {
