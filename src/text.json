@@ -32,7 +32,9 @@
           "Beer_Suggestion": "This module is responsible for suggesting the type of beer that should be produced. A score for each beer type is accumulated through the module and the highest score is the beer that is suggested next.",
           "Sales_Preditions": "This module is responsible for predicting the demand of each beer type for a month of sales 3 months from the current date. The average growth and sales from the same month in the previous years are used to calculate this prediction."
         },
-        "Beanbag_Store": {},
+        "Beanbag_Store": {
+          "Main": "text"
+        },
         "Task_Manager": {},
         "Lift_Algorithm": {}
       },

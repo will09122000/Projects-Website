@@ -100,7 +100,7 @@
                       <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
                     </q-card>
                   </div>
-                  <q-img
+                  <img
                     src="../assets/countdown_simulator_0.png"
                     spinner-color="white"
                     class="max-width-200"
@@ -271,8 +271,26 @@
                 </q-footer>
               </q-tab-panel>
 
-              <q-tab-panel name="Beanbag Store" class="bg-grey-8">
-                <div class="text-h6">Beanbag Store | Java</div>
+              <q-tab-panel name="Beanbag Store" class="bg-grey-8 row justify-center items-center">
+                <div class="row q-pa-md q-gutter-md">
+                  <q-card dark bordered class="bg-grey-9 row justify-center">
+                    <q-card-section>
+                      <div class="text-h6">Beanbag Store</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Beanbag_Store.Main}}
+                    </q-card-section>
+                    <div class="q-pa-md absolute-bottom text-subtitle2"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/barnabys_brewhouse.py')"/></div>
+                  </q-card>
+                </div>
+                <q-footer elevated>
+                  <q-toolbar class="bg-secondary text-white">
+                    <q-toolbar-title class="text-left text-body2">Beanbag Store | Java</q-toolbar-title>
+                    <q-toolbar-title class="text-right text-body2">CA1 of ECM1410 Object-Oritentated Programming</q-toolbar-title>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Beanbag-Store')"/>
+                  </q-toolbar>
+                </q-footer>
               </q-tab-panel>
 
               <q-tab-panel name="Task Manager" class="bg-grey-8">
@@ -296,11 +314,15 @@ import axios from 'axios'
 // import Prism from 'vue-prism-component'
 import { openURL } from 'quasar'
 import TextJson from '../text.json'
+import VueExpandableImage from 'vue-expandable-image'
 
 export default {
   methods: {
     redirect: function (text) {
       openURL(text)
+    },
+    getPic (index) {
+      return `../assets/ ${String(index)} .png`
     }
   },
   data () {
@@ -312,7 +334,8 @@ export default {
       first_year: 'Countdown Simulator',
       smart_alarm_clock_code: null,
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      text: TextJson
+      text: TextJson,
+      path: '../assets/countdown_simulator_0.png'
     }
   },
   mounted () {
