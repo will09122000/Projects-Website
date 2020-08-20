@@ -31,4 +31,6 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-.firebase/hosting.ZGlzdFxzcGE.cache
+*.cache
+.firebase/hosting.ZGlzdC9zcGE.cache
+.firebase/hosting.ZGlzdC9zcGE.cache

@@ -116,7 +116,7 @@
                         </q-btn>
                       </q-bar>
                       <q-card-section class="row justify-center">
-                        <img
+                        <q-img
                           src="../assets/countdown_simulator_0.png"
                           spinner-color="white"
                           :width="windowWidth"
@@ -209,7 +209,7 @@
                       </q-btn>
                     </q-bar>
                     <q-card-section class="row justify-center">
-                      <img
+                      <q-img
                         src="../assets/smart_alarm_clock_0.png"
                         spinner-color="white"
                         :width="windowWidth"
@@ -327,7 +327,7 @@
                       </q-btn>
                     </q-bar>
                     <q-card-section class="row justify-center">
-                      <img
+                      <q-img
                         src="../assets/barnabys_brewhouse_0.png"
                         spinner-color="white"
                         :width="windowWidth"
@@ -386,7 +386,7 @@
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
-                      <div class="text-h6">Batch Management</div>
+                      <div class="text-h6">Temp</div>
                     </q-card-section>
                     <q-separator dark inset />
                     <q-card-section class="q-mb-xl">
