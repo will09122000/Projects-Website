@@ -36,7 +36,11 @@
           "Main": "This assignment was a pair-programming project based around the development of a back-end Java package. This package was to be used by a client who have determined what they require of the system including an interface. They also already have the front-end developed. This back-end will enable them to: manage stock such as adding beanbags and setting their price; selling beanbags; reserving beanbags for customers and retrieve information such as the total price of the beanbags sold."
         },
         "Task_Manager": {
-          "Main": ""
+          "Main": "This coursework was a section of my Web Development module. The main page allows the user to each manage their own tasks. From editing tasks, marking tasks as complete and deleting tasks.",
+          "Log_In": "The log in screen requires a username and a password. The username and hashed password with salt and pepper is looked up in a database. Appropriate error messages are displayed to the user when an unsuccessful log in occurs.",
+          "Sign_Up": "This page is intended for new users with much of the code similar to that of the log in page. The main differences are checking if the username already exists in the database and checking the two passwords the users has entered match. If it's successful, they are taken to the home page and their details are added to the database.",
+          "New_Task": "Here the user can create a new task which includes a title, description and a due date. This task is added to the database and they are returned to the home page with their new task added to the table displayed.",
+          "Import_Export_Tasks": "This allowed the user to import and export tasks to and from a shared database of tasks using an API. Imported tasks were then added to the database as if they had created them with the 'New Task' page."
         },
         "Lift_Algorithm": {}
       },
