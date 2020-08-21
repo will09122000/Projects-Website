@@ -498,6 +498,32 @@
                 </q-footer>
               </q-tab-panel>
 
+                            <q-tab-panel name="Lift Algorithm" class="bg-grey-8">
+                <div class="row q-pa-md q-gutter-md">
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Lift Algorithm</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Task_Manager.Main}}
+                    </q-card-section>
+                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="tasks.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/tasks.php')"/></div>
+                  </q-card>
+                </div>
+                <q-video
+                  :ratio="16/9"
+                  src="https://www.youtube.com/embed/l_47qbni9mY?rel=0"
+                />
+                <q-footer elevated>
+                  <q-toolbar class="bg-secondary text-white">
+                    <q-toolbar-title class="text-left text-body2">Task Manager | PHP, Javascript</q-toolbar-title>
+                    <q-toolbar-title class="text-right text-body2">CA1 of ECM1417 Web Development</q-toolbar-title>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Task-Manager')"/>
+                  </q-toolbar>
+                </q-footer>
+              </q-tab-panel>
+
               <q-tab-panel name="Lift Algorithm" class="bg-grey-8">
                 <div class="text-h6">Lift Algorithm | Python</div>
               </q-tab-panel>
