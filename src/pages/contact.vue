@@ -1,7 +1,7 @@
 <template>
   <q-page padding>
     <div class="q-pa-md" style="max-width: 350px">
-    <q-list bordered>
+    <q-list bordered dark>
       <q-item>
         <q-item-section avatar>
           <q-icon name="email" />
@@ -21,7 +21,7 @@
         <q-btn icon="content_copy" size="sm" v-on:click="copy('07411137158')" class="bg-secondary"/>
       </q-item>
 
-      <q-separator />
+      <q-separator dark/>
 
       <q-item>
         <q-item-section avatar>

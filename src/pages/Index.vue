@@ -20,7 +20,8 @@
         <q-carousel-slide name="style" class="no-wrap flex-center">
           <div class="text-h2 text-center">Barnaby's Brewhouse</div>
           <div class="text-h5 text-center">First Year</div>
-          <div class="text-center"><q-icon name="fab fa-python" size="56px" /></div>
+          <div class="text-center inline"><q-icon name="fab fa-python" size="56px" /></div>
+          <div class="inline"><q-btn color="primary" icon="mail" label="On Left" /></div>
           <div class="q-mt-md q-mb-md text-center">
             {{ text.First_Year.Barnabys_Brewhouse.Main }}
           </div>
@@ -32,19 +33,16 @@
         <q-carousel-slide name="tv" class="column no-wrap flex-center">
           <q-icon name="live_tv" size="56px" />
           <div class="q-mt-md text-center">
-            {{ lorem }}
           </div>
         </q-carousel-slide>
         <q-carousel-slide name="layers" class="column no-wrap flex-center">
           <q-icon name="layers" size="56px" />
           <div class="q-mt-md text-center">
-            {{ lorem }}
           </div>
         </q-carousel-slide>
         <q-carousel-slide name="map" class="column no-wrap flex-center">
           <q-icon name="terrain" size="56px" />
           <div class="q-mt-md text-center">
-            {{ lorem }}
           </div>
         </q-carousel-slide>
       </q-carousel>
