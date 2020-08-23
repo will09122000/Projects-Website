@@ -42,7 +42,12 @@
           "New_Task": "Here the user can create a new task which includes a title, description and a due date. This task is added to the database and they are returned to the home page with their new task added to the table displayed.",
           "Import_Export_Tasks": "This allowed the user to import and export tasks to and from a shared database of tasks using an API. Imported tasks were then added to the database as if they had created them with the 'New Task' page."
         },
-        "Lift_Algorithm": {}
+        "Lift_Algorithm": {
+          "Main": "The idea of this courework was to design and implement an algorithm for a lift using data structures we had learnt in the module. This algorithm would then be compared against a base algorithm which also had to be implemented. These algorithms dictated where the lift would go in order to serve random requests from one floor to another.",
+          "Settings": "The settings page allowed you to configure the total number of floors; the spawn rate of new requests and the speed the lift travelled between floors.",
+          "Base_Algorithm": "The design of this base algorithm was provided; however, we still had to implement it into our program. Tthe lift starts from the bottom floor and continually travels to the top floor and back down to the ground floor, picking up requests if they are heading the same direction as the lift and the lift is not full. Each time a floor is reached, those requests inside the lift who's destination is the current floor are removed from the lift.",
+          "Improved_Algorithm": "For the improved algorithm, the lift starts from the bottom floor. While there are no requests on any floor or in the lift, the lift will travel to the middle floor and wait there for requests to be in the optimal position pending a new request on a random floor. When a request spawns and the lift is empty, the lift will travel to the request that has been waiting the longest picking up any requests heading in the same direction as the lift. The lift will then travel to the destination floor of that request also picking up any heading in the same direction as the lift."
+        }
       },
     "Second_Year": {},
     "Third_Year": {},

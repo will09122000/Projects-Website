@@ -498,7 +498,7 @@
                 </q-footer>
               </q-tab-panel>
 
-                            <q-tab-panel name="Lift Algorithm" class="bg-grey-8">
+              <q-tab-panel name="Lift Algorithm" class="bg-grey-8">
                 <div class="row q-pa-md q-gutter-md">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -506,9 +506,36 @@
                     </q-card-section>
                     <q-separator dark inset />
                     <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Task_Manager.Main}}
+                      {{text.First_Year.Lift_Algorithm.Main}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="tasks.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/tasks.php')"/></div>
+                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="lift_algorithm.py" v-on:click="redirect('https://github.com/will09122000/Lift-Algorithim/blob/master/lift_algorithm.py')"/></div>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Settings</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Lift_Algorithm.Settings}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Base Algorithm</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Lift_Algorithm.Base_Algorithm}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Improved Algorithm</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>
+                      {{text.First_Year.Lift_Algorithm.Improved_Algorithm}}
+                    </q-card-section>
                   </q-card>
                 </div>
                 <q-video
@@ -517,15 +544,11 @@
                 />
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
-                    <q-toolbar-title class="text-left text-body2">Task Manager | PHP, Javascript</q-toolbar-title>
-                    <q-toolbar-title class="text-right text-body2">CA1 of ECM1417 Web Development</q-toolbar-title>
-                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Task-Manager')"/>
+                    <q-toolbar-title class="text-left text-body2">Lift Algorithm | Python</q-toolbar-title>
+                    <q-toolbar-title class="text-right text-body2">CA1 of ECM1414 Data Structures and Algorithms</q-toolbar-title>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Lift-Algorithim')"/>
                   </q-toolbar>
                 </q-footer>
-              </q-tab-panel>
-
-              <q-tab-panel name="Lift Algorithm" class="bg-grey-8">
-                <div class="text-h6">Lift Algorithm | Python</div>
               </q-tab-panel>
             </q-tab-panels>
           </q-tab-panel>
@@ -598,6 +621,10 @@ div.inline {
 }
 
 .q-img {
+  max-width: 1500px;
+}
+
+.q-video {
   max-width: 1500px;
 }
 </style>
