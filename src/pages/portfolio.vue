@@ -57,11 +57,11 @@
             <q-tab-panels v-model="gcse" animated class="bg-purple-1 text-center">
               <q-tab-panel name="A452" class="bg-grey-8">
                 <div class="text-h6">A452 Coursework | SQL</div>
-                <iframe width=100% v-bind:height=windowHeight allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="https://drive.google.com/file/d/1_GeuFxHE6XqkyYT8qQeWCOJUkHqwx_LH/preview?"></iframe>
+                <iframe width=100% :height=window.height allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="https://drive.google.com/file/d/1_GeuFxHE6XqkyYT8qQeWCOJUkHqwx_LH/preview?"></iframe>
               </q-tab-panel>
               <q-tab-panel name="A453" class="bg-grey-8">
                 <div class="text-h6">A453 Coursework | Python</div>
-                <iframe width=100% v-bind:height=windowHeight allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="https://drive.google.com/file/d/1GZrq59o7UloVOx84_u3ERT1n8Av1V003/preview?"></iframe>
+                <iframe width=100% :height=window.height allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="https://drive.google.com/file/d/1GZrq59o7UloVOx84_u3ERT1n8Av1V003/preview?"></iframe>
               </q-tab-panel>
             </q-tab-panels>
           </q-tab-panel>
@@ -84,63 +84,75 @@
             <q-separator />
             <q-tab-panels v-model="first_year" animated class="bg-purple-1 text-center">
               <q-tab-panel name="Countdown Simulator" class="bg-grey-8">
-                  <div class="row q-pa-md q-gutter-md">
-                    <q-card dark bordered class="bg-grey-9">
-                      <q-card-section>
-                        <div class="text-h6 text-bold">Countdown Simulator</div>
-                      </q-card-section>
-                      <q-separator dark inset />
-                      <q-card-section class="q-mb-xl">
-                        {{text.First_Year.Countdown_Simulator.a}} <br>
-                        {{text.First_Year.Countdown_Simulator.b}} <br>
-                        {{text.First_Year.Countdown_Simulator.c}} <br>
-                        {{text.First_Year.Countdown_Simulator.d}} <br>
-                        {{text.First_Year.Countdown_Simulator.e}} <br>
-                      </q-card-section>
-                      <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="countdown_simulator.py" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
-                    </q-card>
-                  </div>
-                  <q-dialog
-                    v-model="dialog"
-                    persistent
-                    :maximized="maximizedToggle"
-                  >
-                    <q-card class="bg-grey-8 text-white">
-                      <q-bar class="bg-secondary">
-                        <div class="text-body-2">
-                          Countdown Simulator | Python
-                        </div>
-                        <q-space />
-                        <q-btn flat icon="close" v-close-popup>
-                          <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                        </q-btn>
-                      </q-bar>
-                      <q-card-section class="row justify-center">
-                        <q-img
-                          src="../assets/countdown_simulator_0.png"
-                          spinner-color="white"
-                          :width="windowWidth"
-                        />
-                      </q-card-section>
-                    </q-card>
-                  </q-dialog>
-                  <q-img
-                    src="../assets/countdown_simulator_0.png"
-                    spinner-color="white"
-                    class="max-width-200"
-                  >
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
-                  </q-img>
-                  <q-footer elevated>
-                    <q-toolbar class="bg-secondary text-white">
-                      <q-toolbar-title class="text-left text-body2">Countdown Simulator | Python</q-toolbar-title>
-                      <q-toolbar-title class="text-right text-body2">CA1 of ECM1400 Programming</q-toolbar-title>
-                      <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator')"/>
-                    </q-toolbar>
-                  </q-footer>
+                <div class="text-h3 q-mb-sm">Countdown Simulator</div>
+                <q-icon name="fab fa-python" size="80px"/>
+                <div class="text-h5 q-mt-sm">Module: Programming</div>
+                <q-separator inset dark/>
+                <div class="row q-pa-md q-gutter-md">
+                  <q-card dark bordered class="bg-grey-9">
+                    <q-card-section>
+                      <div class="text-h6 text-bold">Countdown Simulator</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Countdown_Simulator.a}} <br>
+                      {{text.First_Year.Countdown_Simulator.b}} <br>
+                      {{text.First_Year.Countdown_Simulator.c}} <br>
+                      {{text.First_Year.Countdown_Simulator.d}} <br>
+                      {{text.First_Year.Countdown_Simulator.e}} <br>
+                    </q-card-section>
+                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="countdown_simulator.py" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
+                  </q-card>
+                </div>
+                <q-dialog
+                  v-model="dialog"
+                  persistent
+                  :maximized="maximizedToggle"
+                >
+                  <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                      <div class="text-body-2">
+                        Countdown Simulator
+                      </div>
+                      <q-space />
+                      <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                      </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                      <q-img
+                        src="../assets/countdown_simulator_0.png"
+                        spinner-color="white"
+                        :width="windowWidth"
+                      />
+                    </q-card-section>
+                  </q-card>
+                </q-dialog>
+                <q-img
+                  src="../assets/countdown_simulator_0.png"
+                  spinner-color="white"
+                  class="max-width-200"
+                >
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                </q-img>
+                <q-footer elevated>
+                  <q-toolbar class="bg-secondary text-white">
+                    <div class="text-left text-body2 q-mr-sm">
+                      Countdown Simulator
+                    </div>
+                    <q-separator dark vertical inset />
+                    <q-icon name="fab fa-python" size="30px" class="q-ml-xs"/>
+                    <q-toolbar-title class="text-right"></q-toolbar-title>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator')"/>
+                  </q-toolbar>
+                </q-footer>
               </q-tab-panel>
 
               <q-tab-panel name="Smart Alarm Clock" class="bg-grey-8">
+                <div class="text-h3 q-mb-sm">Smart Alarm Clock</div>
+                <q-icon name="fab fa-python" size="80px"/>
+                <div class="text-h5 q-mt-sm">Module: Programming</div>
+                <q-separator inset dark/>
                 <div class="row q-pa-md q-gutter-md">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -201,7 +213,7 @@
                   <q-card class="bg-grey-8 text-white">
                     <q-bar class="bg-secondary">
                       <div class="text-body-2">
-                        Smart Alarm Clock | Python, HTML, CSS
+                        Smart Alarm Clock
                       </div>
                       <q-space />
                       <q-btn flat icon="close" v-close-popup>
@@ -226,8 +238,12 @@
                 </q-img>
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
-                    <q-toolbar-title class="text-left text-body2">Smart Alarm Clock | Python, HTML, CSS</q-toolbar-title>
-                    <q-toolbar-title class="text-right text-body2">CA2 of ECM1400 Programming</q-toolbar-title>
+                    <div class="text-left text-body2 q-mr-sm">
+                      Smart Alarm Clock
+                    </div>
+                    <q-separator dark vertical inset />
+                    <q-icon name="fab fa-python" size="30px" class="q-ml-xs"/>
+                    <q-toolbar-title class="text-right"></q-toolbar-title>
                     <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock')"/>
                   </q-toolbar>
                 </q-footer>
@@ -239,6 +255,10 @@
               </q-tab-panel>
 
               <q-tab-panel name="Barnaby's Brewhouse" class="bg-grey-8">
+                <div class="text-h3 q-mb-sm">Barnaby's Brewhouse</div>
+                <q-icon name="fab fa-python" size="80px"/>
+                <div class="text-h5 q-mt-sm">Module: Programming</div>
+                <q-separator inset dark/>
                 <div class="row q-pa-md q-gutter-md">
                 <q-card dark bordered class="bg-grey-9 my-card">
                   <q-card-section>
@@ -319,7 +339,7 @@
                   <q-card class="bg-grey-8 text-white">
                     <q-bar class="bg-secondary">
                       <div class="text-body-2">
-                        Barnaby's Brewhouse | Python, HTML, CSS
+                        Barnaby's Brewhouse
                       </div>
                       <q-space />
                       <q-btn flat icon="close" v-close-popup>
@@ -344,14 +364,22 @@
                 </q-img>
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
-                    <q-toolbar-title class="text-left text-body2">Barnaby's Brewhouse | Python, HTML, CSS</q-toolbar-title>
-                    <q-toolbar-title class="text-right text-body2">CA3 of ECM1400 Programming</q-toolbar-title>
+                    <div class="text-left text-body2 q-mr-sm">
+                      Barnaby's Brewhouse
+                    </div>
+                    <q-separator dark vertical inset />
+                    <q-icon name="fab fa-python" size="30px" class="q-ml-xs"/>
+                    <q-toolbar-title class="text-right"></q-toolbar-title>
                     <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse')"/>
                   </q-toolbar>
                 </q-footer>
               </q-tab-panel>
 
-              <q-tab-panel name="Beanbag Store" class="bg-grey-8 row justify-center items-center">
+              <q-tab-panel name="Beanbag Store" class="bg-grey-8 justify-center items-center">
+                <div class="text-h3 q-mb-sm">Beanbag Store</div>
+                <q-icon name="fab fa-java" size="80px"/>
+                <div class="text-h5 q-mt-sm">Module: Object-Oritentated Programming</div>
+                <q-separator inset dark/>
                 <div class="row q-pa-md q-gutter-md">
                   <q-card dark bordered class="bg-grey-9 row justify-center">
                     <q-card-section>
@@ -366,14 +394,22 @@
                 </div>
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
-                    <q-toolbar-title class="text-left text-body2">Beanbag Store | Java</q-toolbar-title>
-                    <q-toolbar-title class="text-right text-body2">CA1 of ECM1410 Object-Oritentated Programming</q-toolbar-title>
+                    <div class="text-left text-body2 q-mr-sm">
+                      Beanbag Store
+                    </div>
+                    <q-separator dark vertical inset />
+                    <q-icon name="fab fa-java" size="30px" class="q-ml-xs"/>
+                    <q-toolbar-title class="text-right"></q-toolbar-title>
                     <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Beanbag-Store')"/>
                   </q-toolbar>
                 </q-footer>
               </q-tab-panel>
 
               <q-tab-panel name="Task Manager" class="bg-grey-8">
+                <div class="text-h3">Task Manager</div>
+                <q-icon name="fab fa-php" size="80px"/>
+                <div class="text-h5">Module: Web Development</div>
+                <q-separator inset dark/>
                 <div class="row q-pa-md q-gutter-md">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -435,7 +471,7 @@
                   <q-card class="bg-grey-8 text-white">
                     <q-bar class="bg-secondary">
                       <div class="text-body-2">
-                        Task Manager | PHP, Javascript
+                        Task Manager
                       </div>
                       <q-space />
                       <q-btn flat icon="close" v-close-popup>
@@ -459,7 +495,7 @@
                   <q-card class="bg-grey-8 text-white">
                     <q-bar class="bg-secondary">
                       <div class="text-body-2">
-                        Task Manager | PHP, Javascript
+                        Task Manager
                       </div>
                       <q-space />
                       <q-btn flat icon="close" v-close-popup>
@@ -491,14 +527,22 @@
                 </q-img>
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
-                    <q-toolbar-title class="text-left text-body2">Task Manager | PHP, Javascript</q-toolbar-title>
-                    <q-toolbar-title class="text-right text-body2">CA1 of ECM1417 Web Development</q-toolbar-title>
+                    <div class="text-left text-body2 q-mr-sm">
+                      Task Manager
+                    </div>
+                    <q-separator dark vertical inset />
+                    <q-icon name="fab fa-php" size="30px" class="q-ml-sm"/>
+                    <q-toolbar-title class="text-right"></q-toolbar-title>
                     <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Task-Manager')"/>
                   </q-toolbar>
                 </q-footer>
               </q-tab-panel>
 
               <q-tab-panel name="Lift Algorithm" class="bg-grey-8">
+                <div class="text-h3 q-mb-sm">Lift Algorithm</div>
+                <q-icon name="fab fa-python" size="80px"/>
+                <div class="text-h5 q-mt-sm">Module: Data Structures and Algorithms</div>
+                <q-separator inset dark/>
                 <div class="row q-pa-md q-gutter-md">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -544,8 +588,12 @@
                 />
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
-                    <q-toolbar-title class="text-left text-body2">Lift Algorithm | Python</q-toolbar-title>
-                    <q-toolbar-title class="text-right text-body2">CA1 of ECM1414 Data Structures and Algorithms</q-toolbar-title>
+                    <div class="text-left text-body2 q-mr-sm">
+                      Lift Algorithm
+                    </div>
+                    <q-separator dark vertical inset />
+                    <q-icon name="fab fa-python" size="30px" class="q-ml-xs"/>
+                    <q-toolbar-title class="text-right"></q-toolbar-title>
                     <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Lift-Algorithim')"/>
                   </q-toolbar>
                 </q-footer>
@@ -572,13 +620,21 @@ export default {
     },
     getPic (index) {
       return `../assets/ ${String(index)} .png`
+    },
+    handleResize () {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      this.window.width = `${window.innerWidth}px`
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      this.window.height = `${window.innerHeight}px`
     }
   },
   data () {
     return {
-      windowHeight: window.innerHeight * 0.8,
-      windowWidth: window.innerWidth,
-      root: 'Personal',
+      window: {
+        width: '0px',
+        height: '0px'
+      },
+      root: '1st Year',
       personal: 'Discord Bot',
       gcse: 'A452',
       first_year: 'Countdown Simulator',
@@ -600,6 +656,21 @@ export default {
   components: {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     // Prism
+  },
+  created () {
+    window.addEventListener('resize', this.handleResize)
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    this.handleResize()
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  watch: {
+    vertical (val) {
+      this.navPos = val === true
+        ? 'right'
+        : 'bottom'
+    }
   }
 }
 </script>
@@ -627,4 +698,5 @@ div.inline {
 .q-video {
   max-width: 1500px;
 }
+
 </style>
