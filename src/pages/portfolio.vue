@@ -641,7 +641,6 @@ export default {
       smart_alarm_clock_code: null,
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       text: TextJson,
-      path: '../assets/countdown_simulator_0.png',
       dialog: false,
       dialog_1: false,
       maximizedToggle: true

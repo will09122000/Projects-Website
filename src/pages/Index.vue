@@ -10,7 +10,6 @@
         control-color="black"
         prev-icon="arrow_left"
         next-icon="arrow_right"
-        navigation
         infinite
         padding
         arrows
@@ -24,17 +23,18 @@
           <div class="q-mt-md q-mb-md">
             {{ text.First_Year.Barnabys_Brewhouse.Main }}
           </div>
-          <q-img
-            src="../assets/barnabys_brewhouse_0.png"
-            spinner-color="white"
-          />
+            <q-img
+              src="../assets/barnabys_brewhouse_0.png"
+              spinner-color="white"
+              class="rounded-borders"
+            />
           <div class="q-mt-md">
             <div class="row">
               <div class="col">
-                <q-btn color="primary" icon="fas fa-align-justify" label="More Details" />
+                <q-btn color="primary" icon="fas fa-align-justify" label="More Details" to="portfolio"/>
               </div>
               <div class="col">
-                <q-btn color="primary" icon="open_in_new" label="GitHub" />
+                <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse')"/>
               </div>
             </div>
           </div>
@@ -61,6 +61,7 @@
 
 <script>
 import TextJson from '../text.json'
+import { openURL } from 'quasar'
 
 export default {
   data () {
@@ -93,6 +94,9 @@ export default {
       this.window.width = `${window.innerWidth}px`
       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       this.window.height = `${window.innerHeight - 81}px`
+    },
+    redirect: function (text) {
+      openURL(text)
     }
   },
   watch: {
@@ -114,6 +118,6 @@ export default {
 }
 
 .q-img {
-  max-width: 1215px;
+  max-width: 1050px;
 }
 </style>
