@@ -14,12 +14,13 @@
         padding
         arrows
         :height=window.height
+        :autoplay="autoplay"
         class="bg-secondary text-black shadow-1 rounded-borders"
       >
         <q-carousel-slide name="style" class="no-wrap flex-center text-center">
           <div class="text-h2">Barnaby's Brewhouse</div>
           <div class="text-h5">First Year</div>
-          <q-icon name="fab fa-python" size="56px" />
+          <q-icon name="fab fa-python" size="80px" />
           <div class="q-mt-md q-mb-md">
             {{ text.First_Year.Barnabys_Brewhouse.Main }}
           </div>

@@ -18,7 +18,7 @@
           <q-tab name="4th Year" label="4th Year" />
         </q-tabs>
 
-        <q-separator />
+        <q-separator dark inset/>
 
         <q-tab-panels v-model="root" animated class="bg-grey-9 text-white">
           <q-tab-panel name="Personal">
@@ -34,7 +34,169 @@
             <q-separator />
             <q-tab-panels v-model="personal" animated class="bg-purple-1 text-center">
               <q-tab-panel name="Discord Bot" class="bg-grey-8">
-                <div class="text-h6">Discord Bot</div>
+                <div class="text-h3 q-mb-sm">Discord Bot</div>
+                <q-icon name="fab fa-js-square" size="80px"/>
+                <div class="q-mt-md q-mb-md">
+                  {{text.Personal.Discord_Bot.a}}<br>
+                  {{text.Personal.Discord_Bot.b}}
+                </div>
+                <q-separator dark class="q-mt-sm"/>
+                <div class="row q-pa-md q-gutter-md justify-center">
+                  <q-card dark bordered class="my-card-wide">
+                    <q-card-section><div class="text-h6">Reminders</div></q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>{{text.Personal.Discord_Bot.Reminders}}</q-card-section>
+                    <q-dialog
+                      v-model="dialog"
+                      persistent
+                      :maximized="maximizedToggle"
+                    >
+                      <q-card class="bg-grey-8 text-white">
+                        <q-bar class="bg-secondary">
+                          <div class="text-body-2">
+                            Discord Bot
+                          </div>
+                          <q-space />
+                          <q-btn flat icon="close" v-close-popup>
+                            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                          </q-btn>
+                        </q-bar>
+                        <q-card-section class="row justify-center">
+                          <q-img
+                            src="../assets/Discord_Bot_Reminders.png"
+                            spinner-color="white"
+                            :width="windowWidth"
+                          />
+                        </q-card-section>
+                      </q-card>
+                    </q-dialog>
+                    <q-img
+                      src="../assets/Discord_Bot_Reminders.png"
+                      spinner-color="white"
+                    >
+                      <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                    </q-img>
+                  </q-card>
+                  <q-card dark bordered class="my-card-wide">
+                    <q-card-section><div class="text-h6">Weather</div></q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>{{text.Personal.Discord_Bot.Weather}}</q-card-section>
+                    <q-dialog
+                      v-model="dialog"
+                      persistent
+                      :maximized="maximizedToggle"
+                    >
+                      <q-card class="bg-grey-8 text-white">
+                        <q-bar class="bg-secondary">
+                          <div class="text-body-2">
+                            Discord Bot
+                          </div>
+                          <q-space />
+                          <q-btn flat icon="close" v-close-popup>
+                            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                          </q-btn>
+                        </q-bar>
+                        <q-card-section class="row justify-center">
+                          <q-img
+                            src="../assets/Discord_Bot_Weather.png"
+                            spinner-color="white"
+                            :width="windowWidth"
+                          />
+                        </q-card-section>
+                      </q-card>
+                    </q-dialog>
+                    <q-img
+                      src="../assets/Discord_Bot_Weather.png"
+                      spinner-color="white"
+                    >
+                      <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                    </q-img>
+                  </q-card>
+                  <q-card dark bordered class="my-card-wide">
+                    <q-card-section><div class="text-h6">Stats</div></q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>{{text.Personal.Discord_Bot.Stats}}</q-card-section>
+                    <q-dialog
+                      v-model="dialog"
+                      persistent
+                      :maximized="maximizedToggle"
+                    >
+                      <q-card class="bg-grey-8 text-white">
+                        <q-bar class="bg-secondary">
+                          <div class="text-body-2">
+                            Discord Bot
+                          </div>
+                          <q-space />
+                          <q-btn flat icon="close" v-close-popup>
+                            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                          </q-btn>
+                        </q-bar>
+                        <q-card-section class="row justify-center">
+                          <q-img
+                            src="../assets/Discord_Bot_Stats.png"
+                            spinner-color="white"
+                            :width="windowWidth"
+                          />
+                        </q-card-section>
+                      </q-card>
+                    </q-dialog>
+                    <q-img
+                      src="../assets/Discord_Bot_Stats.png"
+                      spinner-color="white"
+                    >
+                      <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                    </q-img>
+                  </q-card>
+                  <q-card dark bordered class="my-card-wide">
+                    <q-card-section><div class="text-h6">Roles</div></q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>{{text.Personal.Discord_Bot.Roles}}</q-card-section>
+                    <q-dialog
+                      v-model="dialog"
+                      persistent
+                      :maximized="maximizedToggle"
+                    >
+                      <q-card class="bg-grey-8 text-white">
+                        <q-bar class="bg-secondary">
+                          <div class="text-body-2">
+                            Discord Bot
+                          </div>
+                          <q-space />
+                          <q-btn flat icon="close" v-close-popup>
+                            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                          </q-btn>
+                        </q-bar>
+                        <q-card-section class="row justify-center">
+                          <q-img
+                            src="../assets/Discord_Bot_Roles.png"
+                            spinner-color="white"
+                            :width="windowWidth"
+                          />
+                        </q-card-section>
+                      </q-card>
+                    </q-dialog>
+                    <q-img
+                      src="../assets/Discord_Bot_Roles.png"
+                      spinner-color="white"
+                    >
+                      <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                    </q-img>
+                  </q-card>
+                  <q-card dark bordered class="my-card-wide">
+                    <q-card-section><div class="text-h6">Text to Speech</div></q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>{{text.Personal.Discord_Bot.TTS}}</q-card-section>
+                  </q-card>
+                </div>
+                <q-footer elevated>
+                  <q-toolbar class="bg-secondary text-white">
+                    <div class="text-left text-body2 q-mr-sm">
+                      Discord Bot
+                    </div>
+                    <q-separator dark vertical inset />
+                    <q-icon name="fab fa-js-square" size="30px" class="q-ml-xs"/>
+                  </q-toolbar>
+                </q-footer>
               </q-tab-panel>
               <q-tab-panel name="This Website" class="bg-grey-8">
                 <div class="text-h6">This Website</div>
@@ -87,13 +249,13 @@
                 <div class="text-h3 q-mb-sm">Countdown Simulator</div>
                 <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Programming</div>
-                <q-separator inset dark/>
-                <div class="row q-pa-md q-gutter-md">
+                <q-separator dark class="q-mt-sm"/>
+                <div class="row q-pa-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9">
                     <q-card-section>
                       <div class="text-h6 text-bold">Countdown Simulator</div>
                     </q-card-section>
-                    <q-separator dark inset />
+                    <q-separator dark inset/>
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Countdown_Simulator.a}} <br>
                       {{text.First_Year.Countdown_Simulator.b}} <br>
@@ -102,6 +264,15 @@
                       {{text.First_Year.Countdown_Simulator.e}} <br>
                     </q-card-section>
                     <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="countdown_simulator.py" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9">
+                    <q-card-section>
+                      <div class="text-h6 text-bold">What did I learn?</div>
+                    </q-card-section>
+                    <q-separator dark inset/>
+                    <q-card-section>
+                      {{text.First_Year.Countdown_Simulator.WDIL}}
+                    </q-card-section>
                   </q-card>
                 </div>
                 <q-dialog
@@ -152,8 +323,8 @@
                 <div class="text-h3 q-mb-sm">Smart Alarm Clock</div>
                 <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Programming</div>
-                <q-separator inset dark/>
-                <div class="row q-pa-md q-gutter-md">
+                <q-separator dark class="q-mt-sm"/>
+                <div class="row q-pa-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
                       <div class="text-h6">Smart Alarm Clock</div>
@@ -203,6 +374,15 @@
                       {{text.First_Year.Smart_Alarm_Clock.News}}
                     </q-card-section>
                     <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="news.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/news.py')"/></div>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">What did I learn?</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Smart_Alarm_Clock.WDIL}}
+                    </q-card-section>
                   </q-card>
                 </div>
                 <q-dialog
@@ -258,8 +438,8 @@
                 <div class="text-h3 q-mb-sm">Barnaby's Brewhouse</div>
                 <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Programming</div>
-                <q-separator inset dark/>
-                <div class="row q-pa-md q-gutter-md">
+                <q-separator dark class="q-mt-sm"/>
+                <div class="row q-pa-md q-gutter-md justify-center">
                 <q-card dark bordered class="bg-grey-9 my-card">
                   <q-card-section>
                     <div class="text-h6">Barnaby's Brewhouse</div>
@@ -330,6 +510,15 @@
                   </q-card-section>
                   <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="sales_predictions.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/sales_predictions.py')"/></div>
                 </q-card>
+                <q-card dark bordered class="bg-grey-9 my-card">
+                  <q-card-section>
+                    <div class="text-h6">What did I learn?</div>
+                  </q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section class="q-mb-xl">
+                    {{text.First_Year.Barnabys_Brewhouse.WDIL}}
+                  </q-card-section>
+                </q-card>
                 </div>
                 <q-dialog
                     v-model="dialog"
@@ -379,7 +568,7 @@
                 <div class="text-h3 q-mb-sm">Beanbag Store</div>
                 <q-icon name="fab fa-java" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Object-Oritentated Programming</div>
-                <q-separator inset dark/>
+                <q-separator dark class="q-mt-sm"/>
                 <div class="row q-pa-md q-gutter-md">
                   <q-card dark bordered class="bg-grey-9 row justify-center">
                     <q-card-section>
@@ -390,6 +579,15 @@
                       {{text.First_Year.Beanbag_Store.Main}}
                     </q-card-section>
                     <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Beanbag-Store/tree/master/src/beanbags')"/></div>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 row justify-center">
+                    <q-card-section>
+                      <div class="text-h6">What did I learn?</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Beanbag_Store.WDIL}}
+                    </q-card-section>
                   </q-card>
                 </div>
                 <q-footer elevated>
@@ -409,8 +607,8 @@
                 <div class="text-h3">Task Manager</div>
                 <q-icon name="fab fa-php" size="80px"/>
                 <div class="text-h5">Module: Web Development</div>
-                <q-separator inset dark/>
-                <div class="row q-pa-md q-gutter-md">
+                <q-separator dark class="q-mt-sm"/>
+                <div class="row q-pa-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
                       <div class="text-h6">Task Manager</div>
@@ -459,8 +657,19 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Task_Manager.Import_Export_Tasks}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom-left"><q-btn stack color="primary" icon="open_in_new" label="import_tasks.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/import_tasks.php')"/></div>
-                    <div class="q-pa-md absolute-bottom-right"><q-btn stack color="primary" icon="open_in_new" label="export_tasks.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/export_task.php')"/></div>
+                    <div class="row q-pa-md q-gutter-md justify-center">
+                      <q-btn stack color="primary" icon="open_in_new" label="import_tasks.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/import_tasks.php')"/>
+                      <q-btn stack color="primary" icon="open_in_new" label="export_tasks.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/export_task.php')"/>
+                    </div>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">What did I learn?</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Task_Manager.WDIL}}
+                    </q-card-section>
                   </q-card>
                 </div>
                 <q-dialog
@@ -542,8 +751,8 @@
                 <div class="text-h3 q-mb-sm">Lift Algorithm</div>
                 <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Data Structures and Algorithms</div>
-                <q-separator inset dark/>
-                <div class="row q-pa-md q-gutter-md">
+                <q-separator dark class="q-mt-sm"/>
+                <div class="row q-pa-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
                       <div class="text-h6">Lift Algorithm</div>
@@ -579,6 +788,15 @@
                     <q-separator dark inset />
                     <q-card-section>
                       {{text.First_Year.Lift_Algorithm.Improved_Algorithm}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">What did I learn?</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Lift_Algorithm.WDIL}}
                     </q-card-section>
                   </q-card>
                 </div>
@@ -634,7 +852,7 @@ export default {
         width: '0px',
         height: '0px'
       },
-      root: '1st Year',
+      root: 'Personal',
       personal: 'Discord Bot',
       gcse: 'A452',
       first_year: 'Countdown Simulator',
@@ -688,6 +906,13 @@ div.inline {
 .my-card {
   width: 100%;
   max-width: 300px;
+  background-color: #36393F;
+}
+
+.my-card-wide {
+  width: 100%;
+  max-width: 600px;
+  background-color: #36393F;
 }
 
 .q-img {
