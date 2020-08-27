@@ -41,7 +41,7 @@
                   {{text.Personal.Discord_Bot.b}}
                 </div>
                 <q-separator dark class="q-mt-sm"/>
-                <div class="row q-pa-md q-gutter-md justify-center">
+                <div class="row q-py-md q-gutter-md justify-center">
                   <q-card dark bordered class="my-card-wide">
                     <q-card-section><div class="text-h6">Reminders</div></q-card-section>
                     <q-separator dark inset />
@@ -74,8 +74,8 @@
                       src="../assets/Discord_Bot_Reminders.png"
                       spinner-color="white"
                     >
-                      <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
                     </q-img>
+                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
                   </q-card>
                   <q-card dark bordered class="my-card-wide">
                     <q-card-section><div class="text-h6">Weather</div></q-card-section>
@@ -109,8 +109,8 @@
                       src="../assets/Discord_Bot_Weather.png"
                       spinner-color="white"
                     >
-                      <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
                     </q-img>
+                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
                   </q-card>
                   <q-card dark bordered class="my-card-wide">
                     <q-card-section><div class="text-h6">Stats</div></q-card-section>
@@ -144,8 +144,8 @@
                       src="../assets/Discord_Bot_Stats.png"
                       spinner-color="white"
                     >
-                      <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
                     </q-img>
+                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
                   </q-card>
                   <q-card dark bordered class="my-card-wide">
                     <q-card-section><div class="text-h6">Roles</div></q-card-section>
@@ -179,8 +179,8 @@
                       src="../assets/Discord_Bot_Roles.png"
                       spinner-color="white"
                     >
-                      <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
                     </q-img>
+                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
                   </q-card>
                   <q-card dark bordered class="my-card-wide">
                     <q-card-section><div class="text-h6">Text to Speech</div></q-card-section>
@@ -242,7 +242,6 @@
               <q-tab name="Task Manager" label="Task Manager" />
               <q-tab name="Lift Algorithm" label="Lift Algorithm" />
             </q-tabs>
-
             <q-separator />
             <q-tab-panels v-model="first_year" animated class="bg-purple-1 text-center">
               <q-tab-panel name="Countdown Simulator" class="bg-grey-8">
@@ -250,7 +249,7 @@
                 <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Programming</div>
                 <q-separator dark class="q-mt-sm"/>
-                <div class="row q-pa-md q-gutter-md justify-center">
+                <div class="row q-py-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9">
                     <q-card-section>
                       <div class="text-h6 text-bold">Countdown Simulator</div>
@@ -263,7 +262,7 @@
                       {{text.First_Year.Countdown_Simulator.d}} <br>
                       {{text.First_Year.Countdown_Simulator.e}} <br>
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="countdown_simulator.py" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="countdown_simulator.py" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9">
                     <q-card-section>
@@ -324,7 +323,7 @@
                 <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Programming</div>
                 <q-separator dark class="q-mt-sm"/>
-                <div class="row q-pa-md q-gutter-md justify-center">
+                <div class="row q-py-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
                       <div class="text-h6">Smart Alarm Clock</div>
@@ -333,7 +332,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Smart_Alarm_Clock.Main}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Smart_Alarm_Clock.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/Smart_Alarm_Clock.py')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Smart_Alarm_Clock.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/Smart_Alarm_Clock.py')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -343,7 +342,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Smart_Alarm_Clock.Notifications}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="notifications.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/notifications.py')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="notifications.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/notifications.py')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -353,7 +352,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Smart_Alarm_Clock.Alarms}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="alarm.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/alarm.py')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="alarm.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/alarm.py')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -363,7 +362,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Smart_Alarm_Clock.Weather}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="weather.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/weather.py')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="weather.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/weather.py')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -373,7 +372,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Smart_Alarm_Clock.News}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="news.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/news.py')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="news.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/news.py')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -439,7 +438,7 @@
                 <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Programming</div>
                 <q-separator dark class="q-mt-sm"/>
-                <div class="row q-pa-md q-gutter-md justify-center">
+                <div class="row q-py-md q-gutter-md justify-center">
                 <q-card dark bordered class="bg-grey-9 my-card">
                   <q-card-section>
                     <div class="text-h6">Barnaby's Brewhouse</div>
@@ -448,7 +447,7 @@
                   <q-card-section class="q-mb-xl">
                     {{text.First_Year.Barnabys_Brewhouse.Main}}
                   </q-card-section>
-                  <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="barnabys_brewhouse.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/barnabys_brewhouse.py')"/></div>
+                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="barnabys_brewhouse.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/barnabys_brewhouse.py')"/></div>
                 </q-card>
                 <q-card dark bordered class="bg-grey-9 my-card">
                   <q-card-section>
@@ -458,7 +457,7 @@
                   <q-card-section class="q-mb-xl">
                     {{text.First_Year.Barnabys_Brewhouse.Batch_Management}}
                   </q-card-section>
-                  <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="batch_management.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/batch_management.py')"/></div>
+                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="batch_management.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/batch_management.py')"/></div>
                 </q-card>
                 <q-card dark bordered class="bg-grey-9 my-card">
                   <q-card-section>
@@ -468,7 +467,7 @@
                   <q-card-section class="q-mb-xl">
                     {{text.First_Year.Barnabys_Brewhouse.Tank_Management}}
                   </q-card-section>
-                  <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="tank_management.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/tank_management.py')"/></div>
+                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="tank_management.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/tank_management.py')"/></div>
                 </q-card>
                 <q-card dark bordered class="bg-grey-9 my-card">
                   <q-card-section>
@@ -478,7 +477,7 @@
                   <q-card-section class="q-mb-xl">
                     {{text.First_Year.Barnabys_Brewhouse.Inventory}}
                   </q-card-section>
-                  <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="inventory.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/inventory.py')"/></div>
+                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="inventory.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/inventory.py')"/></div>
                 </q-card>
                 <q-card dark bordered class="bg-grey-9 my-card">
                   <q-card-section>
@@ -488,7 +487,7 @@
                   <q-card-section class="q-mb-xl">
                     {{text.First_Year.Barnabys_Brewhouse.Order_Management}}
                   </q-card-section>
-                  <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="order_management.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/order_management.py')"/></div>
+                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="order_management.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/order_management.py')"/></div>
                 </q-card>
                 <q-card dark bordered class="bg-grey-9 my-card">
                   <q-card-section>
@@ -498,7 +497,7 @@
                   <q-card-section class="q-mb-xl">
                     {{text.First_Year.Barnabys_Brewhouse.Beer_Suggestion}}
                   </q-card-section>
-                  <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="beer_suggestion.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/beer_suggestion.py')"/></div>
+                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="beer_suggestion.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/beer_suggestion.py')"/></div>
                 </q-card>
                 <q-card dark bordered class="bg-grey-9 my-card">
                   <q-card-section>
@@ -508,7 +507,7 @@
                   <q-card-section class="q-mb-xl">
                     {{text.First_Year.Barnabys_Brewhouse.Sales_Preditions}}
                   </q-card-section>
-                  <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="sales_predictions.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/sales_predictions.py')"/></div>
+                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="sales_predictions.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/sales_predictions.py')"/></div>
                 </q-card>
                 <q-card dark bordered class="bg-grey-9 my-card">
                   <q-card-section>
@@ -569,7 +568,7 @@
                 <q-icon name="fab fa-java" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Object-Oritentated Programming</div>
                 <q-separator dark class="q-mt-sm"/>
-                <div class="row q-pa-md q-gutter-md">
+                <div class="row q-py-md q-gutter-md">
                   <q-card dark bordered class="bg-grey-9 row justify-center">
                     <q-card-section>
                       <div class="text-h6">Beanbag Store</div>
@@ -578,7 +577,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Beanbag_Store.Main}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Beanbag-Store/tree/master/src/beanbags')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Source" v-on:click="redirect('https://github.com/will09122000/Beanbag-Store/tree/master/src/beanbags')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 row justify-center">
                     <q-card-section>
@@ -608,7 +607,7 @@
                 <q-icon name="fab fa-php" size="80px"/>
                 <div class="text-h5">Module: Web Development</div>
                 <q-separator dark class="q-mt-sm"/>
-                <div class="row q-pa-md q-gutter-md justify-center">
+                <div class="row q-py-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
                       <div class="text-h6">Task Manager</div>
@@ -617,7 +616,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Task_Manager.Main}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="tasks.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/tasks.php')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="tasks.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/tasks.php')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -627,7 +626,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Task_Manager.Log_In}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="login.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/login.php')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="login.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/login.php')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -637,7 +636,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Task_Manager.Sign_Up}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="register.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/register.php')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="register.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/register.php')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -647,7 +646,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Task_Manager.New_Task}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="new_task.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/new_task.php')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="new_task.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/new_task.php')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -657,7 +656,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Task_Manager.Import_Export_Tasks}}
                     </q-card-section>
-                    <div class="row q-pa-md q-gutter-md justify-center">
+                    <div class="q-py-md q-gutter-md justify-center">
                       <q-btn stack color="primary" icon="open_in_new" label="import_tasks.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/import_tasks.php')"/>
                       <q-btn stack color="primary" icon="open_in_new" label="export_tasks.php" v-on:click="redirect('https://github.com/will09122000/Task-Manager/blob/master/export_task.php')"/>
                     </div>
@@ -752,7 +751,7 @@
                 <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Data Structures and Algorithms</div>
                 <q-separator dark class="q-mt-sm"/>
-                <div class="row q-pa-md q-gutter-md justify-center">
+                <div class="row q-py-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
                       <div class="text-h6">Lift Algorithm</div>
@@ -761,7 +760,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.First_Year.Lift_Algorithm.Main}}
                     </q-card-section>
-                    <div class="q-pa-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="lift_algorithm.py" v-on:click="redirect('https://github.com/will09122000/Lift-Algorithim/blob/master/lift_algorithm.py')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="lift_algorithm.py" v-on:click="redirect('https://github.com/will09122000/Lift-Algorithim/blob/master/lift_algorithm.py')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>

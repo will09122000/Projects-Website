@@ -18,8 +18,8 @@
         class="bg-secondary text-black shadow-1 rounded-borders"
       >
         <q-carousel-slide name="style" class="no-wrap flex-center text-center">
-          <div class="text-h2">Barnaby's Brewhouse</div>
-          <div class="text-h5">First Year</div>
+          <div v-resize-text="{maxFontSize: '80px', minFontSize: '35px'}">Barnaby's Brewhouse</div>
+          <div v-resize-text="{maxFontSize: '40px'}">First Year</div>
           <q-icon name="fab fa-python" size="80px" />
           <div class="q-mt-md q-mb-md">
             {{ text.First_Year.Barnabys_Brewhouse.Main }}
@@ -63,6 +63,7 @@
 <script>
 import TextJson from '../text.json'
 import { openURL } from 'quasar'
+import ResizeText from 'vue-resize-text'
 
 export default {
   data () {
@@ -106,6 +107,10 @@ export default {
         ? 'right'
         : 'bottom'
     }
+  },
+  directives: {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    ResizeText
   }
 }
 </script>

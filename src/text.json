@@ -2,12 +2,12 @@
     "Personal": {
       "Discord_Bot": {
         "a": "Discord is a free communication platform that lets you chat in both text and voice calls. It also allows creating and using Discord server bots – automated users that perform actions assigned to them by the developer.",
-        "b": "This bot provides various commands and features for both admins and users of selected Discord Servers. These Servers are all part of an online sim-racing community known as EERC. It is programmed in JavaScript and runs in Node.js. Below are just a few examples of what this bot is able to do.",
+        "b": "This bot provides various commands and features for both admins and users of selected Discord Servers, these Servers are all part of an online sim-racing community known as EERC (European E-Racing Community). It is programmed in JavaScript and runs in Node.js. Below are just a few examples of what this bot is able to do.",
         "Reminders": "Reminders can be set for someone else in the server or yourself, the user is then notified with the message after the pre-determined delay. It is also possible to notify a user at a certain time of day (e.g 14:00).",
         "Weather": "The Weather can play a large part in an online race, it can be advantageous to know the weather beforehand. Therefore, we needed a fair and slightly random way of configuring the weather settings for a race. This command uses the percentage chance of rain during the race along with an element of randomness to output the weather settings for the race, this weather can include: clear skies, light cloud, overcast, light rain and rain.",
         "Stats": "This command displays statistics on the user's activity on all servers with the bot. The first picture shows their average number of messages sent on each day of the week on each server. The second displays their average number of messages sent each hour of the day on each server. Lastly, the third displays the top 10 chat channels the user is active in.",
         "Roles": "Discord Roles enable you to categorise and set permissions for users in the server. For example, British users get the British role. These commands below allow the user to assign their own roles rather than an admin assigning it, this is especially useful in larger servers with lots of people wanting various roles.",
-        "TTS": ""
+        "TTS": "Using Google's text to speech API, this bot will read aloud messages to users in a voice channel. This is used when penalties are announced to those driving during an online endurance race."
       },
       "Website": {}
     },
