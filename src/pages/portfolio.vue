@@ -918,8 +918,4 @@ div.inline {
   max-width: 1500px;
 }
 
-.q-video {
-  max-width: 1500px;
-}
-
 </style>

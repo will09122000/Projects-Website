@@ -14,45 +14,65 @@
         padding
         arrows
         :height=window.height
-        :autoplay="autoplay"
         class="bg-secondary text-black shadow-1 rounded-borders"
       >
-        <q-carousel-slide name="style" class="no-wrap flex-center text-center">
+        <q-carousel-slide name="Barnabys_Brewhouse" class="no-wrap flex-center text-center">
           <div v-resize-text="{maxFontSize: '80px', minFontSize: '35px'}">Barnaby's Brewhouse</div>
           <div v-resize-text="{maxFontSize: '40px'}">First Year</div>
           <q-icon name="fab fa-python" size="80px" />
           <div class="q-mt-md q-mb-md">
             {{ text.First_Year.Barnabys_Brewhouse.Main }}
           </div>
-            <q-img
-              src="../assets/barnabys_brewhouse_0.png"
-              spinner-color="white"
-              class="rounded-borders"
-            />
-          <div class="q-mt-md">
-            <div class="row">
-              <div class="col">
-                <q-btn color="primary" icon="fas fa-align-justify" label="More Details" to="portfolio"/>
-              </div>
-              <div class="col">
-                <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse')"/>
-              </div>
-            </div>
+          <q-dialog
+            v-model="dialog"
+            persistent
+            :maximized="maximizedToggle"
+          >
+            <q-card class="bg-grey-8 text-white">
+              <q-bar class="bg-secondary">
+                <div class="text-body-2">
+                  Barnaby's Brewhouse
+                </div>
+                <q-space />
+                <q-btn flat icon="close" v-close-popup>
+                  <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                </q-btn>
+              </q-bar>
+              <q-card-section class="row justify-center">
+                <q-img
+                  src="../assets/barnabys_brewhouse_0.png"
+                  spinner-color="white"
+                />
+              </q-card-section>
+            </q-card>
+          </q-dialog>
+          <q-img
+            src="../assets/barnabys_brewhouse_0.png"
+            spinner-color="white"
+            class="rounded-borders"
+          >
+            <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+          </q-img>
+          <div class="row q-my-md q-gutter-md justify-evenly">
+              <q-btn color="primary" icon="fas fa-align-justify" label="More Details" to="portfolio"/>
+              <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse')"/>
           </div>
         </q-carousel-slide>
-        <q-carousel-slide name="tv" class="column no-wrap flex-center">
-          <q-icon name="live_tv" size="56px" />
-          <div class="q-mt-md text-center">
+
+        <q-carousel-slide name="Lift_Algorithm" class="no-wrap flex-center text-center">
+          <div v-resize-text="{maxFontSize: '80px', minFontSize: '35px'}">Lift Algorithm</div>
+          <div v-resize-text="{maxFontSize: '40px'}">First Year</div>
+          <q-icon name="fab fa-python" size="80px" />
+          <div class="q-mt-md q-mb-md">
+            {{ text.First_Year.Lift_Algorithm.Main }}
           </div>
-        </q-carousel-slide>
-        <q-carousel-slide name="layers" class="column no-wrap flex-center">
-          <q-icon name="layers" size="56px" />
-          <div class="q-mt-md text-center">
-          </div>
-        </q-carousel-slide>
-        <q-carousel-slide name="map" class="column no-wrap flex-center">
-          <q-icon name="terrain" size="56px" />
-          <div class="q-mt-md text-center">
+          <q-video
+            :ratio="16/9"
+            src="https://www.youtube.com/embed/l_47qbni9mY?rel=0"
+          />
+          <div class="row q-my-md q-gutter-md justify-evenly">
+              <q-btn color="primary" icon="fas fa-align-justify" label="More Details" to="portfolio"/>
+              <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse')"/>
           </div>
         </q-carousel-slide>
       </q-carousel>
@@ -76,10 +96,12 @@ export default {
       vertical: false,
       arrows: true,
       navigation: true,
-      slide: 'style',
+      slide: 'Barnabys_Brewhouse',
       autoplay: true,
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      text: TextJson
+      text: TextJson,
+      dialog: false,
+      maximizedToggle: true
     }
   },
   created () {
@@ -126,4 +148,5 @@ export default {
 .q-img {
   max-width: 1050px;
 }
+
 </style>
