@@ -198,8 +198,7 @@
               </q-tab-panel>
               <q-tab-panel name="This Website" class="bg-grey-8">
                 <div class="text-h6">This Website</div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </q-tab-panel>
+                <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Projects-Website')"/>              </q-tab-panel>
             </q-tab-panels>
           </q-tab-panel>
 
@@ -480,7 +479,7 @@
                   </q-card-section>
                   <q-separator dark inset />
                   <q-card-section class="q-mb-xl">
-                    {{text.First_Year.Barnabys_Brewhouse.Sales_Preditions}}
+                    {{text.First_Year.Barnabys_Brewhouse.Sales_Predictions}}
                   </q-card-section>
                   <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="sales_predictions.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/sales_predictions.py')"/></div>
                 </q-card>
