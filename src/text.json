@@ -31,7 +31,7 @@
             "Alarms": "This module is responsible for all alarm functionality. The user can add new alarms with the two optional options. First, they can select days of the week for the alarm to repeat on. Secondly, an alarm label which is displayed in notifications and read out to the user when the alarm goes off along with an alarm sound. The alarm is also logged when it goes off along with the appropriate data. The user edit the time of a regular alarm or repeating alarm once it's been set and delete alarms.",
             "News": "This module is responsible for all news functionality. It uses newsapi to fetch the latest news stories every 60 seconds",
             "Weather": "This module is responsible for all weather functionality. It uses openweathermap to fetch the current weather in the given location every 30 seconds. This data is then displayed on the main page. A notification is sent each time weather has been fetched and some data has changed, this is also logged. The user can change the location of the weather with the name of a Town or City.",
-            "WDIL": "This coursework was the first time I had used the Python library 'Flask' (a micro web application framework); This furthered my knowledge in HTTP methods such as GET and POST along with building a simple web layout with html and css."
+            "WDIL": "This coursework was the first time I had used the Python library 'Flask' (a micro web application framework); This furthered my knowledge in HTTP methods such as GET and POST along with building a simple web layout with HTML and CSS."
         },
         "Barnabys_Brewhouse": {
           "Main": "This program provides multiple features to make processing beer and decision making easier for Barnaby's Brewhouse. This is achieved through python and basic html/css using the flask library to display a web interface",
@@ -41,11 +41,11 @@
           "Order_Management": "This module is responsible for handling customer orders inputted by the user via the user interface. It allows the user to upload sales data to be used to influence the planning decisions on which beer to brew next with reasoning.",
           "Beer_Suggestion": "This module is responsible for suggesting the type of beer that should be produced. A score for each beer type is accumulated through the module and the highest score is the beer that is suggested next.",
           "Sales_Predictions": "This module is responsible for predicting the demand of each beer type for a month of sales 3 months from the current date. The average growth and sales from the same month in the previous years are used to calculate this prediction.",
-          "WDIL": ""
+          "WDIL": "This coursework introduced me to logging actions that occur in your program, this was done using the Python library 'logging'. Although this was required for the coursework, I also found it very useful for debugging certain issues with the program."
         },
         "Beanbag_Store": {
           "Main": "This assignment was a pair-programming project based around the development of a back-end Java package. This package was to be used by a client who have determined what they require of the system including an interface. They also already have the front-end developed. This back-end will enable them to: manage stock such as adding beanbags and setting their price; selling beanbags; reserving beanbags for customers and retrieve information such as the total price of the beanbags sold.",
-          "WDIL": ""
+          "WDIL": "This was the first project I had done in Java. During development, I felt I improved my understanding of Object Orientated Programming as a whole as well as Java semantics."
         },
         "Task_Manager": {
           "Main": "This coursework was a section of my Web Development module. The main page allows the user to each manage their own tasks. From editing tasks, marking tasks as complete and deleting tasks.",
@@ -53,14 +53,14 @@
           "Sign_Up": "This page is intended for new users with much of the code similar to that of the log in page. The main differences are checking if the username already exists in the database and checking the two passwords the users has entered match. If it's successful, they are taken to the home page and their details are added to the database.",
           "New_Task": "Here the user can create a new task which includes a title, description and a due date. This task is added to the database and they are returned to the home page with their new task added to the table displayed.",
           "Import_Export_Tasks": "This allowed the user to import and export tasks to and from a shared database of tasks using an API. Imported tasks were then added to the database as if they had created them with the 'New Task' page.",
-          "WDIL": ""
+          "WDIL": "This coursework improved my knowledge of basic web design and styling; the use of a database alongside a website and the use of SOAP APIs. This was also my first (and hopefully last) time using PHP to create a website."
         },
         "Lift_Algorithm": {
           "Main": "The idea of this coursework was to design and implement an algorithm for a lift using data structures we had learnt in the module. This algorithm would then be compared against a base algorithm which also had to be implemented. These algorithms dictated where the lift would go in order to serve random requests from one floor to another.",
           "Settings": "The settings page allowed you to configure the total number of floors; the spawn rate of new requests and the speed the lift travelled between floors.",
           "Base_Algorithm": "The design of this base algorithm was provided; however, we still had to implement it into our program. The lift starts from the bottom floor and continually travels to the top floor and back down to the ground floor, picking up requests if they are heading the same direction as the lift and the lift is not full. Each time a floor is reached, those requests inside the lift who's destination is the current floor are removed from the lift.",
           "Improved_Algorithm": "For the improved algorithm, the lift starts from the bottom floor. While there are no requests on any floor or in the lift, the lift will travel to the middle floor and wait there for requests to be in the optimal position pending a new request on a random floor. When a request spawns and the lift is empty, the lift will travel to the request that has been waiting the longest picking up any requests heading in the same direction as the lift. The lift will then travel to the destination floor of that request also picking up any heading in the same direction as the lift.",
-          "WDIL": ""
+          "WDIL": "This coursework was the first time I had to implement threading into a project and ended up being relatively simple in Python. This allowed for the creation of people requesting to use the lift to process on a separate thread."
         }
       },
     "Second_Year": {},
