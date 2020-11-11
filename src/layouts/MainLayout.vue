@@ -97,12 +97,6 @@ const linksData = [
     caption: 'will0912@icloud.com',
     icon: 'contact_mail',
     link: '/contact'
-  },
-  {
-    title: 'About Me',
-    caption: '',
-    icon: 'emoji_people',
-    link: '/about-me'
   }
 ]
 
