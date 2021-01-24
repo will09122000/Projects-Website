@@ -1,4 +1,14 @@
 {
+    "ALevel": {
+      "RowData": {
+        "a": "My A-Level Computer Science Project.",
+        "Login": "This is the first screen when the program is run, it allows you to sign in or create a new account. These accounts will store your individual rowing statistics along with personal best times.",
+        "Menu": "After a successful log in or sign up, the user is taken to the main menu. From here, they can choose to just row with no goal; start a custom rowing workout; view their statistics; sign out or quit the program.",
+        "Justrow": "This is the display that you will see while you are rowing, it displays all the information most people would want in a large font to make it as clear as possible.",
+        "Summary": "When the user presses 'Save & Exit', a summary of their row is displayed detailing various averages and totals.",
+        "Pb": "If a user selects 'CUSTOM ROW' from the main menu, they are prompted to select a set distance or time. If the user has complete this set distance or time before, their personal best is displayed at the bottom of the screen along with their current row. Enabling them to effectively race against their personal best."
+      }
+    },
     "Personal": {
       "Discord_Bot": {
         "a": "Discord is a free communication platform that lets you chat in both text and voice calls. It also allows creating and using Discord server bots – automated users that perform actions assigned to them by the developer.",
@@ -10,10 +20,6 @@
         "TTS": "Using Google's text to speech API, this bot will read aloud messages to users in a voice channel. This is used when penalties are announced to those driving during an online endurance race."
       },
       "Website": {}
-    },
-    "GCSE": {},
-    "A_Level": {
-      "Rowing_Monitor": {}
     },
     "First_Year": {
         "Countdown_Simulator": {
