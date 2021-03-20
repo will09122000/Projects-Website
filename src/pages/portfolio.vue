@@ -1016,9 +1016,9 @@
               <q-tab name="Functional Programming" label="Functional Programming" />
               <q-tab name="Logic Programming" label="Logic Programming" />
               <q-tab name="Group Software Engineering Project" label="Group Software Engineering Project"/>
-              <q-tab name="AI" label="AI" />
-              <q-tab name="C" label="C" />
-              <q-tab name="C++" label="C++" />
+              <q-tab name="8-Puzzle Problem" label="8-Puzzle Problem" />
+              <q-tab name="Post Office Queues" label="Post Office Queues" />
+              <q-tab name="Vaccine Ordering" label="Vaccine Ordering" />
             </q-tabs>
             <q-separator />
             <q-tab-panels v-model="second_year" animated class="bg-purple-1 text-center">
@@ -1027,69 +1027,65 @@
                 <q-icon name="fab fa-java" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Software Development</div>
                 <q-separator dark class="q-mt-sm"/>
-                <!--
                 <div class="row q-py-md q-gutter-md justify-center">
-                  <q-card dark bordered class="bg-grey-9">
+                  <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
-                      <div class="text-h6 text-bold">Card Game</div>
+                      <div class="text-h6">Card Game</div>
                     </q-card-section>
-                    <q-separator dark inset/>
+                    <q-separator dark inset />
                     <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Countdown_Simulator.a}} <br>
-                      {{text.First_Year.Countdown_Simulator.b}} <br>
-                      {{text.First_Year.Countdown_Simulator.c}} <br>
-                      {{text.First_Year.Countdown_Simulator.d}} <br>
-                      {{text.First_Year.Countdown_Simulator.e}} <br>
+                      {{text.Second_Year.Card_Game.Main}}
                     </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="countdown_simulator.py" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Smart_Alarm_Clock.py" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/CardGame.java')"/></div>
                   </q-card>
-                  <q-card dark bordered class="bg-grey-9">
+                  <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
-                      <div class="text-h6 text-bold">What did I learn?</div>
+                      <div class="text-h6">Card Class</div>
                     </q-card-section>
-                    <q-separator dark inset/>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Smart_Alarm_Clock.Notifications}}
+                    </q-card-section>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Card.java" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/Card.java')"/></div>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
-                      {{text.First_Year.Countdown_Simulator.WDIL}}
+                      <div class="text-h6">Card Deck Class</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Smart_Alarm_Clock.Alarms}}
+                    </q-card-section>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="CardDeck.java" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/CardDeck.java')"/></div>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">Player Class</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Smart_Alarm_Clock.Alarms}}
+                    </q-card-section>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Player.java" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/Player.java')"/></div>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card">
+                    <q-card-section>
+                      <div class="text-h6">What did I learn?</div>
+                    </q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section class="q-mb-xl">
+                      {{text.First_Year.Smart_Alarm_Clock.WDIL}}
                     </q-card-section>
                   </q-card>
                 </div>
-                <q-dialog
-                  v-model="dialog"
-                  persistent
-                  :maximized="maximizedToggle"
-                >
-                  <q-card class="bg-grey-8 text-white">
-                    <q-bar class="bg-secondary">
-                      <div class="text-body-2">
-                        Card Game
-                      </div>
-                      <q-space />
-                      <q-btn flat icon="close" v-close-popup>
-                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                      </q-btn>
-                    </q-bar>
-                    <q-card-section class="row justify-center">
-                      <q-img
-                        src="../assets/countdown_simulator_0.png"
-                        spinner-color="white"
-                      />
-                    </q-card-section>
-                  </q-card>
-                </q-dialog>
-                <q-img
-                  src="../assets/countdown_simulator_0.png"
-                  spinner-color="white"
-                >
-                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
-                </q-img>
-                -->
+
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <div class="text-left text-body2 q-mr-sm">
                       Card Game
                     </div>
                     <q-separator dark vertical inset />
-                    <q-icon name="fab fa-python" size="30px" class="q-ml-xs"/>
+                    <q-icon name="fab fa-java" size="30px" class="q-ml-xs"/>
                     <q-toolbar-title class="text-right"></q-toolbar-title>
                     <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Card-Game')"/>
                   </q-toolbar>
@@ -1347,7 +1343,7 @@
 
               <q-tab-panel name="Group Software Engineering Project" class="bg-grey-8">
                 <div class="text-h3 q-mb-sm">Group Software Engineering Project</div>
-                <q-icon name="fab fa-python" size="80px"/>
+                <q-icon name="fab fa-react" size="80px"/>
                 <q-separator dark class="q-mt-sm"/>
 
                 <q-footer elevated>
@@ -1356,15 +1352,15 @@
                       Group Software Engineering Project
                     </div>
                     <q-separator dark vertical inset />
-                    <q-icon name="fab fa-python" size="30px" class="q-ml-xs"/>
+                    <q-icon name="fab fa-react" size="30px" class="q-ml-xs"/>
                     <q-toolbar-title class="text-right"></q-toolbar-title>
-                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('404')"/>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Unite')"/>
                   </q-toolbar>
                 </q-footer>
               </q-tab-panel>
 
-              <q-tab-panel name="AI" class="bg-grey-8">
-                <div class="text-h3 q-mb-sm">AI</div>
+              <q-tab-panel name="8-Puzzle Problem" class="bg-grey-8">
+                <div class="text-h3 q-mb-sm">8-Puzzle Problem</div>
                 <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Artificial Intelligence and Applications</div>
                 <q-separator dark class="q-mt-sm"/>
@@ -1372,18 +1368,18 @@
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <div class="text-left text-body2 q-mr-sm">
-                      AI
+                      8-Puzzle Problem
                     </div>
                     <q-separator dark vertical inset />
                     <q-icon name="fab fa-python" size="30px" class="q-ml-xs"/>
                     <q-toolbar-title class="text-right"></q-toolbar-title>
-                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('404')"/>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/ECM2423_Coursework/blob/main/question_1.2.py')"/>
                   </q-toolbar>
                 </q-footer>
               </q-tab-panel>
 
-              <q-tab-panel name="C" class="bg-grey-8">
-                <div class="text-h3">C</div>
+              <q-tab-panel name="Post Office Queues" class="bg-grey-8">
+                <div class="text-h3">Post Office Queues</div>
                 <q-icon name="fab fa-c" size="80px"/>
                 <div class="text-h5">Module: The C Family</div>
                 <q-separator dark class="q-mt-sm"/>
@@ -1391,18 +1387,18 @@
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <div class="text-left text-body2 q-mr-sm">
-                      C
+                      Post Office Queues
                     </div>
                     <q-separator dark vertical inset />
                     <q-icon name="fab fa-c" size="30px" class="q-ml-sm"/>
                     <q-toolbar-title class="text-right"></q-toolbar-title>
-                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('404')"/>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Post-Office-Queue')"/>
                   </q-toolbar>
                 </q-footer>
               </q-tab-panel>
 
-              <q-tab-panel name="C++" class="bg-grey-8">
-                <div class="text-h3 q-mb-sm">C++</div>
+              <q-tab-panel name="Vaccine Ordering" class="bg-grey-8">
+                <div class="text-h3 q-mb-sm">Vaccine Ordering</div>
                 <q-icon name="fab fa-c++" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: The C Family</div>
                 <q-separator dark class="q-mt-sm"/>
@@ -1410,12 +1406,12 @@
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <div class="text-left text-body2 q-mr-sm">
-                      C++
+                      Vaccine Ordering
                     </div>
                     <q-separator dark vertical inset />
                     <q-icon name="fab fa-c++" size="30px" class="q-ml-xs"/>
                     <q-toolbar-title class="text-right"></q-toolbar-title>
-                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('404')"/>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Vaccine-Ordering')"/>
                   </q-toolbar>
                 </q-footer>
               </q-tab-panel>
