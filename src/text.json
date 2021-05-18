@@ -1,7 +1,7 @@
 {
     "ALevel": {
       "RowData": {
-        "a": "My A-Level Computer Science Project.",
+        "RowData": "This program was my A-Level Computer Science Project. The purpose of it was to replace the dated rowing monitor found on most common indoor rowing machines as seen in the picture below. Navigating these clunky screens was a pain with the limited screen space and inputs. My program improved upon this software in many ways and made for an overall better indoor rowing experience. RowData was made using Python with the use of Pygame for the GUI.",
         "Login": "This is the first screen when the program is run, it allows you to sign in or create a new account. These accounts will store your individual rowing statistics along with personal best times.",
         "Menu": "After a successful log in or sign up, the user is taken to the main menu. From here, they can choose to just row with no goal; start a custom rowing workout; view their statistics; sign out or quit the program.",
         "Justrow": "This is the display that you will see while you are rowing, it displays all the information most people would want in a large font to make it as clear as possible.",
@@ -11,7 +11,7 @@
     },
     "Personal": {
       "Discord_Bot": {
-        "a": "Discord is a free communication platform that lets you chat in both text and voice calls. It also allows creating and using Discord server bots – automated users that perform actions assigned to them by the developer.",
+        "a": "Discord is a free communication platform that lets you chat in both text and voice calls. It also provides an API allowing you to create Discord server bots. These bots are automated users that perform actions assigned to them by the developer.",
         "b": "This bot provides various commands and features for both admins and users of selected Discord Servers, these Servers are all part of an online sim-racing community known as EERC (European E-Racing Community). It is programmed in JavaScript and runs in Node.js. Below are just a few examples of what this bot is able to do.",
         "Reminders": "Reminders can be set for someone else in the server or yourself, the user is then notified with the message after the pre-determined delay. It is also possible to notify a user at a certain time of day (e.g 14:00).",
         "Weather": "The Weather can play a large part in an online race, it can be advantageous to know the weather beforehand. Therefore, we needed a fair and slightly random way of configuring the weather settings for a race. This command uses the percentage chance of rain during the race along with an element of randomness to output the weather settings for the race, this weather can include: clear skies, light cloud, overcast, light rain and rain.",
@@ -72,8 +72,17 @@
     "Second_Year": {
       "Card_Game": {
         "Main": "This coursework was a pair-programming exercise. We developed in Java, a multi-threaded card playing simulation. Within the design we implemented a thread-safe Card class, Card Deck, and a Player class. The program then runs from the executable CardGame class."
-      }
+      },
+      "Functional_Programming": {},
+      "Logical_Programming": {},
+      "Group_Software_Engineering_Project": {},
+      "Puzzle_Problem": {
+        "Main": "The aim of the 8-puzzle is to reach a predefined configuration of tiles from another configuration of tiles. The 8-puzzle problem can be seen as a search problem due to its following attributes. First, the puzzle has discrete states, these different states are dependent on the position of each tile in the puzzle. One tile is missing enabling a tile next to it to move into that position. The puzzle has four operators, the missing tile can either move up, down, left, or down. Also, the puzzle has an end goal, this goal can any one of the possible states the puzzle can be in. In this question, the goal state is to have the missing tile in the top right with the rest of the tiles in ascending order. Lastly, a search problem requires a path cost. In this puzzle, the path cost is equal to one each time a tile is moved into the missing tile space.",
+        "Manhattan": "The first heuristic function I have picked is the sum of ‘Manhattan’ distances each tile is away from its goal position. So the closer the tiles are to their goal position, the smaller the heuristic value gets. It’s called the ‘Manhattan’ distance because it’s the number of rows plus the number of columns away from the target rather than a direct distance as the crow flies. I chose this type of distance because it is a better representation of how tiles move in the puzzle and therefore should be a better heuristic.",
+        "Euclidean": "The second heuristic function I have picked is the sum of ‘Euclidean’ distances each tile is away from its goal position. This is similar to the first heuristic but instead the distances are defined as a direct distance as the crow flies. I predict that this heuristic will not perform as well as the first once. I chose this heuristic because I wanted to see if I was correct and if so, how big the solving time is between these two heuristics."
+      },
+      "Post_Office_Queue": {},
+      "Vaccine_Ordering": {}
     },
-    "Third_Year": {},
-    "Fourth_Year": {}
+    "Third_Year": {}
   }

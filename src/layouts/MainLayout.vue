@@ -61,7 +61,7 @@
             <img src="../assets/Will.png">
           </q-avatar>
           <div class="text-weight-bold">Will Coates</div>
-          <div>@Will0912</div>
+          <div>University of Exeter</div>
         </div>
       </q-img>
     </q-drawer>
@@ -88,13 +88,11 @@ const linksData = [
   },
   {
     title: 'Portfolio',
-    caption: 'My Computer Science Projects',
     icon: 'assignment',
     link: '/portfolio'
   },
   {
     title: 'Contact',
-    caption: 'will0912@icloud.com',
     icon: 'contact_mail',
     link: '/contact'
   }
@@ -103,7 +101,6 @@ const linksData = [
 const linksDataExternal = [
   {
     title: 'GitHub',
-    caption: 'github.com/will09122000',
     icon: 'code',
     link: 'https://github.com/will09122000'
   }

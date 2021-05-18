@@ -6,9 +6,11 @@
         <q-item-section avatar>
           <q-icon name="email" />
         </q-item-section>
-
-        <q-item-section>Email:<br>will0912@icloud.com</q-item-section>
-
+        <q-item-section><q-img
+                          src="../assets/email.png"
+                          style="max-width: 140px; height:25px;"
+                        />
+        </q-item-section>
         <q-btn icon="content_copy" size="sm" v-on:click="copy('will0912@icloud.com')" class="bg-secondary"/>
       </q-item>
 
@@ -17,7 +19,11 @@
           <q-avatar icon="phone" />
         </q-item-section>
 
-        <q-item-section>Mobile:<br>07411137157</q-item-section>
+        <q-item-section><q-img
+                          src="../assets/mobile.png"
+                          style="max-width: 95px; height:25px;"
+                        />
+        </q-item-section>
         <q-btn icon="content_copy" size="sm" v-on:click="copy('07411137158')" class="bg-secondary"/>
       </q-item>
 
@@ -28,8 +34,8 @@
           <q-avatar icon="fab fa-twitter" />
         </q-item-section>
 
-        <q-item-section>@Will09121</q-item-section>
-        <q-btn icon="open_in_new" size="sm" v-on:click="redirect('https://twitter.com/Will09121')" class="bg-secondary"/>
+        <q-item-section>@Willcoates0912</q-item-section>
+        <q-btn icon="open_in_new" size="sm" v-on:click="redirect('https://twitter.com/Willcoates0912')" class="bg-secondary"/>
       </q-item>
 
       <q-item>

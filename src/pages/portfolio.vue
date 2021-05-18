@@ -14,7 +14,6 @@
           <q-tab name="1st Year" label="1st Year" />
           <q-tab name="2nd Year" label="2nd Year" />
           <q-tab name="3rd Year" label="3rd Year" />
-          <q-tab name="4th Year" label="4th Year" />
         </q-tabs>
 
         <q-separator dark inset/>
@@ -22,220 +21,244 @@
         <q-tab-panels v-model="root" animated class="bg-grey-9 text-white">
           <q-tab-panel name="ALevel">
             <q-tabs
-              v-model="ALevel"
-              no-caps
-              mobile-arrows
-              outside-arrows
+                v-model="ALevel"
+                no-caps
+                mobile-arrows
+                outside-arrows
             >
-              <q-tab name="RowData" label="RowData" />
             </q-tabs>
-            <q-separator />
-            <q-tab-panels v-model="ALevel" animated class="bg-purple-1 text-center">
-              <q-tab-panel name="RowData" class="bg-grey-8">
+            <div class="bg-grey-8 text-center">
                 <div class="text-h3 q-mb-sm">
-                  <q-img
+                    <q-img
                     src="../assets/RowData_logo.png"
                     spinner-color="white"
-                    width="15%"
-                    height="15%"
-                  />
+                    width="20%"
+                    class="q-mt-sm"
+                    />
                 </div>
-
                 <q-icon name="fab fa-python" size="80px"/>
-                <div class="q-mt-md q-mb-md">
-                  {{text.ALevel.RowData.a}}<br>
-                </div>
                 <q-separator dark class="q-mt-sm"/>
                 <div class="row q-py-md q-gutter-md justify-center">
+                  <q-card dark bordered class="my-card-wide">
+                    <q-card-section><div class="text-h6">RowData</div></q-card-section>
+                    <q-separator dark inset />
+                    <q-card-section>{{text.ALevel.RowData.RowData}}</q-card-section>
+                    <q-dialog
+                        v-model="RowDataFullscreen"
+                        persistent
+                        :maximized="maximizedToggle"
+                    >
+                      <q-card class="bg-grey-8 text-white">
+                        <q-bar class="bg-secondary">
+                            <div class="text-body-2">
+                            RowData
+                            </div>
+                            <q-space />
+                            <q-btn flat icon="close" v-close-popup>
+                            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                            </q-btn>
+                        </q-bar>
+                        <q-card-section class="row justify-center">
+                          <q-img
+                          src="../assets/rowing_monitor.jpg"
+                          spinner-color="white"
+                          />
+                        </q-card-section>
+                      </q-card>
+                    </q-dialog>
+                    <q-img
+                      src="../assets/rowing_monitor.jpg"
+                      spinner-color="white"
+                    />
+                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataFullscreen = true" />
+
+                  </q-card>
                   <q-card dark bordered class="my-card-wide">
                     <q-card-section><div class="text-h6">Log In</div></q-card-section>
                     <q-separator dark inset />
                     <q-card-section>{{text.ALevel.RowData.Login}}</q-card-section>
                     <q-dialog
-                      v-model="dialog"
-                      persistent
-                      :maximized="maximizedToggle"
+                        v-model="RowDataLoginFullscreen"
+                        persistent
+                        :maximized="maximizedToggle"
                     >
                       <q-card class="bg-grey-8 text-white">
                         <q-bar class="bg-secondary">
-                          <div class="text-body-2">
+                            <div class="text-body-2">
                             RowData Log In
-                          </div>
-                          <q-space />
-                          <q-btn flat icon="close" v-close-popup>
+                            </div>
+                            <q-space />
+                            <q-btn flat icon="close" v-close-popup>
                             <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                          </q-btn>
+                            </q-btn>
                         </q-bar>
                         <q-card-section class="row justify-center">
-                          <q-img
+                            <q-img
                             src="../assets/RowData_login.png"
                             spinner-color="white"
-                          />
+                            />
                         </q-card-section>
                       </q-card>
                     </q-dialog>
                     <q-img
-                      src="../assets/RowData_login.png"
-                      spinner-color="white"
+                        src="../assets/RowData_login.png"
+                        spinner-color="white"
                     >
                     </q-img>
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
-
+                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataLoginFullscreen = true" />
                   </q-card>
-                    <q-card dark bordered class="my-card-wide">
-                    <q-card-section><div class="text-h6">Main Menu</div></q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>{{text.ALevel.RowData.Menu}}</q-card-section>
-                    <q-dialog
-                      v-model="dialog"
+                  <q-card dark bordered class="my-card-wide">
+                  <q-card-section><div class="text-h6">Main Menu</div></q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section>{{text.ALevel.RowData.Menu}}</q-card-section>
+                  <q-dialog
+                      v-model="RowDataMenuFullscreen"
                       persistent
                       :maximized="maximizedToggle"
-                    >
-                      <q-card class="bg-grey-8 text-white">
-                        <q-bar class="bg-secondary">
-                          <div class="text-body-2">
-                            RowData Menu
-                          </div>
-                          <q-space />
-                          <q-btn flat icon="close" v-close-popup>
-                            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                          </q-btn>
-                        </q-bar>
-                        <q-card-section class="row justify-center">
-                          <q-img
-                            src="../assets/RowData_menu.png"
-                            spinner-color="white"
-                          />
-                        </q-card-section>
-                      </q-card>
-                    </q-dialog>
-                    <q-img
+                  >
+                    <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                        <div class="text-body-2">
+                        RowData Menu
+                        </div>
+                        <q-space />
+                        <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                        </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                        <q-img
+                        src="../assets/RowData_menu.png"
+                        spinner-color="white"
+                        />
+                    </q-card-section>
+                    </q-card>
+                  </q-dialog>
+                  <q-img
                       src="../assets/RowData_menu.png"
                       spinner-color="white"
-                    >
-                    </q-img>
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                  >
+                  </q-img>
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataMenuFullscreen = true" />
                   </q-card>
 
                   <q-card dark bordered class="my-card-wide">
-                    <q-card-section><div class="text-h6">Just Row</div></q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>{{text.ALevel.RowData.Justrow}}</q-card-section>
-                    <q-dialog
-                      v-model="dialog"
+                  <q-card-section><div class="text-h6">Just Row</div></q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section>{{text.ALevel.RowData.Justrow}}</q-card-section>
+                  <q-dialog
+                      v-model="RowDataJustrowFullscreen"
                       persistent
                       :maximized="maximizedToggle"
-                    >
-                      <q-card class="bg-grey-8 text-white">
-                        <q-bar class="bg-secondary">
-                          <div class="text-body-2">
-                            RowData Just Row
-                          </div>
-                          <q-space />
-                          <q-btn flat icon="close" v-close-popup>
-                            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                          </q-btn>
-                        </q-bar>
-                        <q-card-section class="row justify-center">
-                          <q-img
-                            src="../assets/RowData_justrow.png"
-                            spinner-color="white"
-                          />
-                        </q-card-section>
-                      </q-card>
-                    </q-dialog>
-                    <q-img
+                  >
+                    <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                        <div class="text-body-2">
+                        RowData Just Row
+                        </div>
+                        <q-space />
+                        <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                        </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                        <q-img
+                        src="../assets/RowData_justrow.png"
+                        spinner-color="white"
+                        />
+                    </q-card-section>
+                    </q-card>
+                  </q-dialog>
+                  <q-img
                       src="../assets/RowData_justrow.png"
                       spinner-color="white"
-                    >
-                    </q-img>
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                  >
+                  </q-img>
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataJustrowFullscreen = true" />
                   </q-card>
 
                   <q-card dark bordered class="my-card-wide">
-                    <q-card-section><div class="text-h6">Rowing Summary</div></q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>{{text.ALevel.RowData.Summary}}</q-card-section>
-                    <q-dialog
-                      v-model="dialog"
+                  <q-card-section><div class="text-h6">Rowing Summary</div></q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section>{{text.ALevel.RowData.Summary}}</q-card-section>
+                  <q-dialog
+                      v-model="RowDataSummaryFullscreen"
                       persistent
                       :maximized="maximizedToggle"
-                    >
-                      <q-card class="bg-grey-8 text-white">
-                        <q-bar class="bg-secondary">
-                          <div class="text-body-2">
-                            RowData Rowing Summary
-                          </div>
-                          <q-space />
-                          <q-btn flat icon="close" v-close-popup>
-                            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                          </q-btn>
-                        </q-bar>
-                        <q-card-section class="row justify-center">
-                          <q-img
-                            src="../assets/RowData_summary.png"
-                            spinner-color="white"
-                          />
-                        </q-card-section>
-                      </q-card>
-                    </q-dialog>
-                    <q-img
+                  >
+                    <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                        <div class="text-body-2">
+                        RowData Rowing Summary
+                        </div>
+                        <q-space />
+                        <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                        </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                        <q-img
+                        src="../assets/RowData_summary.png"
+                        spinner-color="white"
+                        />
+                    </q-card-section>
+                    </q-card>
+                  </q-dialog>
+                  <q-img
                       src="../assets/RowData_summary.png"
                       spinner-color="white"
-                    >
-                    </q-img>
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                  >
+                  </q-img>
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataSummaryFullscreen = true" />
                   </q-card>
 
                   <q-card dark bordered class="my-card-wide">
-                    <q-card-section><div class="text-h6">Personal Best</div></q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>{{text.ALevel.RowData.Pb}}</q-card-section>
-                    <q-dialog
-                      v-model="dialog"
+                  <q-card-section><div class="text-h6">Personal Best</div></q-card-section>
+                  <q-separator dark inset />
+                  <q-card-section>{{text.ALevel.RowData.Pb}}</q-card-section>
+                  <q-dialog
+                      v-model="RowDataPBFullscreen"
                       persistent
                       :maximized="maximizedToggle"
-                    >
-                      <q-card class="bg-grey-8 text-white">
-                        <q-bar class="bg-secondary">
-                          <div class="text-body-2">
-                            RowData Personal Best
-                          </div>
-                          <q-space />
-                          <q-btn flat icon="close" v-close-popup>
-                            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                          </q-btn>
-                        </q-bar>
-                        <q-card-section class="row justify-center">
-                          <q-img
-                            src="../assets/RowData_pb.png"
-                            spinner-color="white"
-                          />
-                        </q-card-section>
-                      </q-card>
-                    </q-dialog>
-                    <q-img
+                  >
+                    <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                        <div class="text-body-2">
+                        RowData Personal Best
+                        </div>
+                        <q-space />
+                        <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                        </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                        <q-img
+                        src="../assets/RowData_pb.png"
+                        spinner-color="white"
+                        />
+                    </q-card-section>
+                    </q-card>
+                  </q-dialog>
+                  <q-img
                       src="../assets/RowData_pb.png"
                       spinner-color="white"
-                    >
-                    </q-img>
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                  >
+                  </q-img>
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataPBFullscreen = true" />
                   </q-card>
-
-                </div>
-                <q-footer elevated>
+              </div>
+              <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
-                    <div class="text-left text-body2 q-mr-sm">
+                  <div class="text-left text-body2 q-mr-sm">
                       RowData
-                    </div>
-                    <q-separator dark vertical inset />
-                    <q-icon name="fab fa-python" size="30px" class="q-ml-xs"/>
-                    <q-toolbar-title class="text-right"></q-toolbar-title>
-                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/RowData')"/>
+                  </div>
+                  <q-separator dark vertical inset />
+                  <q-icon name="fab fa-python" size="30px" class="q-ml-xs"/>
+                  <q-toolbar-title class="text-right"></q-toolbar-title>
+                  <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/RowData')"/>
                   </q-toolbar>
-                </q-footer>
-              </q-tab-panel>
-            </q-tab-panels>
+              </q-footer>
+            </div>
           </q-tab-panel>
 
           <q-tab-panel name="Personal">
@@ -251,7 +274,14 @@
             <q-separator />
             <q-tab-panels v-model="personal" animated class="bg-purple-1 text-center">
               <q-tab-panel name="Discord Bot" class="bg-grey-8">
-                <div class="text-h3 q-mb-sm">Discord Bot</div>
+                <div class="text-h3 q-mb-sm">
+                  <q-img
+                    src="../assets/EERC.png"
+                    spinner-color="white"
+                    width="20%"
+                    class="q-mt-sm"
+                  />
+                </div>
                 <q-icon name="fab fa-js-square" size="80px"/>
                 <div class="q-mt-md q-mb-md">
                   {{text.Personal.Discord_Bot.a}}<br>
@@ -264,14 +294,14 @@
                     <q-separator dark inset />
                     <q-card-section>{{text.Personal.Discord_Bot.Reminders}}</q-card-section>
                     <q-dialog
-                      v-model="dialog"
+                      v-model="DiscordBotRemindersFullscreen"
                       persistent
                       :maximized="maximizedToggle"
                     >
                       <q-card class="bg-grey-8 text-white">
                         <q-bar class="bg-secondary">
                           <div class="text-body-2">
-                            Discord Bot
+                            Reminders
                           </div>
                           <q-space />
                           <q-btn flat icon="close" v-close-popup>
@@ -291,21 +321,21 @@
                       spinner-color="white"
                     >
                     </q-img>
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="DiscordBotRemindersFullscreen = true" />
                   </q-card>
                   <q-card dark bordered class="my-card-wide">
                     <q-card-section><div class="text-h6">Weather</div></q-card-section>
                     <q-separator dark inset />
                     <q-card-section>{{text.Personal.Discord_Bot.Weather}}</q-card-section>
                     <q-dialog
-                      v-model="dialog"
+                      v-model="DiscordBotWeatherFullscreen"
                       persistent
                       :maximized="maximizedToggle"
                     >
                       <q-card class="bg-grey-8 text-white">
                         <q-bar class="bg-secondary">
                           <div class="text-body-2">
-                            Discord Bot
+                            Weather
                           </div>
                           <q-space />
                           <q-btn flat icon="close" v-close-popup>
@@ -325,21 +355,21 @@
                       spinner-color="white"
                     >
                     </q-img>
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="DiscordBotWeatherFullscreen = true" />
                   </q-card>
                   <q-card dark bordered class="my-card-wide">
                     <q-card-section><div class="text-h6">Stats</div></q-card-section>
                     <q-separator dark inset />
                     <q-card-section>{{text.Personal.Discord_Bot.Stats}}</q-card-section>
                     <q-dialog
-                      v-model="dialog"
+                      v-model="DiscordBotStatsFullscreen"
                       persistent
                       :maximized="maximizedToggle"
                     >
                       <q-card class="bg-grey-8 text-white">
                         <q-bar class="bg-secondary">
                           <div class="text-body-2">
-                            Discord Bot
+                            Stats
                           </div>
                           <q-space />
                           <q-btn flat icon="close" v-close-popup>
@@ -359,21 +389,21 @@
                       spinner-color="white"
                     >
                     </q-img>
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="DiscordBotStatsFullscreen = true" />
                   </q-card>
                   <q-card dark bordered class="my-card-wide">
                     <q-card-section><div class="text-h6">Roles</div></q-card-section>
                     <q-separator dark inset />
                     <q-card-section>{{text.Personal.Discord_Bot.Roles}}</q-card-section>
                     <q-dialog
-                      v-model="dialog"
+                      v-model="DiscordBotRolesFullscreen"
                       persistent
                       :maximized="maximizedToggle"
                     >
                       <q-card class="bg-grey-8 text-white">
                         <q-bar class="bg-secondary">
                           <div class="text-body-2">
-                            Discord Bot
+                            Roles
                           </div>
                           <q-space />
                           <q-btn flat icon="close" v-close-popup>
@@ -393,7 +423,7 @@
                       spinner-color="white"
                     >
                     </q-img>
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="DiscordBotRolesFullscreen = true" />
                   </q-card>
                   <q-card dark bordered class="my-card-wide">
                     <q-card-section><div class="text-h6">Text to Speech</div></q-card-section>
@@ -435,13 +465,13 @@
             <q-tab-panels v-model="first_year" animated class="bg-purple-1 text-center">
               <q-tab-panel name="Countdown Simulator" class="bg-grey-8">
                 <div class="text-h3 q-mb-sm">Countdown Simulator</div>
-                <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Programming</div>
+                <q-icon name="fab fa-python" size="80px"/>
                 <q-separator dark class="q-mt-sm"/>
                 <div class="row q-py-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9">
                     <q-card-section>
-                      <div class="text-h6 text-bold">Countdown Simulator</div>
+                      <div class="text-h6">Countdown Simulator</div>
                     </q-card-section>
                     <q-separator dark inset/>
                     <q-card-section class="q-mb-xl">
@@ -455,7 +485,7 @@
                   </q-card>
                   <q-card dark bordered class="bg-grey-9">
                     <q-card-section>
-                      <div class="text-h6 text-bold">What did I learn?</div>
+                      <div class="text-h6">What did I learn?</div>
                     </q-card-section>
                     <q-separator dark inset/>
                     <q-card-section>
@@ -507,8 +537,8 @@
 
               <q-tab-panel name="Smart Alarm Clock" class="bg-grey-8">
                 <div class="text-h3 q-mb-sm">Smart Alarm Clock</div>
-                <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Programming</div>
+                <q-icon name="fab fa-python" size="80px"/>
                 <q-separator dark class="q-mt-sm"/>
                 <div class="row q-py-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9 my-card">
@@ -590,7 +620,6 @@
                       <q-img
                         src="../assets/smart_alarm_clock_0.png"
                         spinner-color="white"
-                        :width="windowWidth"
                       />
                     </q-card-section>
                   </q-card>
@@ -622,8 +651,8 @@
 
               <q-tab-panel name="Barnaby's Brewhouse" class="bg-grey-8">
                 <div class="text-h3 q-mb-sm">Barnaby's Brewhouse</div>
-                <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Programming</div>
+                <q-icon name="fab fa-python" size="80px"/>
                 <q-separator dark class="q-mt-sm"/>
                 <div class="row q-py-md q-gutter-md justify-center">
                 <q-card dark bordered class="bg-grey-9 my-card">
@@ -725,7 +754,6 @@
                       <q-img
                         src="../assets/barnabys_brewhouse_0.png"
                         spinner-color="white"
-                        :width="windowWidth"
                       />
                     </q-card-section>
                   </q-card>
@@ -752,8 +780,8 @@
 
               <q-tab-panel name="Beanbag Store" class="bg-grey-8 justify-center items-center">
                 <div class="text-h3 q-mb-sm">Beanbag Store</div>
-                <q-icon name="fab fa-java" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Object-Oritentated Programming</div>
+                <q-icon name="fab fa-java" size="80px"/>
                 <q-separator dark class="q-mt-sm"/>
                 <div class="row q-py-md q-gutter-md">
                   <q-card dark bordered class="bg-grey-9 row justify-center">
@@ -791,8 +819,8 @@
 
               <q-tab-panel name="Task Manager" class="bg-grey-8">
                 <div class="text-h3">Task Manager</div>
-                <q-icon name="fab fa-php" size="80px"/>
                 <div class="text-h5">Module: Web Development</div>
+                <q-icon name="fab fa-php" size="80px"/>
                 <q-separator dark class="q-mt-sm"/>
                 <div class="row q-py-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9 my-card">
@@ -859,7 +887,7 @@
                   </q-card>
                 </div>
                 <q-dialog
-                    v-model="dialog"
+                    v-model="Task_Manager1Fullscreen"
                     persistent
                     :maximized="maximizedToggle"
                 >
@@ -877,13 +905,12 @@
                       <img
                         src="../assets/task_manager_0.png"
                         spinner-color="white"
-                        :width="windowWidth"
                       />
                     </q-card-section>
                   </q-card>
                 </q-dialog>
                 <q-dialog
-                    v-model="dialog_1"
+                    v-model="Task_Manager2Fullscreen"
                     persistent
                     :maximized="maximizedToggle"
                 >
@@ -901,7 +928,6 @@
                       <img
                         src="../assets/task_manager_1.png"
                         spinner-color="white"
-                        :width="windowWidth"
                       />
                     </q-card-section>
                   </q-card>
@@ -911,14 +937,14 @@
                   spinner-color="white"
                   class="max-width-200"
                 >
-                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="Task_Manager1Fullscreen = true" />
                 </q-img>
                 <q-img
                   src="../assets/task_manager_1.png"
                   spinner-color="white"
                   class="max-width-200"
                 >
-                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog_1 = true" />
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="Task_Manager2Fullscreen = true" />
                 </q-img>
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
@@ -935,8 +961,8 @@
 
               <q-tab-panel name="Lift Algorithm" class="bg-grey-8">
                 <div class="text-h3 q-mb-sm">Lift Algorithm</div>
-                <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Data Structures and Algorithms</div>
+                <q-icon name="fab fa-python" size="80px"/>
                 <q-separator dark class="q-mt-sm"/>
                 <div class="row q-py-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9 my-card">
@@ -1024,8 +1050,8 @@
             <q-tab-panels v-model="second_year" animated class="bg-purple-1 text-center">
               <q-tab-panel name="Card Game" class="bg-grey-8">
                 <div class="text-h3 q-mb-sm">Card Game</div>
-                <q-icon name="fab fa-java" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Software Development</div>
+                <q-icon name="fab fa-java" size="80px"/>
                 <q-separator dark class="q-mt-sm"/>
                 <div class="row q-py-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9 my-card">
@@ -1094,8 +1120,15 @@
 
               <q-tab-panel name="Functional Programming" class="bg-grey-8">
                 <div class="text-h3 q-mb-sm">Functional Programming</div>
-                <q-icon name="fab fa-haskell" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Computer Languages & Representations</div>
+                <div class="text-h3 q-mb-sm">
+                  <q-img
+                    src="../assets/haskell.png"
+                    spinner-color="white"
+                    width="13%"
+                    class="q-mt-sm"
+                  />
+                </div>
                 <q-separator dark class="q-mt-sm"/>
                 <!--
                 <div class="row q-py-md q-gutter-md justify-center">
@@ -1197,7 +1230,12 @@
                       Functional Programming
                     </div>
                     <q-separator dark vertical inset />
-                    <q-icon name="fab fa-haskell" size="30px" class="q-ml-xs"/>
+                    <q-img
+                      src="../assets/haskell.png"
+                      spinner-color="white"
+                      width="5%"
+                      class="q-ml-sm"
+                    />
                     <q-toolbar-title class="text-right"></q-toolbar-title>
                     <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming')"/>
                   </q-toolbar>
@@ -1211,8 +1249,15 @@
 
               <q-tab-panel name="Logic Programming" class="bg-grey-8">
                 <div class="text-h3 q-mb-sm">Logic Programming</div>
-                <q-icon name="fab fa-prolog" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Computer Languages & Representations</div>
+                <div class="text-h3 q-mb-sm">
+                  <q-img
+                    src="../assets/prolog.png"
+                    spinner-color="white"
+                    width="10%"
+                    class="q-mt-sm"
+                  />
+                </div>
                 <q-separator dark class="q-mt-sm"/>
                 <!--
                 <div class="row q-py-md q-gutter-md justify-center">
@@ -1334,7 +1379,12 @@
                       Logic Programming
                     </div>
                     <q-separator dark vertical inset />
-                    <q-icon name="fab fa-prolog" size="30px" class="q-ml-xs"/>
+                    <q-img
+                      src="../assets/prolog.png"
+                      spinner-color="white"
+                      width="4.5%"
+                      class="q-ml-sm"
+                    />
                     <q-toolbar-title class="text-right"></q-toolbar-title>
                     <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Logic-Programming')"/>
                   </q-toolbar>
@@ -1345,7 +1395,35 @@
                 <div class="text-h3 q-mb-sm">Group Software Engineering Project</div>
                 <q-icon name="fab fa-react" size="80px"/>
                 <q-separator dark class="q-mt-sm"/>
-
+                <q-dialog
+                  v-model="dialog"
+                  persistent
+                  :maximized="maximizedToggle"
+                >
+                  <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                      <div class="text-body-2">
+                        Countdown Simulator
+                      </div>
+                      <q-space />
+                      <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                      </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                      <q-img
+                        src="../assets/poster.png"
+                        spinner-color="white"
+                      />
+                    </q-card-section>
+                  </q-card>
+                </q-dialog>
+                <q-img
+                  src="../assets/poster.png"
+                  spinner-color="white"
+                >
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                </q-img>
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <div class="text-left text-body2 q-mr-sm">
@@ -1361,10 +1439,107 @@
 
               <q-tab-panel name="8-Puzzle Problem" class="bg-grey-8">
                 <div class="text-h3 q-mb-sm">8-Puzzle Problem</div>
-                <q-icon name="fab fa-python" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: Artificial Intelligence and Applications</div>
+                <q-icon name="fab fa-python" size="80px"/>
                 <q-separator dark class="q-mt-sm"/>
-
+                <div class="row q-py-md q-gutter-md justify-center">
+                  <q-card dark bordered class="bg-grey-9">
+                    <q-card-section>
+                      <div class="text-h6">The 8-Puzzle Problem</div>
+                    </q-card-section>
+                    <q-separator dark inset/>
+                    <q-card-section>
+                      {{text.Second_Year.Puzzle_Problem.Main}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card-stretch">
+                    <q-card-section>
+                      <div class="text-h6">Manhattan Distance Heuristic</div>
+                    </q-card-section>
+                    <q-separator dark inset/>
+                    <q-card-section>
+                      {{text.Second_Year.Puzzle_Problem.Manhattan}}
+                    </q-card-section>
+                  </q-card>
+                  <q-card dark bordered class="bg-grey-9 my-card-stretch">
+                    <q-card-section>
+                      <div class="text-h6">Euclidean Distance Heuristic</div>
+                    </q-card-section>
+                    <q-separator dark inset/>
+                    <q-card-section>
+                      {{text.Second_Year.Puzzle_Problem.Euclidean}}
+                    </q-card-section>
+                  </q-card>
+                  <q-dialog
+                    v-model="dialog"
+                    persistent
+                    :maximized="maximizedToggle"
+                  >
+                  <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                      <div class="text-body-2">
+                        Manhattan Distance Heuristic
+                      </div>
+                      <q-space />
+                      <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                      </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                      <q-img
+                        src="../assets/8-puzzle_problem_1.png"
+                        spinner-color="white"
+                      />
+                    </q-card-section>
+                  </q-card>
+                </q-dialog>
+                <q-img
+                  src="../assets/8-puzzle_problem_1.png"
+                  spinner-color="white"
+                  class="max-width-200"
+                >
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                </q-img>
+                <q-dialog
+                    v-model="dialog"
+                    persistent
+                    :maximized="maximizedToggle"
+                  >
+                  <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                      <div class="text-body-2">
+                        Euclidean Distance Heuristic
+                      </div>
+                      <q-space />
+                      <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                      </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                      <q-img
+                        src="../assets/8-puzzle_problem_2.png"
+                        spinner-color="white"
+                      />
+                    </q-card-section>
+                  </q-card>
+                </q-dialog>
+                <q-img
+                  src="../assets/8-puzzle_problem_2.png"
+                  spinner-color="white"
+                  class="max-width-200"
+                >
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                </q-img>
+                  <q-card dark bordered class="bg-grey-9">
+                    <q-card-section>
+                      <div class="text-h6">What did I learn?</div>
+                    </q-card-section>
+                    <q-separator dark inset/>
+                    <q-card-section>
+                      {{text.Second_Year.Puzzle_Problem.WDIL}}
+                    </q-card-section>
+                  </q-card>
+                </div>
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <div class="text-left text-body2 q-mr-sm">
@@ -1380,8 +1555,15 @@
 
               <q-tab-panel name="Post Office Queues" class="bg-grey-8">
                 <div class="text-h3">Post Office Queues</div>
-                <q-icon name="fab fa-c" size="80px"/>
                 <div class="text-h5">Module: The C Family</div>
+                <div class="text-h3 q-mb-sm">
+                  <q-img
+                    src="../assets/c.png"
+                    spinner-color="white"
+                    width="8%"
+                    class="q-mt-sm"
+                  />
+                </div>
                 <q-separator dark class="q-mt-sm"/>
 
                 <q-footer elevated>
@@ -1399,8 +1581,15 @@
 
               <q-tab-panel name="Vaccine Ordering" class="bg-grey-8">
                 <div class="text-h3 q-mb-sm">Vaccine Ordering</div>
-                <q-icon name="fab fa-c++" size="80px"/>
                 <div class="text-h5 q-mt-sm">Module: The C Family</div>
+                <div class="text-h3 q-mb-sm">
+                  <q-img
+                    src="../assets/c++.png"
+                    spinner-color="white"
+                    width="6%"
+                    class="q-mt-sm"
+                  />
+                </div>
                 <q-separator dark class="q-mt-sm"/>
 
                 <q-footer elevated>
@@ -1428,8 +1617,9 @@
 <script>
 import axios from 'axios'
 // import Prism from 'vue-prism-component'
-import { openURL } from 'quasar'
+import openURL from 'quasar'
 import TextJson from '../text.json'
+// import alevel from './alevel.vue'
 
 export default {
   methods: {
@@ -1437,7 +1627,7 @@ export default {
       openURL(text)
     },
     getPic (index) {
-      return `../assets/ ${String(index)} .png`
+      return `../assets/${String(index)}.png`
     },
     handleResize () {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
@@ -1460,6 +1650,18 @@ export default {
       smart_alarm_clock_code: null,
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       text: TextJson,
+      RowDataFullscreen: false,
+      RowDataLoginFullscreen: false,
+      RowDataMenuFullscreen: false,
+      RowDataJustrowFullscreen: false,
+      RowDataSummaryFullscreen: false,
+      RowDataPBFullscreen: false,
+      DiscordBotRemindersFullscreen: false,
+      DiscordBotWeatherFullscreen: false,
+      DiscordBotStatsFullscreen: false,
+      DiscordBotRolesFullscreen: false,
+      Task_Manager1Fullscreen: false,
+      Task_Manager2Fullscreen: false,
       dialog: false,
       dialog_1: false,
       maximizedToggle: true
@@ -1472,6 +1674,7 @@ export default {
       .catch((e) => console.log(e))
   },
   components: {
+    // alevel: alevel
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     // Prism
   },
@@ -1507,6 +1710,12 @@ div.inline {
 .my-card {
   width: 100%;
   max-width: 300px;
+  background-color: #36393F;
+}
+
+.my-card-stretch {
+  width: 100%;
+  max-width: 400px;
   background-color: #36393F;
 }
 
