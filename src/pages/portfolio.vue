@@ -270,6 +270,7 @@
             >
               <q-tab name="Discord Bot" label="Discord Bot" />
               <q-tab name="This Website" label="This Website" />
+              <q-tab name="Rally Results Reader" label="Rally Results Reader" />
             </q-tabs>
             <q-separator />
             <q-tab-panels v-model="personal" animated class="bg-purple-1 text-center">
@@ -282,6 +283,7 @@
                     class="q-mt-sm"
                   />
                 </div>
+                <div class="text-h3 q-mb-sm">Discord Bot</div>
                 <q-icon name="fab fa-js-square" size="80px"/>
                 <div class="q-mt-md q-mb-md">
                   {{text.Personal.Discord_Bot.a}}<br>
@@ -442,8 +444,141 @@
                 </q-footer>
               </q-tab-panel>
               <q-tab-panel name="This Website" class="bg-grey-8">
-                <div class="text-h6">This Website</div>
-                <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Projects-Website')"/>              </q-tab-panel>
+                <div class="text-h3 q-mb-sm">This Website</div>
+                <div class="text-h3 q-mb-sm">
+                  <q-img
+                    src="../assets/vue-js.png"
+                    spinner-color="white"
+                    width="15%"
+                    class="q-mt-sm"
+                  />
+                  <q-img
+                    src="../assets/quasar.png"
+                    spinner-color="white"
+                    width="19%"
+                    class="q-mt-sm"
+                  />
+                </div>
+                <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Projects-Website')"/>
+              </q-tab-panel>
+              <q-tab-panel name="Rally Results Reader" class="bg-grey-8">
+                <div class="text-h3 q-mb-sm">Rally Results Reader</div>
+                <q-icon name="fab fa-python" size="80px"/>
+                <q-separator dark class="q-mt-sm"/>
+                <div class="row q-py-md q-gutter-md justify-center">
+                  <q-card dark bordered class="bg-grey-9">
+                    <q-card-section>
+                      <div class="text-h6">Rally Results Reader</div>
+                    </q-card-section>
+                    <q-separator dark inset/>
+                    <q-card-section class="q-mb-xl">
+                      {{text.Personal.Rally_Results_Reader}}
+                    </q-card-section>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="reader.py" v-on:click="redirect('https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py')"/></div>
+                  </q-card>
+                </div>
+                <div class="text-h6 q-mb-sm">Ingests Rally Results Screenshot</div>
+                <q-dialog
+                  v-model="dialog"
+                  persistent
+                  :maximized="maximizedToggle"
+                >
+                  <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                      <div class="text-body-2">
+                        Rally Result Screenshot
+                      </div>
+                      <q-space />
+                      <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                      </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                      <q-img
+                        src="../assets/rally_results_reader_1.png"
+                        spinner-color="white"
+                      />
+                    </q-card-section>
+                  </q-card>
+                </q-dialog>
+                <q-img
+                  src="../assets/rally_results_reader_1.png"
+                  spinner-color="white"
+                >
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                </q-img><br><br>
+                <div class="text-h6 q-mb-sm">Outputs Rally Results CSV File</div>
+                <q-dialog
+                  v-model="dialog"
+                  persistent
+                  :maximized="maximizedToggle"
+                >
+                  <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                      <div class="text-body-2">
+                        Rally Result CSV File
+                      </div>
+                      <q-space />
+                      <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                      </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                      <q-img
+                        src="../assets/rally_results_reader_2.png"
+                        spinner-color="white"
+                      />
+                    </q-card-section>
+                  </q-card>
+                </q-dialog>
+                <q-img
+                  src="../assets/rally_results_reader_2.png"
+                  spinner-color="white"
+                >
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                </q-img><br><br>
+                <div class="text-h6 q-mb-sm">CSV File Uploaded to <a href="https://beta.eerc.info/Leagues/DIRT"> Website</a></div>
+                <q-dialog
+                  v-model="dialog"
+                  persistent
+                  :maximized="maximizedToggle"
+                >
+                  <q-card class="bg-grey-8 text-white">
+                    <q-bar class="bg-secondary">
+                      <div class="text-body-2">
+                        Rally Result CSV File
+                      </div>
+                      <q-space />
+                      <q-btn flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                      </q-btn>
+                    </q-bar>
+                    <q-card-section class="row justify-center">
+                      <q-img
+                        src="../assets/rally_results_reader_3.png"
+                        spinner-color="white"
+                      />
+                    </q-card-section>
+                  </q-card>
+                </q-dialog>
+                <q-img
+                  src="../assets/rally_results_reader_3.png"
+                  spinner-color="white"
+                >
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                </q-img>
+                <q-footer elevated>
+                  <q-toolbar class="bg-secondary text-white">
+                    <div class="text-left text-body2 q-mr-sm">
+                      Rally Results Reader
+                    </div>
+                    <q-separator dark vertical inset />
+                    <q-icon name="fab fa-python" size="30px" class="q-ml-xs"/>
+                    <q-toolbar-title class="text-right"></q-toolbar-title>
+                    <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Results-Reader')"/>
+                  </q-toolbar>
+                </q-footer>
+              </q-tab-panel>
             </q-tab-panels>
           </q-tab-panel>
 
@@ -642,11 +777,6 @@
                     <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock')"/>
                   </q-toolbar>
                 </q-footer>
-                <!--
-                <prism language="python" class="code">
-                  {{ smart_alarm_clock_code.data }}
-                </prism>
-                -->
               </q-tab-panel>
 
               <q-tab-panel name="Barnaby's Brewhouse" class="bg-grey-8">
@@ -1131,52 +1261,80 @@
                 </div>
                 <q-separator dark class="q-mt-sm"/>
                 <div class="row q-py-md q-gutter-md justify-center">
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Question 1</div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section class="q-mb-xl">
-                      <p>{{text.Second_Year.Functional_Programming.Question_1_1}}</p>
-                      <p class="list">{{text.Second_Year.Functional_Programming.Question_1_2}}</p>
-                      <p class="list">{{text.Second_Year.Functional_Programming.Question_1_3}}</p>
-                      <p class="list">{{text.Second_Year.Functional_Programming.Question_1_4}}</p>
-                      <p class="list">{{text.Second_Year.Functional_Programming.Question_1_5}}</p>
-                    </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="puzzle.hs" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/puzzle.hs')"/></div>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Question 2</div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section class="q-mb-xl">
-                      <p>{{text.Second_Year.Functional_Programming.Question_2_1}}</p>
-                      <p class="list">{{text.Second_Year.Functional_Programming.Question_2_2}}</p>
-                      <p class="list">{{text.Second_Year.Functional_Programming.Question_2_3}}</p>
-                      <p class="list">{{text.Second_Year.Functional_Programming.Question_2_4}}</p>
-                      <p>{{text.Second_Year.Functional_Programming.Question_2_5}}</p>
-                    </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="GameOfLife.hs" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/gameOfLife.hs')"/></div>
-                  </q-card>
+                  <div class="my-row">
+                    <q-card dark bordered class="bg-grey-9 my-column">
+                      <q-card-section>
+                        <div class="text-h6">Question 1</div>
+                      </q-card-section>
+                      <q-separator dark inset />
+                      <q-card-section class="q-mb-xl">
+                        <p>{{text.Second_Year.Functional_Programming.Question_1_1}}</p>
+                        <p class="list">{{text.Second_Year.Functional_Programming.Question_1_2}}</p>
+                        <p class="list">{{text.Second_Year.Functional_Programming.Question_1_3}}</p>
+                        <p class="list">{{text.Second_Year.Functional_Programming.Question_1_4}}</p>
+                        <p class="list">{{text.Second_Year.Functional_Programming.Question_1_5}}</p>
+                      </q-card-section>
+                      <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="puzzle.hs" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/puzzle.hs')"/></div>
+                    </q-card>
+                    <q-card dark bordered class="bg-grey-9 my-column">
+                      <q-card-section>
+                        <div class="text-h6">Question 2</div>
+                      </q-card-section>
+                      <q-separator dark inset />
+                      <q-card-section class="q-mb-xl">
+                        <p>{{text.Second_Year.Functional_Programming.Question_2_1}}</p>
+                        <p class="list">{{text.Second_Year.Functional_Programming.Question_2_2}}</p>
+                        <p class="list">{{text.Second_Year.Functional_Programming.Question_2_3}}</p>
+                        <p class="list">{{text.Second_Year.Functional_Programming.Question_2_4}}</p>
+                        <p>{{text.Second_Year.Functional_Programming.Question_2_5}}</p>
+                      </q-card-section>
+                      <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="GameOfLife.hs" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/gameOfLife.hs')"/></div>
+                    </q-card>
+                  </div>
+                    <q-card dark bordered class="bg-grey-9 my-column">
+                        <q-card-section>
+                          <div class="text-h6">What did I learn?</div>
+                        </q-card-section>
+                        <q-separator dark inset />
+                        <q-card-section class="q-mb-xl">
+                          {{text.Second_Year.Functional_Programming.WDIL}}
+                        </q-card-section>
+                        <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="GameOfLife.hs" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/gameOfLife.hs')"/></div>
+                      </q-card>
                 </div>
-                <q-dialog
+                  <q-dialog
                     v-model="dialog"
                     persistent
                     :maximized="maximizedToggle"
-                >
-                  <q-card class="bg-grey-8 text-white">
-                    <q-bar class="bg-secondary">
-                      <div class="text-body-2">
-                        Functional Programming
-                      </div>
-                      <q-space />
-                      <q-btn flat icon="close" v-close-popup>
-                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                      </q-btn>
-                    </q-bar>
-                  </q-card>
+                  >
+                    <q-card class="bg-grey-8 text-white">
+                      <q-bar class="bg-secondary">
+                        <div class="text-body-2">
+                          Question 2 - Glider Pattern
+                        </div>
+                        <q-space />
+                        <q-btn flat icon="close" v-close-popup>
+                          <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                        </q-btn>
+                      </q-bar>
+                      <q-card-section class="row justify-center">
+                        <q-img
+                          src="../assets/glider_pattern.png"
+                          spinner-color="white"
+                        />
+                      </q-card-section>
+                    </q-card>
                 </q-dialog>
+                <q-img
+                  src="../assets/glider_pattern.png"
+                  spinner-color="white"
+                  class="max-width-200"
+                >
+                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+                  <div class="absolute-bottom-left text-subtitle2">
+                    Question 2 - Glider Pattern
+                  </div>
+                </q-img>
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <div class="text-left text-body2 q-mr-sm">
@@ -1400,24 +1558,26 @@
                       {{text.Second_Year.Puzzle_Problem.Main}}
                     </q-card-section>
                   </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card-stretch">
-                    <q-card-section>
-                      <div class="text-h6">Manhattan Distance Heuristic</div>
-                    </q-card-section>
-                    <q-separator dark inset/>
-                    <q-card-section>
-                      {{text.Second_Year.Puzzle_Problem.Manhattan}}
-                    </q-card-section>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card-stretch">
-                    <q-card-section>
-                      <div class="text-h6">Euclidean Distance Heuristic</div>
-                    </q-card-section>
-                    <q-separator dark inset/>
-                    <q-card-section>
-                      {{text.Second_Year.Puzzle_Problem.Euclidean}}
-                    </q-card-section>
-                  </q-card>
+                  <div class="my-row">
+                    <q-card dark bordered class="bg-grey-9 my-column">
+                      <q-card-section>
+                        <div class="text-h6">Manhattan Distance Heuristic</div>
+                      </q-card-section>
+                      <q-separator dark inset/>
+                      <q-card-section>
+                        {{text.Second_Year.Puzzle_Problem.Manhattan}}
+                      </q-card-section>
+                    </q-card>
+                    <q-card dark bordered class="bg-grey-9 my-column">
+                      <q-card-section>
+                        <div class="text-h6">Euclidean Distance Heuristic</div>
+                      </q-card-section>
+                      <q-separator dark inset/>
+                      <q-card-section>
+                        {{text.Second_Year.Puzzle_Problem.Euclidean}}
+                      </q-card-section>
+                    </q-card>
+                  </div>
                   <q-dialog
                     v-model="dialog"
                     persistent
@@ -1645,10 +1805,6 @@ export default {
 </script>
 
 <style>
-.code {
-  width:650px;
-  height:800px;
-}
 
 div.inline {
   display: inline-block;
@@ -1661,10 +1817,18 @@ div.inline {
   background-color: #36393F;
 }
 
-.my-card-stretch {
-  width: 100%;
-  max-width: 400px;
+.my-column {
+  float: left;
+  width: 50%;
   background-color: #36393F;
+  flex: 1;
+}
+
+.my-row {
+  content: "";
+  display: flex;
+  clear: both;
+  column-gap: 15px;
 }
 
 .my-card-wide {
@@ -1674,7 +1838,7 @@ div.inline {
 }
 
 .q-img {
-  max-width: 1500px;
+  max-width: 1000px;
 }
 
 .list {

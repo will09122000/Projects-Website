@@ -19,7 +19,8 @@
         "Roles": "Discord Roles enable you to categories and set permissions for users in the server. For example, British users get the British role. These commands below allow the user to assign their own roles rather than an admin assigning it, this is especially useful in larger servers with lots of people wanting various roles.",
         "TTS": "Using Google's text to speech API, this bot will read aloud messages to users in a voice channel. This is used when penalties are announced to those driving during an online endurance race."
       },
-      "Website": {}
+      "Website": {},
+      "Rally_Results_Reader": "This program uses OCR to read results from a screenshot and converts them to a CSV file. These results come from the website of a rally driving simulator called 'DiRT Rally 2.0'. An online weekly championship is hosted on this website whereby each driver has a week to complete a section of the game as fast as possible with no resets allowed."
     },
     "First_Year": {
       "Countdown_Simulator": {
@@ -83,7 +84,7 @@
         "Question_1_3": "2. alternate digits are even and odd, or odd and even;",
         "Question_1_4": "3. alternate digits differ by more than two;",
         "Question_1_5": "4. the first and middle pairs of digits form numbers that are both multiples of the last.",
-        "Question_2_1": "The second question was based on the 'Game of Life'. The late John Conway was a mathematician who became known outside the world of mathematics for his invention of the Game of Life. The game involves configuring a cellular automaton and then observing how it evolves according to three rules. The cells are organised as a two-dimensional grid, and are either live or dead. The three rules of evolution are:",
+        "Question_2_1": "The second question was based on simulating the 'Game of Life'. The late John Conway was a mathematician who became known outside the world of mathematics for his invention of the Game of Life. The game involves configuring a cellular automaton and then observing how it evolves according to three rules. The cells are organised as a two-dimensional grid, and are either live or dead. The three rules of evolution are:",
         "Question_2_2": "1. Any live cell with two or three live neighbours survives.",
         "Question_2_3": "2. Any dead cell with three live neighbours becomes alive.",
         "Question_2_4": "3. All other live cells die, and all other dead cells stay dead",
