@@ -1595,14 +1595,14 @@
                     </q-bar>
                     <q-card-section class="row justify-center">
                       <q-img
-                        src="../assets/8-puzzle_problem_1.png"
+                        src="../assets/8-puzzle_problem_2.png"
                         spinner-color="white"
                       />
                     </q-card-section>
                   </q-card>
                 </q-dialog>
                 <q-img
-                  src="../assets/8-puzzle_problem_1.png"
+                  src="../assets/8-puzzle_problem_2.png"
                   spinner-color="white"
                   class="max-width-200"
                 >
@@ -1625,14 +1625,14 @@
                     </q-bar>
                     <q-card-section class="row justify-center">
                       <q-img
-                        src="../assets/8-puzzle_problem_2.png"
+                        src="../assets/8-puzzle_problem_1.png"
                         spinner-color="white"
                       />
                     </q-card-section>
                   </q-card>
                 </q-dialog>
                 <q-img
-                  src="../assets/8-puzzle_problem_2.png"
+                  src="../assets/8-puzzle_problem_1.png"
                   spinner-color="white"
                   class="max-width-200"
                 >
