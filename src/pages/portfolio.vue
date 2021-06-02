@@ -1070,7 +1070,7 @@
                     </q-card-section>
                     <q-separator dark inset />
                     <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Smart_Alarm_Clock.Notifications}}
+                      {{text.Second_Year.Card_Game.Card_Class}}
                     </q-card-section>
                     <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Card.java" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/Card.java')"/></div>
                   </q-card>
@@ -1080,7 +1080,7 @@
                     </q-card-section>
                     <q-separator dark inset />
                     <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Smart_Alarm_Clock.Alarms}}
+                      {{text.Second_Year.Card_Game.Card_Deck_Class}}
                     </q-card-section>
                     <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="CardDeck.java" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/CardDeck.java')"/></div>
                   </q-card>
@@ -1090,7 +1090,7 @@
                     </q-card-section>
                     <q-separator dark inset />
                     <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Smart_Alarm_Clock.Alarms}}
+                      {{text.Second_Year.Card_Game.Player_Class}}
                     </q-card-section>
                     <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Player.java" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/Player.java')"/></div>
                   </q-card>
@@ -1100,7 +1100,7 @@
                     </q-card-section>
                     <q-separator dark inset />
                     <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Smart_Alarm_Clock.WDIL}}
+                      {{text.Second_Year.Card_Game.WDIL}}
                     </q-card-section>
                   </q-card>
                 </div>
@@ -1130,66 +1130,34 @@
                   />
                 </div>
                 <q-separator dark class="q-mt-sm"/>
-                <!--
                 <div class="row q-py-md q-gutter-md justify-center">
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
-                      <div class="text-h6">Smart Alarm Clock</div>
+                      <div class="text-h6">Question 1</div>
                     </q-card-section>
                     <q-separator dark inset />
                     <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Smart_Alarm_Clock.Main}}
+                      <p>{{text.Second_Year.Functional_Programming.Question_1_1}}</p>
+                      <p class="list">{{text.Second_Year.Functional_Programming.Question_1_2}}</p>
+                      <p class="list">{{text.Second_Year.Functional_Programming.Question_1_3}}</p>
+                      <p class="list">{{text.Second_Year.Functional_Programming.Question_1_4}}</p>
+                      <p class="list">{{text.Second_Year.Functional_Programming.Question_1_5}}</p>
                     </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Smart_Alarm_Clock.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/Smart_Alarm_Clock.py')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="puzzle.hs" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/puzzle.hs')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
-                      <div class="text-h6">Notifications</div>
+                      <div class="text-h6">Question 2</div>
                     </q-card-section>
                     <q-separator dark inset />
                     <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Smart_Alarm_Clock.Notifications}}
+                      <p>{{text.Second_Year.Functional_Programming.Question_2_1}}</p>
+                      <p class="list">{{text.Second_Year.Functional_Programming.Question_2_2}}</p>
+                      <p class="list">{{text.Second_Year.Functional_Programming.Question_2_3}}</p>
+                      <p class="list">{{text.Second_Year.Functional_Programming.Question_2_4}}</p>
+                      <p>{{text.Second_Year.Functional_Programming.Question_2_5}}</p>
                     </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="notifications.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/notifications.py')"/></div>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Alarms</div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Smart_Alarm_Clock.Alarms}}
-                    </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="alarm.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/alarm.py')"/></div>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Weather</div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Smart_Alarm_Clock.Weather}}
-                    </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="weather.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/weather.py')"/></div>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">News</div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Smart_Alarm_Clock.News}}
-                    </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="news.py" v-on:click="redirect('https://github.com/will09122000/Smart-Alarm-Clock/blob/master/news.py')"/></div>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">What did I learn?</div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section class="q-mb-xl">
-                      {{text.First_Year.Smart_Alarm_Clock.WDIL}}
-                    </q-card-section>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="GameOfLife.hs" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/gameOfLife.hs')"/></div>
                   </q-card>
                 </div>
                 <q-dialog
@@ -1207,23 +1175,8 @@
                         <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
                       </q-btn>
                     </q-bar>
-                    <q-card-section class="row justify-center">
-                      <q-img
-                        src="../assets/smart_alarm_clock_0.png"
-                        spinner-color="white"
-                        :width="windowWidth"
-                      />
-                    </q-card-section>
                   </q-card>
                 </q-dialog>
-                <q-img
-                  src="../assets/smart_alarm_clock_0.png"
-                  spinner-color="white"
-                  class="max-width-200"
-                >
-                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
-                </q-img>
-                -->
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <div class="text-left text-body2 q-mr-sm">
@@ -1240,11 +1193,6 @@
                     <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming')"/>
                   </q-toolbar>
                 </q-footer>
-                <!--
-                <prism language="python" class="code">
-                  {{ smart_alarm_clock_code.data }}
-                </prism>
-                -->
               </q-tab-panel>
 
               <q-tab-panel name="Logic Programming" class="bg-grey-8">
@@ -1727,6 +1675,10 @@ div.inline {
 
 .q-img {
   max-width: 1500px;
+}
+
+.list {
+  text-align: left;
 }
 
 </style>
