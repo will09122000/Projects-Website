@@ -1171,7 +1171,7 @@
               <q-tab name="Card Game" label="Card Game" />
               <q-tab name="Functional Programming" label="Functional Programming" />
               <q-tab name="Logic Programming" label="Logic Programming" />
-              <q-tab name="Group Software Engineering Project" label="Group Software Engineering Project"/>
+              <q-tab name="Unite" label="Unite!"/>
               <q-tab name="8-Puzzle Problem" label="8-Puzzle Problem" />
               <q-tab name="Post Office Queues" label="Post Office Queues" />
               <q-tab name="Vaccine Ordering" label="Vaccine Ordering" />
@@ -1268,11 +1268,13 @@
                       </q-card-section>
                       <q-separator dark inset />
                       <q-card-section class="q-mb-xl">
-                        <p>{{text.Second_Year.Functional_Programming.Question_1_1}}</p>
-                        <p class="list">{{text.Second_Year.Functional_Programming.Question_1_2}}</p>
-                        <p class="list">{{text.Second_Year.Functional_Programming.Question_1_3}}</p>
-                        <p class="list">{{text.Second_Year.Functional_Programming.Question_1_4}}</p>
-                        <p class="list">{{text.Second_Year.Functional_Programming.Question_1_5}}</p>
+                        {{text.Second_Year.Functional_Programming.Question_1_1}}
+                        <ul>
+                          <li class="list">{{text.Second_Year.Functional_Programming.Question_1_2}}</li>
+                          <li class="list">{{text.Second_Year.Functional_Programming.Question_1_3}}</li>
+                          <li class="list">{{text.Second_Year.Functional_Programming.Question_1_4}}</li>
+                          <li class="list">{{text.Second_Year.Functional_Programming.Question_1_5}}</li>
+                        </ul>
                       </q-card-section>
                       <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="puzzle.hs" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/puzzle.hs')"/></div>
                     </q-card>
@@ -1282,11 +1284,13 @@
                       </q-card-section>
                       <q-separator dark inset />
                       <q-card-section class="q-mb-xl">
-                        <p>{{text.Second_Year.Functional_Programming.Question_2_1}}</p>
-                        <p class="list">{{text.Second_Year.Functional_Programming.Question_2_2}}</p>
-                        <p class="list">{{text.Second_Year.Functional_Programming.Question_2_3}}</p>
-                        <p class="list">{{text.Second_Year.Functional_Programming.Question_2_4}}</p>
-                        <p>{{text.Second_Year.Functional_Programming.Question_2_5}}</p>
+                        {{text.Second_Year.Functional_Programming.Question_2_1}}
+                        <ul>
+                          <li class="list">{{text.Second_Year.Functional_Programming.Question_2_2}}</li>
+                          <li class="list">{{text.Second_Year.Functional_Programming.Question_2_3}}</li>
+                          <li class="list">{{text.Second_Year.Functional_Programming.Question_2_4}}</li>
+                        </ul>
+                        {{text.Second_Year.Functional_Programming.Question_2_5}}
                       </q-card-section>
                       <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="GameOfLife.hs" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/gameOfLife.hs')"/></div>
                     </q-card>
@@ -1299,7 +1303,6 @@
                         <q-card-section class="q-mb-xl">
                           {{text.Second_Year.Functional_Programming.WDIL}}
                         </q-card-section>
-                        <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="GameOfLife.hs" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/gameOfLife.hs')"/></div>
                       </q-card>
                 </div>
                   <q-dialog
@@ -1365,120 +1368,50 @@
                   />
                 </div>
                 <q-separator dark class="q-mt-sm"/>
-                <!--
                 <div class="row q-py-md q-gutter-md justify-center">
-                <q-card dark bordered class="bg-grey-9 my-card">
-                  <q-card-section>
-                    <div class="text-h6">Logic Programming</div>
-                  </q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section class="q-mb-xl">
-                    {{text.First_Year.Barnabys_Brewhouse.Main}}
-                  </q-card-section>
-                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="barnabys_brewhouse.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/barnabys_brewhouse.py')"/></div>
-                </q-card>
-                <q-card dark bordered class="bg-grey-9 my-card">
-                  <q-card-section>
-                    <div class="text-h6">Batch Management</div>
-                  </q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section class="q-mb-xl">
-                    {{text.First_Year.Barnabys_Brewhouse.Batch_Management}}
-                  </q-card-section>
-                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="batch_management.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/batch_management.py')"/></div>
-                </q-card>
-                <q-card dark bordered class="bg-grey-9 my-card">
-                  <q-card-section>
-                    <div class="text-h6">Tank Management</div>
-                  </q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section class="q-mb-xl">
-                    {{text.First_Year.Barnabys_Brewhouse.Tank_Management}}
-                  </q-card-section>
-                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="tank_management.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/tank_management.py')"/></div>
-                </q-card>
-                <q-card dark bordered class="bg-grey-9 my-card">
-                  <q-card-section>
-                    <div class="text-h6">Inventory</div>
-                  </q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section class="q-mb-xl">
-                    {{text.First_Year.Barnabys_Brewhouse.Inventory}}
-                  </q-card-section>
-                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="inventory.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/inventory.py')"/></div>
-                </q-card>
-                <q-card dark bordered class="bg-grey-9 my-card">
-                  <q-card-section>
-                    <div class="text-h6">Order Management</div>
-                  </q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section class="q-mb-xl">
-                    {{text.First_Year.Barnabys_Brewhouse.Order_Management}}
-                  </q-card-section>
-                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="order_management.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/order_management.py')"/></div>
-                </q-card>
-                <q-card dark bordered class="bg-grey-9 my-card">
-                  <q-card-section>
-                    <div class="text-h6">Beer Suggestion</div>
-                  </q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section class="q-mb-xl">
-                    {{text.First_Year.Barnabys_Brewhouse.Beer_Suggestion}}
-                  </q-card-section>
-                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="beer_suggestion.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/beer_suggestion.py')"/></div>
-                </q-card>
-                <q-card dark bordered class="bg-grey-9 my-card">
-                  <q-card-section>
-                    <div class="text-h6">Sales Preditions</div>
-                  </q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section class="q-mb-xl">
-                    {{text.First_Year.Barnabys_Brewhouse.Sales_Predictions}}
-                  </q-card-section>
-                  <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="sales_predictions.py" v-on:click="redirect('https://github.com/will09122000/Barnabys-Brewhouse/blob/master/sales_predictions.py')"/></div>
-                </q-card>
-                <q-card dark bordered class="bg-grey-9 my-card">
-                  <q-card-section>
-                    <div class="text-h6">What did I learn?</div>
-                  </q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section class="q-mb-xl">
-                    {{text.First_Year.Barnabys_Brewhouse.WDIL}}
-                  </q-card-section>
-                </q-card>
+                  <div class="my-row">
+                    <q-card dark bordered class="bg-grey-9 my-column">
+                      <q-card-section>
+                        <div class="text-h6">Question 1</div>
+                      </q-card-section>
+                      <q-separator dark inset />
+                      <q-card-section class="q-mb-xl">
+                        {{text.Second_Year.Logical_Programming.Question_1_1}}
+                        <ul>
+                          <li class="list">{{text.Second_Year.Logical_Programming.Question_1_2}}</li>
+                          <li class="list">{{text.Second_Year.Logical_Programming.Question_1_3}}</li>
+                          <li class="list">{{text.Second_Year.Logical_Programming.Question_1_4}}</li>
+                        </ul>
+                      </q-card-section>
+                      <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Question1.pl" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Logic-Programming/blob/main/Question1.pl')"/></div>
+                    </q-card>
+                    <q-card dark bordered class="bg-grey-9 my-column">
+                      <q-card-section>
+                        <div class="text-h6">Question 2</div>
+                      </q-card-section>
+                      <q-separator dark inset />
+                      <q-card-section class="q-mb-xl">
+                        {{text.Second_Year.Logical_Programming.Question_2_1}}
+                        <ul>
+                          <li class="list">{{text.Second_Year.Logical_Programming.Question_2_2}}</li>
+                          <li class="list">{{text.Second_Year.Logical_Programming.Question_2_3}}</li>
+                          <li class="list">{{text.Second_Year.Logical_Programming.Question_2_4}}</li>
+                          <li class="list">{{text.Second_Year.Logical_Programming.Question_2_5}}</li>
+                        </ul>
+                      </q-card-section>
+                      <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Question2.pl" v-on:click="redirect('https://github.com/will09122000/ECM2418-CA-Logic-Programming/blob/main/Question2.pl')"/></div>
+                    </q-card>
+                  </div>
+                    <q-card dark bordered class="bg-grey-9 my-column">
+                        <q-card-section>
+                          <div class="text-h6">What did I learn?</div>
+                        </q-card-section>
+                        <q-separator dark inset />
+                        <q-card-section class="q-mb-xl">
+                          {{text.Second_Year.Functional_Programming.WDIL}}
+                        </q-card-section>
+                      </q-card>
                 </div>
-                <q-dialog
-                    v-model="dialog"
-                    persistent
-                    :maximized="maximizedToggle"
-                >
-                  <q-card class="bg-grey-8 text-white">
-                    <q-bar class="bg-secondary">
-                      <div class="text-body-2">
-                        Logic Programming
-                      </div>
-                      <q-space />
-                      <q-btn flat icon="close" v-close-popup>
-                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                      </q-btn>
-                    </q-bar>
-                    <q-card-section class="row justify-center">
-                      <q-img
-                        src="../assets/barnabys_brewhouse_0.png"
-                        spinner-color="white"
-                        :width="windowWidth"
-                      />
-                    </q-card-section>
-                  </q-card>
-                </q-dialog>
-                <q-img
-                  src="../assets/barnabys_brewhouse_0.png"
-                  spinner-color="white"
-                  class="max-width-200"
-                >
-                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
-                </q-img>
-                -->
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <div class="text-left text-body2 q-mr-sm">
@@ -1497,10 +1430,54 @@
                 </q-footer>
               </q-tab-panel>
 
-              <q-tab-panel name="Group Software Engineering Project" class="bg-grey-8">
-                <div class="text-h3 q-mb-sm">Group Software Engineering Project</div>
+              <q-tab-panel name="Unite" class="bg-grey-8">
+                <div class="text-h3 q-mb-sm">
+                  <q-img
+                    src="../assets/unite_logo.png"
+                    spinner-color="white"
+                    width="16%"
+                    class="q-mt-sm"
+                  />
+                </div>
+                <div class="text-h3 q-mb-sm">Unite!</div>
+                <div class="text-h5 q-mb-sm">Module: Group Software Engineering Project</div>
                 <q-icon name="fab fa-react" size="80px"/>
                 <q-separator dark class="q-mt-sm"/>
+                <div class="row q-py-md q-gutter-md justify-center">
+                  <q-card dark bordered class="bg-grey-9">
+                    <q-card-section>
+                      <div class="text-h6">Unite!</div>
+                    </q-card-section>
+                    <q-separator dark inset/>
+                    <q-card-section>
+                      {{text.Second_Year.Unite.Main}}
+                    </q-card-section>
+                  </q-card>
+                  <div class="my-row">
+                    <q-card dark bordered class="bg-grey-9 my-column">
+                      <q-card-section>
+                        <div class="text-h6">Team Feedback</div>
+                      </q-card-section>
+                      <q-separator dark inset/>
+                      <q-card-section>
+                        <ul>
+                          <li class="list">"{{text.Second_Year.Unite.Feedback_1}}"</li>
+                          <li class="list">"{{text.Second_Year.Unite.Feedback_2}}"</li>
+                          <li class="list">"{{text.Second_Year.Unite.Feedback_3}}"</li>
+                        </ul>
+                      </q-card-section>
+                    </q-card>
+                    <q-card dark bordered class="bg-grey-9 my-column">
+                      <q-card-section>
+                        <div class="text-h6">What did I learn?</div>
+                      </q-card-section>
+                      <q-separator dark inset/>
+                      <q-card-section>
+                        {{text.Second_Year.Unite.WDIL}}
+                      </q-card-section>
+                    </q-card>
+                  </div>
+                </div>
                 <q-dialog
                   v-model="dialog"
                   persistent
@@ -1509,7 +1486,7 @@
                   <q-card class="bg-grey-8 text-white">
                     <q-bar class="bg-secondary">
                       <div class="text-body-2">
-                        Countdown Simulator
+                        Unite!
                       </div>
                       <q-space />
                       <q-btn flat icon="close" v-close-popup>
@@ -1533,7 +1510,7 @@
                 <q-footer elevated>
                   <q-toolbar class="bg-secondary text-white">
                     <div class="text-left text-body2 q-mr-sm">
-                      Group Software Engineering Project
+                      Unite!
                     </div>
                     <q-separator dark vertical inset />
                     <q-icon name="fab fa-react" size="30px" class="q-ml-xs"/>
