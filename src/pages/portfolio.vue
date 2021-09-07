@@ -1192,37 +1192,7 @@
                     <q-card-section class="q-mb-xl">
                       {{text.Second_Year.Card_Game.Main}}
                     </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Smart_Alarm_Clock.py" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/CardGame.java')"/></div>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Card Class</div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section class="q-mb-xl">
-                      {{text.Second_Year.Card_Game.Card_Class}}
-                    </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Card.java" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/Card.java')"/></div>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Card Deck Class</div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section class="q-mb-xl">
-                      {{text.Second_Year.Card_Game.Card_Deck_Class}}
-                    </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="CardDeck.java" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/CardDeck.java')"/></div>
-                  </q-card>
-                  <q-card dark bordered class="bg-grey-9 my-card">
-                    <q-card-section>
-                      <div class="text-h6">Player Class</div>
-                    </q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section class="q-mb-xl">
-                      {{text.Second_Year.Card_Game.Player_Class}}
-                    </q-card-section>
-                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="Player.java" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/Player.java')"/></div>
+                    <div class="q-py-md absolute-bottom"><q-btn color="primary" icon="open_in_new" label="CardGame.py" v-on:click="redirect('https://github.com/will09122000/Card-Game/blob/main/src/main/CardGame.java')"/></div>
                   </q-card>
                   <q-card dark bordered class="bg-grey-9 my-card">
                     <q-card-section>
@@ -1233,6 +1203,7 @@
                       {{text.Second_Year.Card_Game.WDIL}}
                     </q-card-section>
                   </q-card>
+                    <pdf src="../assets/CardGameReport.pdf"></pdf>
                 </div>
 
                 <q-footer elevated>
@@ -1701,10 +1672,9 @@
 
 <script>
 import axios from 'axios'
-// import Prism from 'vue-prism-component'
+import pdf from 'vue-pdf'
 import openURL from 'quasar'
 import TextJson from '../text.json'
-// import alevel from './alevel.vue'
 
 export default {
   methods: {
@@ -1759,9 +1729,7 @@ export default {
       .catch((e) => console.log(e))
   },
   components: {
-    // alevel: alevel
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    // Prism
+    pdf
   },
   created () {
     window.addEventListener('resize', this.handleResize)
