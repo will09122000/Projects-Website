@@ -1203,7 +1203,12 @@
                       {{text.Second_Year.Card_Game.WDIL}}
                     </q-card-section>
                   </q-card>
-                    <pdf src="../assets/CardGameReport.pdf"></pdf>
+
+                   <q-pdfviewer
+                    v-model="visible"
+                    src="../assets/CardGameReport.pdf"
+                    type="pdfjs"
+                  />
                 </div>
 
                 <q-footer elevated>
@@ -1672,7 +1677,6 @@
 
 <script>
 import axios from 'axios'
-import pdf from 'vue-pdf'
 import openURL from 'quasar'
 import TextJson from '../text.json'
 
@@ -1727,9 +1731,6 @@ export default {
       .get('https://raw.githubusercontent.com/will09122000/Smart-Alarm-Clock/master/Smart_Alarm_Clock.py')
       .then(response => (this.smart_alarm_clock_code = response))
       .catch((e) => console.log(e))
-  },
-  components: {
-    pdf
   },
   created () {
     window.addEventListener('resize', this.handleResize)
