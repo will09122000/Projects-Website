@@ -10,10 +10,10 @@
           class="bg-secondary text-white"
         >
           <q-tab name="ALevel" label="A-Level" />
-          <q-tab name="Personal" label="Personal" />
           <q-tab name="1st Year" label="1st Year" />
           <q-tab name="2nd Year" label="2nd Year" />
           <q-tab name="3rd Year" label="3rd Year" />
+          <q-tab name="Personal" label="Personal" />
         </q-tabs>
 
         <q-separator dark inset/>
@@ -27,238 +27,7 @@
                 outside-arrows
             >
             </q-tabs>
-            <div class="bg-grey-8 text-center">
-                <div class="text-h3 q-mb-sm">
-                    <q-img
-                    src="../assets/RowData_logo.png"
-                    spinner-color="white"
-                    width="20%"
-                    class="q-mt-sm"
-                    />
-                </div>
-                <q-icon name="fab fa-python" size="80px"/>
-                <q-separator dark class="q-mt-sm"/>
-                <div class="row q-py-md q-gutter-md justify-center">
-                  <q-card dark bordered class="my-card-wide">
-                    <q-card-section><div class="text-h6">RowData</div></q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>{{text.ALevel.RowData.RowData}}</q-card-section>
-                    <q-dialog
-                        v-model="RowDataFullscreen"
-                        persistent
-                        :maximized="maximizedToggle"
-                    >
-                      <q-card class="bg-grey-8 text-white">
-                        <q-bar class="bg-secondary">
-                            <div class="text-body-2">
-                            RowData
-                            </div>
-                            <q-space />
-                            <q-btn flat icon="close" v-close-popup>
-                            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                            </q-btn>
-                        </q-bar>
-                        <q-card-section class="row justify-center">
-                          <q-img
-                          src="../assets/rowing_monitor.jpg"
-                          spinner-color="white"
-                          />
-                        </q-card-section>
-                      </q-card>
-                    </q-dialog>
-                    <q-img
-                      src="../assets/rowing_monitor.jpg"
-                      spinner-color="white"
-                    />
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataFullscreen = true" />
-
-                  </q-card>
-                  <q-card dark bordered class="my-card-wide">
-                    <q-card-section><div class="text-h6">Log In</div></q-card-section>
-                    <q-separator dark inset />
-                    <q-card-section>{{text.ALevel.RowData.Login}}</q-card-section>
-                    <q-dialog
-                        v-model="RowDataLoginFullscreen"
-                        persistent
-                        :maximized="maximizedToggle"
-                    >
-                      <q-card class="bg-grey-8 text-white">
-                        <q-bar class="bg-secondary">
-                            <div class="text-body-2">
-                            RowData Log In
-                            </div>
-                            <q-space />
-                            <q-btn flat icon="close" v-close-popup>
-                            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                            </q-btn>
-                        </q-bar>
-                        <q-card-section class="row justify-center">
-                            <q-img
-                            src="../assets/RowData_login.png"
-                            spinner-color="white"
-                            />
-                        </q-card-section>
-                      </q-card>
-                    </q-dialog>
-                    <q-img
-                        src="../assets/RowData_login.png"
-                        spinner-color="white"
-                    >
-                    </q-img>
-                    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataLoginFullscreen = true" />
-                  </q-card>
-                  <q-card dark bordered class="my-card-wide">
-                  <q-card-section><div class="text-h6">Main Menu</div></q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section>{{text.ALevel.RowData.Menu}}</q-card-section>
-                  <q-dialog
-                      v-model="RowDataMenuFullscreen"
-                      persistent
-                      :maximized="maximizedToggle"
-                  >
-                    <q-card class="bg-grey-8 text-white">
-                    <q-bar class="bg-secondary">
-                        <div class="text-body-2">
-                        RowData Menu
-                        </div>
-                        <q-space />
-                        <q-btn flat icon="close" v-close-popup>
-                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                        </q-btn>
-                    </q-bar>
-                    <q-card-section class="row justify-center">
-                        <q-img
-                        src="../assets/RowData_menu.png"
-                        spinner-color="white"
-                        />
-                    </q-card-section>
-                    </q-card>
-                  </q-dialog>
-                  <q-img
-                      src="../assets/RowData_menu.png"
-                      spinner-color="white"
-                  >
-                  </q-img>
-                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataMenuFullscreen = true" />
-                  </q-card>
-
-                  <q-card dark bordered class="my-card-wide">
-                  <q-card-section><div class="text-h6">Just Row</div></q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section>{{text.ALevel.RowData.Justrow}}</q-card-section>
-                  <q-dialog
-                      v-model="RowDataJustrowFullscreen"
-                      persistent
-                      :maximized="maximizedToggle"
-                  >
-                    <q-card class="bg-grey-8 text-white">
-                    <q-bar class="bg-secondary">
-                        <div class="text-body-2">
-                        RowData Just Row
-                        </div>
-                        <q-space />
-                        <q-btn flat icon="close" v-close-popup>
-                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                        </q-btn>
-                    </q-bar>
-                    <q-card-section class="row justify-center">
-                        <q-img
-                        src="../assets/RowData_justrow.png"
-                        spinner-color="white"
-                        />
-                    </q-card-section>
-                    </q-card>
-                  </q-dialog>
-                  <q-img
-                      src="../assets/RowData_justrow.png"
-                      spinner-color="white"
-                  >
-                  </q-img>
-                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataJustrowFullscreen = true" />
-                  </q-card>
-
-                  <q-card dark bordered class="my-card-wide">
-                  <q-card-section><div class="text-h6">Rowing Summary</div></q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section>{{text.ALevel.RowData.Summary}}</q-card-section>
-                  <q-dialog
-                      v-model="RowDataSummaryFullscreen"
-                      persistent
-                      :maximized="maximizedToggle"
-                  >
-                    <q-card class="bg-grey-8 text-white">
-                    <q-bar class="bg-secondary">
-                        <div class="text-body-2">
-                        RowData Rowing Summary
-                        </div>
-                        <q-space />
-                        <q-btn flat icon="close" v-close-popup>
-                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                        </q-btn>
-                    </q-bar>
-                    <q-card-section class="row justify-center">
-                        <q-img
-                        src="../assets/RowData_summary.png"
-                        spinner-color="white"
-                        />
-                    </q-card-section>
-                    </q-card>
-                  </q-dialog>
-                  <q-img
-                      src="../assets/RowData_summary.png"
-                      spinner-color="white"
-                  >
-                  </q-img>
-                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataSummaryFullscreen = true" />
-                  </q-card>
-
-                  <q-card dark bordered class="my-card-wide">
-                  <q-card-section><div class="text-h6">Personal Best</div></q-card-section>
-                  <q-separator dark inset />
-                  <q-card-section>{{text.ALevel.RowData.Pb}}</q-card-section>
-                  <q-dialog
-                      v-model="RowDataPBFullscreen"
-                      persistent
-                      :maximized="maximizedToggle"
-                  >
-                    <q-card class="bg-grey-8 text-white">
-                    <q-bar class="bg-secondary">
-                        <div class="text-body-2">
-                        RowData Personal Best
-                        </div>
-                        <q-space />
-                        <q-btn flat icon="close" v-close-popup>
-                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-                        </q-btn>
-                    </q-bar>
-                    <q-card-section class="row justify-center">
-                        <q-img
-                        src="../assets/RowData_pb.png"
-                        spinner-color="white"
-                        />
-                    </q-card-section>
-                    </q-card>
-                  </q-dialog>
-                  <q-img
-                      src="../assets/RowData_pb.png"
-                      spinner-color="white"
-                  >
-                  </q-img>
-                  <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="RowDataPBFullscreen = true" />
-                  </q-card>
-              </div>
-              <q-footer elevated>
-                  <q-toolbar class="bg-secondary text-white">
-                  <div class="text-left text-body2 q-mr-sm">
-                      RowData
-                  </div>
-                  <q-separator dark vertical inset />
-                  <q-icon name="fab fa-python" size="30px" class="q-ml-xs"/>
-                  <q-toolbar-title class="text-right"></q-toolbar-title>
-                  <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/RowData')"/>
-                  </q-toolbar>
-              </q-footer>
-            </div>
+            <rowData/>
           </q-tab-panel>
 
           <q-tab-panel name="Personal">
@@ -1680,6 +1449,8 @@ import axios from 'axios'
 import openURL from 'quasar'
 import TextJson from '../text.json'
 
+import rowData from './portfolio/alevel/rowData.vue'
+
 export default {
   methods: {
     redirect: function (text) {
@@ -1694,6 +1465,9 @@ export default {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       this.window.height = `${window.innerHeight}px`
     }
+  },
+  components: {
+    rowData
   },
   data () {
     return {

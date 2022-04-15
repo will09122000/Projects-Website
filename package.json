@@ -17,6 +17,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "firebase": "^7.17.1",
+    "firebase-tools": "^10.6.0",
     "prismjs": "^1.21.0",
     "quasar": "^1.15.23",
     "vue-code-highlight": "^0.7.4",
@@ -39,7 +40,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.1.2",
-    "fork-ts-checker-webpack-plugin": "^6.3.3",
+    "fork-ts-checker-webpack-plugin": "^7.2.6",
     "strip-ansi": "=3.0.1"
   },
   "browserslist": [
