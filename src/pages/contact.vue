@@ -24,7 +24,7 @@
                             style="max-width: 95px; height:25px;"
                           />
           </q-item-section>
-          <q-btn icon="content_copy" size="sm" v-on:click="copy('07411137158')" class="bg-secondary"/>
+          <q-btn icon="content_copy" size="sm" v-on:click="copy('07411137157')" class="bg-secondary"/>
         </q-item>
 
         <q-item>
