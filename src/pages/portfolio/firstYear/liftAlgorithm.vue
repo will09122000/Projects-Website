@@ -2,6 +2,7 @@
 <div class="bg-grey-8 text-center">
   <div class="text-h3 q-mb-sm">Lift Algorithm</div>
   <div class="text-h5 q-mt-sm">Module: Data Structures and Algorithms</div>
+  <div class="text-h5 q-mt-sm">Grade: 90%</div>
   <q-icon name="fab fa-python" size="80px" />
   <q-separator dark class="q-mt-sm" />
   <div class="row q-py-md q-gutter-md justify-center">

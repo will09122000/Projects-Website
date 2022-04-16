@@ -2,6 +2,7 @@
 <div class="bg-grey-8 text-center">
   <div class="text-h3">Task Manager</div>
   <div class="text-h5">Module: Web Development</div>
+  <div class="text-h5 q-mt-sm">Grade: 73%</div>
   <q-icon name="fab fa-php" size="80px" />
   <q-separator dark class="q-mt-sm" />
   <div class="row q-py-md q-gutter-md justify-center">

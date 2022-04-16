@@ -2,6 +2,7 @@
 <div class="bg-grey-8 text-center">
   <div class="text-h3 q-mb-sm">Beanbag Store</div>
   <div class="text-h5 q-mt-sm">Module: Object-Oritentated Programming</div>
+  <div class="text-h5 q-mt-sm">Grade: 87%</div>
   <q-icon name="fab fa-java" size="80px" />
   <q-separator dark class="q-mt-sm" />
   <div class="row q-py-md q-gutter-md">
