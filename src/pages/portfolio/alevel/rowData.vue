@@ -18,7 +18,7 @@
       </q-card-section>
       <q-separator dark inset />
       <q-card-section>{{text.ALevel.RowData.Login}}</q-card-section>
-      <customImage filename="RowData_login.png" imageDescription="Log In"/>
+      <customImage filename="RowData_login.png" imageDescription="Log In" />
     </q-card>
 
     <q-card dark bordered class="my-card-wide">
@@ -27,7 +27,7 @@
       </q-card-section>
       <q-separator dark inset />
       <q-card-section>{{text.ALevel.RowData.Menu}}</q-card-section>
-      <customImage filename="RowData_menu.png" imageDescription="Main Menu"/>
+      <customImage filename="RowData_menu.png" imageDescription="Main Menu" />
     </q-card>
 
     <q-card dark bordered class="my-card-wide">
@@ -36,7 +36,7 @@
       </q-card-section>
       <q-separator dark inset />
       <q-card-section>{{text.ALevel.RowData.Justrow}}</q-card-section>
-      <customImage filename="RowData_justrow.png" imageDescription="Just Row"/>
+      <customImage filename="RowData_justrow.png" imageDescription="Just Row" />
     </q-card>
 
     <q-card dark bordered class="my-card-wide">
@@ -45,7 +45,7 @@
       </q-card-section>
       <q-separator dark inset />
       <q-card-section>{{text.ALevel.RowData.Summary}}</q-card-section>
-      <customImage filename="RowData_summary.png" imageDescription="Rowing Summary"/>
+      <customImage filename="RowData_summary.png" imageDescription="Rowing Summary" />
     </q-card>
 
     <q-card dark bordered class="my-card-wide">
@@ -54,7 +54,7 @@
       </q-card-section>
       <q-separator dark inset />
       <q-card-section>{{text.ALevel.RowData.Pb}}</q-card-section>
-      <customImage filename="RowData_pb.png" imageDescription="Personal Best"/>
+      <customImage filename="RowData_pb.png" imageDescription="Personal Best" />
     </q-card>
 
   </div>
@@ -66,23 +66,19 @@
       <q-separator dark vertical inset />
       <q-icon name="fab fa-python" size="30px" class="q-ml-xs" />
       <q-toolbar-title class="text-right"></q-toolbar-title>
-      <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/RowData')" />
+      <q-btn class="redirect" type="a" label="GitHub" href="https://github.com/will09122000/RowData" icon="open_in_new" color="primary" target="_blank" />
     </q-toolbar>
   </q-footer>
 </div>
 </template>
 
 <script>
-import openURL from 'quasar'
 import textJson from '../../../text.json'
 import customImage from '../../../components/image.vue'
 
 export default {
-  components: { customImage },
-  methods: {
-    redirect: function (text) {
-      openURL(text)
-    }
+  components: {
+    customImage
   },
   data () {
     return {

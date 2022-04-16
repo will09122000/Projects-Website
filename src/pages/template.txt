@@ -1,0 +1,21 @@
+<template>
+<div class="bg-grey-8 text-center">
+
+</div>
+</template>
+
+<script>
+import textJson from '../../../text.json'
+import customImage from '../../../components/image.vue'
+
+export default {
+  components: {
+    customImage
+  },
+  data () {
+    return {
+      text: textJson
+    }
+  }
+}
+</script>
