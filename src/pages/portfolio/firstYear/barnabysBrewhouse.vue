@@ -5,20 +5,12 @@
   <div class="text-h5 q-mt-sm">Grade: 98%</div>
   <q-icon name="fab fa-python" size="80px" />
   <q-separator dark class="q-mt-sm" />
-  <div class="row q-py-md q-gutter-md justify-center">
 
-    <q-card dark bordered class="bg-grey-9 my-card">
-      <q-card-section>
-        <div class="text-h6">Barnaby's Brewhouse</div>
-      </q-card-section>
-      <q-separator dark inset />
-      <q-card-section class="q-mb-xl">
-        {{text.First_Year.Barnabys_Brewhouse.Main}}
-      </q-card-section>
-      <div class="q-py-md absolute-bottom">
-        <q-btn class="redirect" type="a" label="barnabys_brewhouse.py" href="https://github.com/will09122000/Barnabys-Brewhouse/blob/master/barnabys_brewhouse.py" icon="open_in_new" color="primary" target="_blank" />
-      </div>
-    </q-card>
+  <div class="text-body-2 q-pa-md">
+    {{text.First_Year.Barnabys_Brewhouse.Main}}
+  </div>
+
+  <div class="row q-py-md q-gutter-md justify-center">
 
     <q-card dark bordered class="bg-grey-9 my-card">
       <q-card-section>

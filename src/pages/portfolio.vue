@@ -169,7 +169,7 @@
             <q-tab-panels v-model="third_year" animated class="bg-purple-1 text-center">
 
               <q-tab-panel name="Workout Planner" class="bg-grey-8">
-                <card-game/>
+                <workout-planner/>
               </q-tab-panel>
 
               <q-tab-panel name="Street Scene" class="bg-grey-8">
@@ -225,6 +225,8 @@ import eightPuzzleProblem from './portfolio/secondYear/eightPuzzleProblem.vue'
 import postOfficeQueues from './portfolio/secondYear/postOfficeQueues.vue'
 import vaccineOrdering from './portfolio/secondYear/vaccineOrdering.vue'
 
+import workoutPlanner from './portfolio/thirdYear/workoutPlanner.vue'
+
 export default {
   methods: {
     redirect: function (text) {
@@ -257,7 +259,8 @@ export default {
     unite,
     eightPuzzleProblem,
     postOfficeQueues,
-    vaccineOrdering
+    vaccineOrdering,
+    workoutPlanner
   },
   data () {
     return {

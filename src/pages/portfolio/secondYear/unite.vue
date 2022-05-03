@@ -8,17 +8,12 @@
   <div class="text-h5 q-mt-sm">Grade: 87%</div>
   <q-icon name="fab fa-react" size="80px" />
   <q-separator dark class="q-mt-sm" />
-  <div class="row q-py-md q-gutter-md justify-center">
 
-    <q-card dark bordered class="bg-grey-9">
-      <q-card-section>
-        <div class="text-h6">Unite</div>
-      </q-card-section>
-      <q-separator dark inset />
-      <q-card-section>
-        {{text.Second_Year.Unite.Main}}
-      </q-card-section>
-    </q-card>
+  <div class="text-body-2 q-pa-md">
+    {{text.Second_Year.Unite.Main}}
+  </div>
+
+  <div class="row q-py-md q-gutter-md justify-center">
 
     <div class="my-row">
       <q-card dark bordered class="bg-grey-9 my-column">

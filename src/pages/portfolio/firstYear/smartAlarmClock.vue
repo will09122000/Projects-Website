@@ -5,20 +5,12 @@
   <div class="text-h5 q-mt-sm">Grade: 90%</div>
   <q-icon name="fab fa-python" size="80px" />
   <q-separator dark class="q-mt-sm" />
-  <div class="row q-py-md q-gutter-md justify-center">
 
-    <q-card dark bordered class="bg-grey-9 my-card">
-      <q-card-section>
-        <div class="text-h6">Smart Alarm Clock</div>
-      </q-card-section>
-      <q-separator dark inset />
-      <q-card-section class="q-mb-xl">
-        {{text.First_Year.Smart_Alarm_Clock.Main}}
-      </q-card-section>
-      <div class="q-py-md absolute-bottom">
-        <q-btn class="redirect" type="a" label="Smart_Alarm_Clock.py" href="https://github.com/will09122000/Smart-Alarm-Clock/blob/master/Smart_Alarm_Clock.py" icon="open_in_new" color="primary" target="_blank" />
-      </div>
-    </q-card>
+  <div class="text-body-2 q-pa-md">
+    {{text.First_Year.Smart_Alarm_Clock.Main}}
+  </div>
+
+  <div class="row q-py-md q-gutter-md justify-center">
 
     <q-card dark bordered class="bg-grey-9 my-card">
       <q-card-section>
@@ -93,7 +85,7 @@
       <q-separator dark vertical inset />
       <q-icon name="fab fa-python" size="30px" class="q-ml-xs" />
       <q-toolbar-title class="text-right"></q-toolbar-title>
-      <q-btn class="redirect" type="a" label="GitHub.py" href="https://github.com/will09122000/Smart-Alarm-Clock" icon="open_in_new" color="primary" target="_blank" />
+      <q-btn class="redirect" type="a" label="GitHub" href="https://github.com/will09122000/Smart-Alarm-Clock" icon="open_in_new" color="primary" target="_blank" />
     </q-toolbar>
   </q-footer>
 </div>

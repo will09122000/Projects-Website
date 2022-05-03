@@ -5,19 +5,12 @@
   <div class="text-h5 q-mt-sm">Grade: 87%</div>
   <q-icon name="fab fa-java" size="80px" />
   <q-separator dark class="q-mt-sm" />
+
+  <div class="text-body-2 q-pa-md">
+    {{text.First_Year.Beanbag_Store.Main}}
+  </div>
+
   <div class="row q-py-md q-gutter-md">
-    <q-card dark bordered class="bg-grey-9 row justify-center">
-      <q-card-section>
-        <div class="text-h6">Beanbag Store</div>
-      </q-card-section>
-      <q-separator dark inset />
-      <q-card-section class="q-mb-xl">
-        {{text.First_Year.Beanbag_Store.Main}}
-      </q-card-section>
-      <div class="q-py-md absolute-bottom">
-        <q-btn class="redirect" type="a" label="Source" href="https://github.com/will09122000/Beanbag-Store/tree/master/src/beanbags" icon="open_in_new" color="primary" target="_blank" />
-      </div>
-    </q-card>
     <q-card dark bordered class="bg-grey-9 row justify-center">
       <q-card-section>
         <div class="text-h6">What did I learn?</div>
@@ -28,6 +21,7 @@
       </q-card-section>
     </q-card>
   </div>
+
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">
       <div class="text-left text-body2 q-mr-sm">

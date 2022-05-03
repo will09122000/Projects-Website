@@ -5,23 +5,16 @@
   <div class="text-h5 q-mt-sm">Grade: 88%</div>
   <q-icon name="fab fa-python" size="80px" />
   <q-separator dark class="q-mt-sm" />
+
+  <div class="text-body-2 q-pa-md">
+    {{text.First_Year.Countdown_Simulator.a}} <br>
+    {{text.First_Year.Countdown_Simulator.b}} <br>
+    {{text.First_Year.Countdown_Simulator.c}} <br>
+    {{text.First_Year.Countdown_Simulator.d}} <br>
+    {{text.First_Year.Countdown_Simulator.e}} <br>
+  </div>
+
   <div class="row q-py-md q-gutter-md justify-center">
-    <q-card dark bordered class="bg-grey-9">
-      <q-card-section>
-        <div class="text-h6">Countdown Simulator</div>
-      </q-card-section>
-      <q-separator dark inset />
-      <q-card-section class="q-mb-xl">
-        {{text.First_Year.Countdown_Simulator.a}} <br>
-        {{text.First_Year.Countdown_Simulator.b}} <br>
-        {{text.First_Year.Countdown_Simulator.c}} <br>
-        {{text.First_Year.Countdown_Simulator.d}} <br>
-        {{text.First_Year.Countdown_Simulator.e}} <br>
-      </q-card-section>
-      <div class="q-py-md absolute-bottom">
-        <q-btn class="redirect" type="a" label="GitHub" href="https://github.com/will09122000/Countdown-Simulator/blob/master/Countdown%20Simulator/countdown_simulator.py" icon="open_in_new" color="primary" target="_blank" />
-      </div>
-    </q-card>
     <q-card dark bordered class="bg-grey-9">
       <q-card-section>
         <div class="text-h6">What did I learn?</div>
@@ -32,6 +25,7 @@
       </q-card-section>
     </q-card>
   </div>
+
   <customImage filename="countdown_simulator_0.png" imageDescription="Countdown Simulator" />
 
   <q-footer elevated>
