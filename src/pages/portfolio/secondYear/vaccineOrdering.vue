@@ -8,6 +8,25 @@
   </div>
   <q-separator dark class="q-mt-sm" />
 
+  <div class="text-body-2 q-pa-md">
+    {{text.Second_Year.Vaccine_Ordering.Main}}
+  </div>
+
+  <div class="row q-py-md q-gutter-md justify-center">
+
+    <q-card dark bordered class="bg-grey-9 my-card">
+      <q-card-section>
+        <div class="text-h6">What did I learn?</div>
+      </q-card-section>
+      <q-separator dark inset />
+      <q-card-section class="q-mb-xl">
+        {{text.Second_Year.Vaccine_Ordering.WDIL}}
+      </q-card-section>
+    </q-card>
+  </div>
+
+  <customImage filename="vaccine-ordering.png" imageDescription="Vaccine Ordering Example" />
+
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">
       <div class="text-left text-body2 q-mr-sm">
@@ -24,8 +43,12 @@
 
 <script>
 import textJson from '../../../text.json'
+import customImage from '../../../components/image.vue'
 
 export default {
+  components: {
+    customImage
+  },
   data () {
     return {
       text: textJson

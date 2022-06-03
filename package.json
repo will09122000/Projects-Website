@@ -22,7 +22,7 @@
     "prismjs": "^1.21.0",
     "quasar": "^1.15.23",
     "vue-code-highlight": "^0.7.4",
-    "vue-i18n": "^8.0.0",
+    "vue-i18n": "8.27.1",
     "vue-pdf": "^4.3.0",
     "vue-resize-text": "^0.1.1"
   },

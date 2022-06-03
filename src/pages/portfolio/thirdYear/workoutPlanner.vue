@@ -4,6 +4,7 @@
   <div class="text-h5 q-mt-sm">Module: Individual Literature Review and Project</div>
   <div class="text-h5 q-mt-sm">Grade: x%</div>
   <q-icon name="fab fa-swift" size="80px" />
+  <q-icon name="fab fa-python" size="80px" />
   <q-separator dark class="q-mt-sm" />
 
   <div class="text-body-2 q-pa-md">
@@ -50,8 +51,9 @@
       </div>
       <q-separator dark vertical inset />
       <q-icon name="fab fa-swift" size="30px" class="q-ml-xs" />
+      <q-icon name="fab fa-python" size="30px" />
       <q-toolbar-title class="text-right"></q-toolbar-title>
-      <q-btn class="redirect" type="a" label="GitHub" href="https://github.com/will09122000/ECM2423_Coursework/blob/main/question_1.2.py" icon="open_in_new" color="primary" target="_blank" />
+      <q-btn class="redirect" type="a" label="GitHub" href="https://github.com/Resistance-Training-App" icon="open_in_new" color="primary" target="_blank" />
     </q-toolbar>
   </q-footer>
 </div>

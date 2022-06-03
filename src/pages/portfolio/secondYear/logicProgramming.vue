@@ -55,7 +55,7 @@
       </q-card-section>
       <q-separator dark inset />
       <q-card-section class="q-mb-xl">
-        {{text.Second_Year.Functional_Programming.WDIL}}
+        {{text.Second_Year.Logical_Programming.WDIL}}
       </q-card-section>
     </q-card>
 

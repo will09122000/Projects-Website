@@ -41,7 +41,7 @@
           "WDIL": "This coursework was the first time I had used the Python library 'Flask' (a micro web application framework); This furthered my knowledge in HTTP methods such as GET and POST along with building a simple web layout with HTML and CSS."
       },
       "Barnabys_Brewhouse": {
-        "Main": "This program provides multiple features to make processing beer and decision making easier for Barnaby's Brewhouse. This is achieved through python and basic html/css using the flask library to display a web interface",
+        "Main": "This program provides multiple features to make processing beer and decision making easier for Barnaby's Brewhouse. This is achieved through python and basic html/css using the flask library to display a web interface.",
         "Batch_Management": "This module is responsible for handling the creation, movement and termination of batches created from the user interface. It allows the user to upload a new batch of beer with the choice of a tank preference and if not the most suitable tank is automatically picked displaying all batches currently being processed.",
         "Tank_Management": "This module is responsible for fetching the status of each tank. The status of each tank is then displayed with details of the batch inside each tank.",
         "Inventory": "This module handles fetching the inventory from the json file and updating the inventory when a manual update is requested. The inventory is then displayed for each beer enabling them to update the stock manually in case beers are returned or other unforeseen circumstances.",
@@ -73,10 +73,7 @@
     "Second_Year": {
       "Card_Game": {
         "Main": "This coursework was a pair-programming exercise. We developed in Java, a multi-threaded card playing simulation. Within the design we implemented a thread-safe Card class, Card Deck, and a Player class. The program then runs from the executable CardGame class.",
-        "Card_Class": "",
-        "Card_Deck_Class": "",
-        "Player_Class": "",
-        "WDIL": ""
+        "WDIL": "The module as a whole including this coursework gave me a greater understanding on threading. It also taught me how to create multi-threaded programs more complex than very basic multi-threaded examples."
       },
       "Functional_Programming": {
         "Question_1_1": "The aim of the first question was to create a haskell program that could validate answers and find all solutions to the following puzzle. A puzzle requires one to find six-digit numbers where:",
@@ -89,7 +86,7 @@
         "Question_2_3": "Any dead cell with three live neighbours becomes alive.",
         "Question_2_4": "All other live cells die, and all other dead cells stay dead",
         "Question_2_5": "The next generation is created by applying the rules simultaneously to every cell in the current generation, so that births and deaths occur simultaneously.",
-        "WDIL": ""
+        "WDIL": "This was both the first time using Haskell and using a functional programming language in general. At first, I found the syntax confusing and hard to use. But after this coursework I was much more confident in writing in Haskell and understanding functional programming."
       },
       "Logical_Programming": {
         "Question_1_1": "The first question in this coursework was to create a prolog program that could solve a particular niner puzzle published by the Exeter Express. Each number from 1 to 9 represents a different letter. Solve the clues and insert the letters in the appropriate squares to discover a word which uses all nine letters.",
@@ -101,23 +98,28 @@
         "Question_2_3": "A pair of PARs is a PARTY if no digit is repeated and each PAR is a multiple of the missing positive digit.",
         "Question_2_4": "I wrote down a PAR and challenged Sam to use it to make a PARTY. He was successful.",
         "Question_2_5": "I then challenged Beth to use my PAR and the digits in Sam’s PAR to make a different PARTY. She too was successful. What was my PAR?",
-        "WDIL": ""
+        "WDIL": "Similar to the previous functional programming coursework, this was both the first time using Prolog and using a logic programming language in general. While working on this coursework, I gained a much stronger understanding of the logic programming paradigm."
       },
       "Unite": {
-        "Main": "Main text.",
+        "Main": "Unite is a mobile application for designed for students at university. Students would ask questions related to their course and other students on the same course could reply with answers. As gamification was required as part of the specification, a points system was implemented based on the number of questions a student would ask, against the number they would answer. Students could earn badges as they use the app and leaderboards would display the top students answering the most questions.",
         "Feedback_1": "Will always delivers at completing tasks on the board and is great at giving direction to other members of the team.",
         "Feedback_2": "Will demonstrated a fantastic grasp of serverside technologies, and was especially quick at learning new things too.",
         "Feedback_3": "Will set up many of the technologies used and performed many of the technical tasks very well.",
-        "WDIL": ""
+        "WDIL": "This was the first time I had worked in a larger team in an agile software development environment. It was also my first time using React and TypeScript. The deadline for this coursework was very short, so I took control of taking control and delegating tasks in order to complete the coursework on time."
       },
       "Puzzle_Problem": {
         "Main": "The aim of the 8-puzzle is to reach a predefined configuration of tiles from another configuration of tiles. The 8-puzzle problem can be seen as a search problem due to its following attributes. First, the puzzle has discrete states, these different states are dependent on the position of each tile in the puzzle. One tile is missing enabling a tile next to it to move into that position. The puzzle has four operators, the missing tile can either move up, down, left, or down. Also, the puzzle has an end goal, this goal can any one of the possible states the puzzle can be in. In this question, the goal state is to have the missing tile in the top right with the rest of the tiles in ascending order. Lastly, a search problem requires a path cost. In this puzzle, the path cost is equal to one each time a tile is moved into the missing tile space.",
         "Manhattan": "The first heuristic function I have picked is the sum of ‘Manhattan’ distances each tile is away from its goal position. So the closer the tiles are to their goal position, the smaller the heuristic value gets. It’s called the ‘Manhattan’ distance because it’s the number of rows plus the number of columns away from the target rather than a direct distance as the crow flies. I chose this type of distance because it is a better representation of how tiles move in the puzzle and therefore should be a better heuristic.",
-        "Euclidean": "The second heuristic function I have picked is the sum of ‘Euclidean’ distances each tile is away from its goal position. This is similar to the first heuristic but instead the distances are defined as a direct distance as the crow flies. I predict that this heuristic will not perform as well as the first once. I chose this heuristic because I wanted to see if I was correct and if so, how big the solving time is between these two heuristics.",
-        "WDIL": ""
+        "Euclidean": "The second heuristic function I have picked is the sum of ‘Euclidean’ distances each tile is away from its goal position. This is similar to the first heuristic but instead the distances are defined as a direct distance as the crow flies. I predict that this heuristic will not perform as well as the first once. I chose this heuristic because I wanted to see if I was correct and if so, how big the solving time is between these two heuristics."
       },
-      "Post_Office_Queue": {},
-      "Vaccine_Ordering": {}
+      "Post_Office_Queue": {
+        "Main": "The aim of this coursework was to simulate queues at a post office, whereby a single queue of people are waiting for to be served by any of the multiple service points.",
+        "WDIL": "This was my first time using the C programming language. It was also my first time using pointers within a larger system, rather than smaller examples."
+      },
+      "Vaccine_Ordering": {
+        "Main": "The aim of this coursework was to create a customer ordering system for vaccines. The overall design of my system includes classes in separate files to represent single entities of customers, invoices, and orders. There is also a file named ‘fileIO’ which validates and reads the input file. Lastly, my main function can be found in the file named ‘ordering’ which also contains other functions such as adding new customers and orders. ",
+        "WDIL": "This was my first time using the C++ programming language."
+      }
     },
     "Third_Year": {
       "Workout_Planner": {

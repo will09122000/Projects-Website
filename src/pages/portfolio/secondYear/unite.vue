@@ -42,7 +42,7 @@
     </div>
   </div>
 
-  <customImage filename="poster.png" imageDescription="Unite" />
+  <customImage filename="unite_poster.png" imageDescription="Unite" />
 
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">

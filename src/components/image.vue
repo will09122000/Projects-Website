@@ -21,7 +21,7 @@
         {{ imageDescription }}
       </div>
     </q-img>
-    <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="fullscreen = true" />
+    <q-btn class="q-ma-lg absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="fullscreen = true" />
   </div>
 </template>
 

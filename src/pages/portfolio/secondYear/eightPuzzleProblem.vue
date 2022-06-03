@@ -33,21 +33,11 @@
         </q-card-section>
       </q-card>
     </div>
-
-    <q-card dark bordered class="bg-grey-9">
-      <q-card-section>
-        <div class="text-h6">What did I learn?</div>
-      </q-card-section>
-      <q-separator dark inset />
-      <q-card-section>
-        {{text.Second_Year.Puzzle_Problem.WDIL}}
-      </q-card-section>
-    </q-card>
   </div>
 
-    <customImage filename="8-puzzle_problem_2.png" imageDescription="Manhattan Distance Heuristic" />
-    <q-separator class="q-mt-md" />
-    <customImage filename="8-puzzle_problem_1.png" imageDescription="Euclidean Distance Heuristic" />
+  <customImage filename="8-puzzle_problem_2.png" imageDescription="Manhattan Distance Heuristic" />
+  <q-separator class="q-mt-md" />
+  <customImage filename="8-puzzle_problem_1.png" imageDescription="Euclidean Distance Heuristic" />
 
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">

@@ -25,7 +25,7 @@
           </ul>
         </q-card-section>
         <div class="q-py-md absolute-bottom">
-          <q-btn class="redirect" type="a" label="puzzle.hs" href="https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/puzzle.h" icon="open_in_new" color="primary" target="_blank" />
+          <q-btn class="redirect" type="a" label="puzzle.hs" href="https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/puzzle.hs" icon="open_in_new" color="primary" target="_blank" />
         </div>
       </q-card>
 
@@ -44,7 +44,7 @@
           {{text.Second_Year.Functional_Programming.Question_2_5}}
         </q-card-section>
         <div class="q-py-md absolute-bottom">
-          <q-btn class="redirect" type="a" label="GameOfLife.hs" href="https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/GameOfLife.h" icon="open_in_new" color="primary" target="_blank" />
+          <q-btn class="redirect" type="a" label="GameOfLife.hs" href="https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/GameOfLife.hs" icon="open_in_new" color="primary" target="_blank" />
         </div>
       </q-card>
     </div>
