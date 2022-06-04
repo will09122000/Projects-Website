@@ -1,34 +1,53 @@
 <template>
 <div class="bg-grey-8 text-center">
-  <div class="text-h3 q-mb-sm">Resistance Training App with Automatic Exercise Analysis</div>
+  <div class="text-h3 q-mb-sm">Workout Planner</div>
   <div class="text-h5 q-mt-sm">Module: Individual Literature Review and Project</div>
   <div class="text-h5 q-mt-sm">Grade: x%</div>
   <q-icon name="fab fa-swift" size="80px" />
   <q-icon name="fab fa-python" size="80px" />
   <q-separator dark class="q-mt-sm" />
 
-  <div class="text-body-2 q-pa-md">
-    {{text.Third_Year.Workout_Planner.a}}<br><br>
-    {{text.Third_Year.Workout_Planner.b}}<br><br>
-    {{text.Third_Year.Workout_Planner.c}}
+  <div class="row justify-center">
+    <div class="col q-pa-md" style="max-width: 1000px">
+      {{text.Third_Year.Workout_Planner.a}}<br><br>
+      {{text.Third_Year.Workout_Planner.b}}<br><br>
+      {{text.Third_Year.Workout_Planner.c}}
+    </div>
   </div>
 
   <div class="row q-py-md q-gutter-md justify-center">
 
-    <div class="my-row">
-
-      <q-card dark bordered class="bg-grey-9 my-column">
+      <q-card dark bordered class="my-card-wide">
         <q-card-section>
-          <div class="text-h6">Euclidean Distance Heuristic</div>
+          <div class="text-h6">iPhone App</div>
         </q-card-section>
         <q-separator dark inset />
-        <q-card-section>
-          {{text.Second_Year.Puzzle_Problem.Euclidean}}
-        </q-card-section>
+          <div class="row justify-center">
+            <div class="col q-pa-md">
+              <customImage filename="workout_planner_1.png" imageDescription="Workout list" :showButton="false"/>
+            </div>
+            <div class="col q-pa-md">
+              <customImage filename="workout_planner_2.png" imageDescription="Working Out" :showButton="false"/>
+            </div>
+          </div>
       </q-card>
-    </div>
 
-    <q-card dark bordered class="bg-grey-9">
+      <q-card dark bordered class="my-card-wide">
+        <q-card-section>
+          <div class="text-h6">Apple Watch App</div>
+        </q-card-section>
+        <q-separator dark inset />
+          <div class="row justify-center">
+            <div class="col q-pa-md">
+              <customImage filename="workout_planner_3.png" imageDescription="Workout list"/>
+            </div>
+            <div class="col q-pa-md">
+              <customImage filename="workout_planner_4.png" imageDescription="Working Out"/>
+            </div>
+          </div>
+      </q-card>
+
+    <q-card dark bordered class="my-card-wide">
       <q-card-section>
         <div class="text-h6">What did I learn?</div>
       </q-card-section>

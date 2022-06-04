@@ -16,12 +16,12 @@
       </q-card-section>
     </q-card>
     </q-dialog>
-    <q-img :src="require(`../assets/${filename}`)" spinner-color="white">
+    <q-img :src="require(`../assets/${filename}`)" spinner-color="white" :style="style">
       <div v-if="caption" class="absolute-bottom-left text-subtitle2">
         {{ imageDescription }}
       </div>
     </q-img>
-    <q-btn class="q-ma-lg absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="fullscreen = true" />
+    <!-- <q-btn class="q-ma-lg absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="fullscreen = true" /> -->
   </div>
 </template>
 
@@ -34,6 +34,6 @@ export default {
       maximizedToggle: true
     }
   },
-  props: ['filename', 'imageDescription', 'caption']
+  props: ['filename', 'imageDescription', 'caption', 'style']
 }
 </script>

@@ -9,12 +9,13 @@
   <q-icon name="fab fa-react" size="80px" />
   <q-separator dark class="q-mt-sm" />
 
-  <div class="text-body-2 q-pa-md">
-    {{text.Second_Year.Unite.Main}}
+  <div class="row justify-center">
+    <div class="col q-pa-md" style="max-width: 1000px">
+      {{text.Second_Year.Unite.Main}}
+    </div>
   </div>
 
   <div class="row q-py-md q-gutter-md justify-center">
-
     <div class="my-row">
       <q-card dark bordered class="bg-grey-9 my-column">
         <q-card-section>

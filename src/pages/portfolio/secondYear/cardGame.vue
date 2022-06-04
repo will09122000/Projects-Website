@@ -6,12 +6,13 @@
   <q-icon name="fab fa-java" size="80px" />
   <q-separator dark class="q-mt-sm" />
 
-  <div class="text-body-2 q-pa-md">
-    {{text.Second_Year.Card_Game.Main}}
+  <div class="row justify-center">
+    <div class="col q-pa-md" style="max-width: 1000px">
+      {{text.Second_Year.Card_Game.Main}}
+    </div>
   </div>
 
   <div class="row q-py-md q-gutter-md justify-center">
-
     <q-card dark bordered class="bg-grey-9 my-card">
       <q-card-section>
         <div class="text-h6">What did I learn?</div>
