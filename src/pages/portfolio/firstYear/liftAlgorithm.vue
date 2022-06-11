@@ -2,12 +2,12 @@
 <div class="bg-grey-8 text-center">
   <div class="text-h3 q-mb-sm">Lift Algorithm</div>
   <div class="text-h5 q-mt-sm">Module: Data Structures and Algorithms</div>
-  <div class="text-h5 q-mt-sm">Grade: 90%</div>
+  <div class="text-h5 q-mt-sm">Grade: 84%</div>
   <q-icon name="fab fa-python" size="80px" />
   <q-separator dark class="q-mt-sm" />
 
   <div class="row justify-center">
-    <div class="col q-pa-md" style="max-width: 1000px">
+    <div class="col q-pa-md text-body1" style="max-width: 1000px">
       {{text.First_Year.Lift_Algorithm.Main}}
     </div>
   </div>
@@ -41,6 +41,16 @@
       <q-separator dark inset />
       <q-card-section>
         {{text.First_Year.Lift_Algorithm.Improved_Algorithm}}
+      </q-card-section>
+    </q-card>
+
+    <q-card dark bordered class="bg-grey-9 my-card">
+      <q-card-section>
+        <div class="text-h6">Feedback</div>
+      </q-card-section>
+      <q-separator dark inset />
+      <q-card-section class="q-mb-xl">
+        {{text.First_Year.Lift_Algorithm.FB}}
       </q-card-section>
     </q-card>
 

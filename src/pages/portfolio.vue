@@ -162,7 +162,6 @@
             <q-tab name="Spotify Hit Predictor" label="Spotify Hit Predictor" />
             <q-tab name="Quickhull Algorithm" label="Quickhull Algorithm" />
             <q-tab name="Ant Colony Optimisation" label="Ant Colony Optimisation"/>
-            <q-tab name="Alexa" label="Alexa" />
           </q-tabs>
           <q-separator />
           <q-tab-panels v-model="third_year" animated class="bg-purple-1 text-center">
@@ -176,19 +175,15 @@
             </q-tab-panel>
 
             <q-tab-panel name="Spotify Hit Predictor" class="bg-grey-8">
-              <card-game/>
+              <spotify-hit-predictor/>
             </q-tab-panel>
 
             <q-tab-panel name="Quickhull Algorithm" class="bg-grey-8">
-              <card-game/>
+              <quickhull-algorithm/>
             </q-tab-panel>
 
             <q-tab-panel name="Ant Colony Optimisation" class="bg-grey-8">
-              <card-game/>
-            </q-tab-panel>
-
-            <q-tab-panel name="Alexa" class="bg-grey-8">
-              <card-game/>
+              <ant-colony-optimisation/>
             </q-tab-panel>
 
           </q-tab-panels>
@@ -225,6 +220,9 @@ import vaccineOrdering from './portfolio/secondYear/vaccineOrdering.vue'
 
 import workoutPlanner from './portfolio/thirdYear/workoutPlanner.vue'
 import streetScene from './portfolio/thirdYear/streetScene.vue'
+import spotifyHitPredictor from './portfolio/thirdYear/spotifyHitPredictor.vue'
+import quickhullAlgorithm from './portfolio/thirdYear/quickhullAlgorithm.vue'
+import AntColonyOptimisation from './portfolio/thirdYear/antColonyOptimisation.vue'
 
 export default {
   methods: {
@@ -260,7 +258,10 @@ export default {
     postOfficeQueues,
     vaccineOrdering,
     workoutPlanner,
-    streetScene
+    streetScene,
+    spotifyHitPredictor,
+    quickhullAlgorithm,
+    AntColonyOptimisation
   },
   data () {
     return {

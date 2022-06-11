@@ -7,7 +7,7 @@
   <q-separator dark class="q-mt-sm" />
 
   <div class="row justify-center">
-    <div class="col q-pa-md" style="max-width: 1000px">
+    <div class="col q-pa-md text-body1" style="max-width: 1000px">
       {{text.First_Year.Barnabys_Brewhouse.Main}}
     </div>
   </div>

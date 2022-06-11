@@ -9,12 +9,22 @@
   <q-separator dark class="q-mt-sm" />
 
   <div class="row justify-center">
-    <div class="col q-pa-md" style="max-width: 1000px">
+    <div class="col q-pa-md text-body1" style="max-width: 1000px">
       {{text.Second_Year.Vaccine_Ordering.Main}}
     </div>
   </div>
 
   <div class="row q-py-md q-gutter-md justify-center">
+
+    <q-card dark bordered class="bg-grey-9 my-card">
+      <q-card-section>
+        <div class="text-h6">Feedback</div>
+      </q-card-section>
+      <q-separator dark inset />
+      <q-card-section class="q-mb-xl">
+        {{text.Second_Year.Vaccine_Ordering.FB}}
+      </q-card-section>
+    </q-card>
 
     <q-card dark bordered class="bg-grey-9 my-card">
       <q-card-section>
@@ -25,6 +35,7 @@
         {{text.Second_Year.Vaccine_Ordering.WDIL}}
       </q-card-section>
     </q-card>
+
   </div>
 
   <customImage filename="vaccine-ordering.png" imageDescription="Vaccine Ordering Example" />

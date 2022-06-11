@@ -7,7 +7,7 @@
   <q-separator dark class="q-mt-sm" />
 
   <div class="row justify-center">
-    <div class="col q-pa-md" style="max-width: 1000px">
+    <div class="col q-pa-md text-body1" style="max-width: 1000px">
       {{text.First_Year.Task_Manager.Main}}
     </div>
   </div>
@@ -65,6 +65,16 @@
         <q-btn class="redirect" type="a" label="import_tasks.php" href="https://github.com/will09122000/Task-Manager/blob/master/import_tasks.php" icon="open_in_new" color="primary" target="_blank" />
         <q-btn class="redirect" type="a" label="export_tasks.php" href="https://github.com/will09122000/Task-Manager/blob/master/export_tasks.php" icon="open_in_new" color="primary" target="_blank" />
       </div>
+    </q-card>
+
+    <q-card dark bordered class="bg-grey-9 my-card">
+      <q-card-section>
+        <div class="text-h6">Feedback</div>
+      </q-card-section>
+      <q-separator dark inset />
+      <q-card-section class="q-mb-xl">
+        {{text.First_Year.Task_Manager.FB}}
+      </q-card-section>
     </q-card>
 
     <q-card dark bordered class="bg-grey-9 my-card">

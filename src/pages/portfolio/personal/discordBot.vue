@@ -5,7 +5,7 @@
   </div>
   <div class="text-h3 q-mb-sm">Discord Bot</div>
   <q-icon name="fab fa-js-square" size="80px" />
-  <div class="q-mt-md q-mb-md">
+  <div class="q-mt-md q-mb-md text-body1">
     {{text.Personal.Discord_Bot.a}}<br>
     {{text.Personal.Discord_Bot.b}}
   </div>

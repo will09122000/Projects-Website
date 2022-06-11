@@ -4,7 +4,7 @@
   <q-icon name="fab fa-python" size="80px" />
   <q-separator dark class="q-mt-sm" />
 
-  <div class="text-body-2 q-pa-md">
+  <div class="text-body-2 q-pa-md text-body1">
     {{text.Personal.Rally_Results_Reader}}
   </div>
 
