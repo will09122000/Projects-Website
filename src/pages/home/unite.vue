@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-h3 q-mb-sm">
-      <q-img src="../../assets/unite_logo.png" spinner-color="white" width="16%" class="q-mt-sm" />
+      <q-img src="../../assets/unite_logo.png" spinner-color="white" width="100px" class="q-mt-sm" />
     </div>
     <div v-resize-text="{maxFontSize: '80px', minFontSize: '35px'}">Unite</div>
     <div v-resize-text="{maxFontSize: '40px'}">Second Year</div>

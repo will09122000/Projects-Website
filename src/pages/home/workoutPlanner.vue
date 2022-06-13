@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-h3 q-mb-sm">
-      <q-img src="../../assets/workout_planner_logo.png" spinner-color="white" width="16%" class="q-mt-sm" />
+      <q-img src="../../assets/workout_planner_logo.png" spinner-color="white" width="100px" class="q-mt-sm" />
     </div>
     <div v-resize-text="{maxFontSize: '80px', minFontSize: '35px'}">Workout Planner</div>
     <div v-resize-text="{maxFontSize: '40px'}">Third Year</div>

@@ -13,8 +13,7 @@
   </div>
 
   <div class="row q-py-md q-gutter-md justify-center">
-    <div class="my-row">
-      <q-card dark bordered class="bg-grey-9 my-card">
+      <q-card dark bordered class="bg-grey-9 my-card-wide">
         <q-card-section>
           <div class="text-h6">Feedback</div>
         </q-card-section>
@@ -23,17 +22,6 @@
           {{text.Third_Year.Quickhull_Algorithm.FB}}
         </q-card-section>
       </q-card>
-
-      <q-card dark bordered class="bg-grey-9 my-card">
-        <q-card-section>
-          <div class="text-h6">What did I learn?</div>
-        </q-card-section>
-        <q-separator dark inset />
-        <q-card-section>
-          {{text.Third_Year.Quickhull_Algorithm.WDIL}}
-        </q-card-section>
-      </q-card>
-    </div>
   </div>
 
   <customImage filename="quickhull_algorithm.png" imageDescription="Calculating the convex hull from a 2D set of point using the Quickhull algorithm." />

@@ -13,7 +13,7 @@
         infinite
         padding
         arrows
-        :height=window.height
+        :height=(window.height)
         class="bg-secondary text-black shadow-1 rounded-borders"
       >
 

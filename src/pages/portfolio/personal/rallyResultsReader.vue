@@ -1,11 +1,16 @@
 <template>
 <div class="bg-grey-8 text-center">
+  <div class="text-h3 q-mb-sm">
+    <q-img src="../../../assets/eercdirt.png" spinner-color="white" width="20%" class="q-mt-sm" />
+  </div>
   <div class="text-h3 q-mb-sm">Rally Results Reader</div>
   <q-icon name="fab fa-python" size="80px" />
   <q-separator dark class="q-mt-sm" />
 
-  <div class="text-body-2 q-pa-md text-body1">
-    {{text.Personal.Rally_Results_Reader}}
+  <div class="row justify-center">
+    <div class="col q-pa-md text-body1" style="max-width: 1000px">
+      {{text.Personal.Rally_Results_Reader}}
+    </div>
   </div>
 
   <div class="text-h6 q-mb-sm">1. Ingests Rally Results Screenshot</div>
@@ -16,7 +21,7 @@
   <customImage filename="rally_results_reader_2.png" imageDescription="Rally Result CSV File"/>
   <br>
 
-  <div class="text-h6 q-mb-sm">3. CSV File Uploaded to <a href="https://beta.eerc.info/Leagues/DIRT"> Website</a></div>
+  <div class="text-h6 q-mb-sm">3. CSV File Uploaded to <a href="https://eerc.info/Leagues/DIRT">Website</a></div>
   <customImage filename="rally_results_reader_3.png" imageDescription="Rally Result CSV File"/>
 
   <q-footer elevated>

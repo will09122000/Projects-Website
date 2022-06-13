@@ -7,49 +7,48 @@
     <q-img src="../../../assets/haskell.png" spinner-color="white" width="13%" class="q-mt-sm" />
   </div>
   <q-separator dark class="q-mt-sm" />
+
   <div class="row q-py-md q-gutter-md justify-center">
-    <div class="my-row">
 
-      <q-card dark bordered class="bg-grey-9 my-column">
-        <q-card-section>
-          <div class="text-h6">Question 1</div>
-        </q-card-section>
-        <q-separator dark inset />
-        <q-card-section class="q-mb-xl">
-          {{text.Second_Year.Functional_Programming.Question_1_1}}
-          <ul>
-            <li class="list">{{text.Second_Year.Functional_Programming.Question_1_2}}</li>
-            <li class="list">{{text.Second_Year.Functional_Programming.Question_1_3}}</li>
-            <li class="list">{{text.Second_Year.Functional_Programming.Question_1_4}}</li>
-            <li class="list">{{text.Second_Year.Functional_Programming.Question_1_5}}</li>
-          </ul>
-        </q-card-section>
-        <div class="q-py-md absolute-bottom">
-          <q-btn class="redirect" type="a" label="puzzle.hs" href="https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/puzzle.hs" icon="open_in_new" color="primary" target="_blank" />
-        </div>
-      </q-card>
+    <q-card dark bordered class="bg-grey-9 my-card-wide">
+      <q-card-section>
+        <div class="text-h6">Question 1</div>
+      </q-card-section>
+      <q-separator dark inset />
+      <q-card-section class="q-mb-xl">
+        {{text.Second_Year.Functional_Programming.Question_1_1}}
+        <ul>
+          <li class="list">{{text.Second_Year.Functional_Programming.Question_1_2}}</li>
+          <li class="list">{{text.Second_Year.Functional_Programming.Question_1_3}}</li>
+          <li class="list">{{text.Second_Year.Functional_Programming.Question_1_4}}</li>
+          <li class="list">{{text.Second_Year.Functional_Programming.Question_1_5}}</li>
+        </ul>
+      </q-card-section>
+      <div class="q-py-md absolute-bottom">
+        <q-btn class="redirect" type="a" label="puzzle.hs" href="https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/puzzle.hs" icon="open_in_new" color="primary" target="_blank" />
+      </div>
+    </q-card>
 
-      <q-card dark bordered class="bg-grey-9 my-column">
-        <q-card-section>
-          <div class="text-h6">Question 2</div>
-        </q-card-section>
-        <q-separator dark inset />
-        <q-card-section class="q-mb-xl">
-          {{text.Second_Year.Functional_Programming.Question_2_1}}
-          <ul>
-            <li class="list">{{text.Second_Year.Functional_Programming.Question_2_2}}</li>
-            <li class="list">{{text.Second_Year.Functional_Programming.Question_2_3}}</li>
-            <li class="list">{{text.Second_Year.Functional_Programming.Question_2_4}}</li>
-          </ul>
-          {{text.Second_Year.Functional_Programming.Question_2_5}}
-        </q-card-section>
-        <div class="q-py-md absolute-bottom">
-          <q-btn class="redirect" type="a" label="GameOfLife.hs" href="https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/GameOfLife.hs" icon="open_in_new" color="primary" target="_blank" />
-        </div>
-      </q-card>
-    </div>
+    <q-card dark bordered class="bg-grey-9 my-card-wide">
+      <q-card-section>
+        <div class="text-h6">Question 2</div>
+      </q-card-section>
+      <q-separator dark inset />
+      <q-card-section class="q-mb-xl">
+        {{text.Second_Year.Functional_Programming.Question_2_1}}
+        <ul>
+          <li class="list">{{text.Second_Year.Functional_Programming.Question_2_2}}</li>
+          <li class="list">{{text.Second_Year.Functional_Programming.Question_2_3}}</li>
+          <li class="list">{{text.Second_Year.Functional_Programming.Question_2_4}}</li>
+        </ul>
+        {{text.Second_Year.Functional_Programming.Question_2_5}}
+      </q-card-section>
+      <div class="q-py-md absolute-bottom">
+        <q-btn class="redirect" type="a" label="GameOfLife.hs" href="https://github.com/will09122000/ECM2418-CA-Functional-Programming/blob/main/GameOfLife.hs" icon="open_in_new" color="primary" target="_blank" />
+      </div>
+    </q-card>
 
-    <q-card dark bordered class="bg-grey-9 my-column">
+    <q-card dark bordered class="bg-grey-9 my-card-wide">
       <q-card-section>
         <div class="text-h6">What did I learn?</div>
       </q-card-section>

@@ -13,28 +13,25 @@
   </div>
 
   <div class="row q-py-md q-gutter-md justify-center">
+    <q-card dark bordered class="bg-grey-9 my-card-wide">
+      <q-card-section>
+        <div class="text-h6">Manhattan Distance Heuristic</div>
+      </q-card-section>
+      <q-separator dark inset />
+      <q-card-section>
+        {{text.Second_Year.Puzzle_Problem.Manhattan}}
+      </q-card-section>
+    </q-card>
 
-    <div class="my-row">
-      <q-card dark bordered class="bg-grey-9 my-column">
-        <q-card-section>
-          <div class="text-h6">Manhattan Distance Heuristic</div>
-        </q-card-section>
-        <q-separator dark inset />
-        <q-card-section>
-          {{text.Second_Year.Puzzle_Problem.Manhattan}}
-        </q-card-section>
-      </q-card>
-
-      <q-card dark bordered class="bg-grey-9 my-column">
-        <q-card-section>
-          <div class="text-h6">Euclidean Distance Heuristic</div>
-        </q-card-section>
-        <q-separator dark inset />
-        <q-card-section>
-          {{text.Second_Year.Puzzle_Problem.Euclidean}}
-        </q-card-section>
-      </q-card>
-    </div>
+    <q-card dark bordered class="bg-grey-9 my-card-wide">
+      <q-card-section>
+        <div class="text-h6">Euclidean Distance Heuristic</div>
+      </q-card-section>
+      <q-separator dark inset />
+      <q-card-section>
+        {{text.Second_Year.Puzzle_Problem.Euclidean}}
+      </q-card-section>
+    </q-card>
   </div>
 
   <customImage filename="8-puzzle_problem_2.png" imageDescription="Manhattan Distance Heuristic" />

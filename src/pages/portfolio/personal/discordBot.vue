@@ -5,14 +5,16 @@
   </div>
   <div class="text-h3 q-mb-sm">Discord Bot</div>
   <q-icon name="fab fa-js-square" size="80px" />
-  <div class="q-mt-md q-mb-md text-body1">
-    {{text.Personal.Discord_Bot.a}}<br>
-    {{text.Personal.Discord_Bot.b}}
+  <div class="row justify-center">
+    <div class="col q-pa-md text-body1" style="max-width: 1000px">
+      {{text.Personal.Discord_Bot.a}}<br>
+      {{text.Personal.Discord_Bot.b}}
+    </div>
   </div>
   <q-separator dark class="q-mt-sm" />
   <div class="row q-py-md q-gutter-md justify-center">
 
-    <q-card dark bordered class="my-card-wide">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">Reminders</div>
       </q-card-section>
@@ -21,7 +23,7 @@
       <customImage filename="Discord_Bot_Reminders.png" imageDescription="Reminders"/>
     </q-card>
 
-    <q-card dark bordered class="my-card-wide">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">Weather</div>
       </q-card-section>
@@ -30,7 +32,7 @@
       <customImage filename="Discord_Bot_Weather.png" imageDescription="Weather"/>
     </q-card>
 
-    <q-card dark bordered class="my-card-wide">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">Stats</div>
       </q-card-section>
@@ -39,7 +41,7 @@
       <customImage filename="Discord_Bot_Stats.png" imageDescription="Stats"/>
     </q-card>
 
-    <q-card dark bordered class="my-card-wide">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">Roles</div>
       </q-card-section>
@@ -48,7 +50,7 @@
       <customImage filename="Discord_Bot_Roles.png" imageDescription="Roles"/>
     </q-card>
 
-    <q-card dark bordered class="my-card-wide">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">Text to Speech</div>
       </q-card-section>

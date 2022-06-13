@@ -14,7 +14,7 @@
 
   <div class="row q-py-md q-gutter-md justify-center">
 
-    <q-card dark bordered class="bg-grey-9 my-column">
+    <q-card dark bordered class="bg-grey-9 my-card-wide">
       <q-card-section>
         <div class="text-h6">What did I learn?</div>
       </q-card-section>
@@ -27,7 +27,7 @@
   </div>
 
   <q-page class="row items-center justify-evenly">
-    <iframe width=100% height=1000 allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="https://drive.google.com/file/d/1tKzemUUaO0MUVzIKC6l4-XasVOUx9Nx9/preview?"></iframe>
+    <iframe width=50% height=1000 allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="https://drive.google.com/file/d/1tKzemUUaO0MUVzIKC6l4-XasVOUx9Nx9/preview?"></iframe>
   </q-page>
 
   <q-footer elevated>

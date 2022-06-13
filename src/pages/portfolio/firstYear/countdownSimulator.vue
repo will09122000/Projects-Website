@@ -17,12 +17,12 @@
   </div>
 
   <div class="row q-py-md q-gutter-md justify-center">
-    <q-card dark bordered class="bg-grey-9">
+    <q-card dark bordered class="bg-grey-9 my-card-wide">
       <q-card-section>
         <div class="text-h6">What did I learn?</div>
       </q-card-section>
       <q-separator dark inset />
-      <q-card-section>
+      <q-card-section class="q-mb-xl">
         {{text.First_Year.Countdown_Simulator.WDIL}}
       </q-card-section>
     </q-card>

@@ -16,31 +16,29 @@
   </div>
 
   <div class="row q-py-md q-gutter-md justify-center">
-    <div class="my-row">
-      <q-card dark bordered class="bg-grey-9 my-column">
-        <q-card-section>
-          <div class="text-h6">Team Feedback</div>
-        </q-card-section>
-        <q-separator dark inset />
-        <q-card-section>
-          <ul>
-            <li class="list">"{{text.Second_Year.Unite.Feedback_1}}"</li>
-            <li class="list">"{{text.Second_Year.Unite.Feedback_2}}"</li>
-            <li class="list">"{{text.Second_Year.Unite.Feedback_3}}"</li>
-          </ul>
-        </q-card-section>
-      </q-card>
+    <q-card dark bordered class="bg-grey-9 my-card-wide">
+      <q-card-section>
+        <div class="text-h6">Team Feedback</div>
+      </q-card-section>
+      <q-separator dark inset />
+      <q-card-section>
+        <ul>
+          <li class="list">"{{text.Second_Year.Unite.Feedback_1}}"</li>
+          <li class="list">"{{text.Second_Year.Unite.Feedback_2}}"</li>
+          <li class="list">"{{text.Second_Year.Unite.Feedback_3}}"</li>
+        </ul>
+      </q-card-section>
+    </q-card>
 
-      <q-card dark bordered class="bg-grey-9 my-column">
-        <q-card-section>
-          <div class="text-h6">What did I learn?</div>
-        </q-card-section>
-        <q-separator dark inset />
-        <q-card-section>
-          {{text.Second_Year.Unite.WDIL}}
-        </q-card-section>
-      </q-card>
-    </div>
+    <q-card dark bordered class="bg-grey-9 my-card-wide">
+      <q-card-section>
+        <div class="text-h6">What did I learn?</div>
+      </q-card-section>
+      <q-separator dark inset />
+      <q-card-section>
+        {{text.Second_Year.Unite.WDIL}}
+      </q-card-section>
+    </q-card>
   </div>
 
   <customImage filename="unite_poster.png" imageDescription="Unite" />

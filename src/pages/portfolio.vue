@@ -30,33 +30,6 @@
           <row-data/>
         </q-tab-panel>
 
-        <q-tab-panel name="Personal">
-          <q-tabs
-            v-model="personal"
-            no-caps
-            mobile-arrows
-            outside-arrows
-          >
-            <q-tab name="Discord Bot" label="Discord Bot" />
-            <q-tab name="This Website" label="This Website" />
-            <q-tab name="Rally Results Reader" label="Rally Results Reader" />
-          </q-tabs>
-          <q-separator />
-          <q-tab-panels v-model="personal" animated class="bg-purple-1 text-center">
-            <q-tab-panel name="Discord Bot" class="bg-grey-8">
-              <discord-bot/>
-            </q-tab-panel>
-
-            <q-tab-panel name="This Website" class="bg-grey-8">
-              <this-website/>
-            </q-tab-panel>
-
-            <q-tab-panel name="Rally Results Reader" class="bg-grey-8">
-              <rally-results-reader/>
-            </q-tab-panel>
-          </q-tab-panels>
-        </q-tab-panel>
-
         <q-tab-panel name="1st Year">
           <q-tabs
             v-model="first_year"
@@ -188,6 +161,36 @@
 
           </q-tab-panels>
         </q-tab-panel>
+
+        <q-tab-panel name="Personal">
+          <q-tabs
+            v-model="personal"
+            no-caps
+            mobile-arrows
+            outside-arrows
+          >
+            <q-tab name="Discord Bot" label="Discord Bot" />
+            <q-tab name="Rally Results Reader" label="Rally Results Reader" />
+            <q-tab name="This Website" label="This Website" />
+          </q-tabs>
+          <q-separator />
+          <q-tab-panels v-model="personal" animated class="bg-purple-1 text-center">
+
+            <q-tab-panel name="Discord Bot" class="bg-grey-8">
+              <discord-bot/>
+            </q-tab-panel>
+
+            <q-tab-panel name="Rally Results Reader" class="bg-grey-8">
+              <rally-results-reader/>
+            </q-tab-panel>
+
+            <q-tab-panel name="This Website" class="bg-grey-8">
+              <this-website/>
+            </q-tab-panel>
+
+          </q-tab-panels>
+        </q-tab-panel>
+
       </q-tab-panels>
     </div>
   </q-page>
@@ -198,10 +201,6 @@ import openURL from 'quasar'
 import TextJson from '../text.json'
 
 import rowData from './portfolio/alevel/rowData.vue'
-
-import discordBot from './portfolio/personal/discordBot.vue'
-import thisWebsite from './portfolio/personal/thisWebsite.vue'
-import rallyResultsReader from './portfolio/personal/rallyResultsReader.vue'
 
 import countdownSimulator from './portfolio/firstYear/countdownSimulator.vue'
 import smartAlarmClock from './portfolio/firstYear/smartAlarmClock.vue'
@@ -223,6 +222,10 @@ import streetScene from './portfolio/thirdYear/streetScene.vue'
 import spotifyHitPredictor from './portfolio/thirdYear/spotifyHitPredictor.vue'
 import quickhullAlgorithm from './portfolio/thirdYear/quickhullAlgorithm.vue'
 import AntColonyOptimisation from './portfolio/thirdYear/antColonyOptimisation.vue'
+
+import discordBot from './portfolio/personal/discordBot.vue'
+import rallyResultsReader from './portfolio/personal/rallyResultsReader.vue'
+import thisWebsite from './portfolio/personal/thisWebsite.vue'
 
 export default {
   methods: {
@@ -326,7 +329,7 @@ div.inline {
 
 .my-card-wide {
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   background-color: #36393F;
 }
 

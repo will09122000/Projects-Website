@@ -6,6 +6,8 @@
     <q-img src="../../../assets/quasar.png" spinner-color="white" width="19%" class="q-mt-sm" />
   </div>
 
+  <q-btn class="redirect" type="a" label="GitHub" href="https://github.com/will09122000/Projects-Website" icon="open_in_new" color="primary" target="_blank" />
+
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">
       <div class="text-left text-body2 q-mr-sm">
