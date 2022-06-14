@@ -1,6 +1,18 @@
 <template>
   <q-page>
+
     <div class="q-pa-md">
+      <div class="no-wrap flex-center text-center">
+        <div v-resize-text="{maxFontSize: '70px', minFontSize: '35px'}">About Me</div>
+        <div class="row justify-center text-body1">
+          <div style="max-width: 1000px" >
+            {{ text.AboutMe }}
+          </div>
+        </div>
+      </div>
+
+      <q-separator color="white" inset class="q-my-lg"/>
+
       <q-carousel
         v-model="slide"
         transition-prev="jump-right"
@@ -13,7 +25,7 @@
         infinite
         padding
         arrows
-        :height=(window.height)
+        height="1330px"
         class="bg-secondary text-black shadow-1 rounded-borders"
       >
 
@@ -38,6 +50,8 @@
 import { openURL } from 'quasar'
 import ResizeText from 'vue-resize-text'
 
+import textJson from '../text.json'
+
 import unite from './home/unite.vue'
 import liftAlgorithm from './home/liftAlgorithm.vue'
 import workoutPlanner from './home/workoutPlanner.vue'
@@ -54,12 +68,12 @@ export default {
       vertical: false,
       arrows: true,
       navigation: true,
-      slide: 'Workout_Planner'
+      slide: 'Workout_Planner',
+      text: textJson
     }
   },
   created () {
     window.addEventListener('resize', this.handleResize)
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     this.handleResize()
   },
   destroyed () {
@@ -67,9 +81,7 @@ export default {
   },
   methods: {
     handleResize () {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       this.window.width = `${window.innerWidth}px`
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       this.window.height = `${window.innerHeight - 81}px`
     },
     redirect: function (text) {
@@ -84,7 +96,6 @@ export default {
     }
   },
   directives: {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     ResizeText
   }
 }

@@ -56,9 +56,8 @@ import { openURL, copyToClipboard } from 'quasar'
 export default {
   name: 'PageContact',
   methods: {
-    copy: function (text) {
-      // eslint-disable-next-line @typescript-eslint/no-floating-promises
-      copyToClipboard(text)
+    copy: async function (text) {
+      await copyToClipboard(text)
     },
     redirect: function (text) {
       openURL(text)

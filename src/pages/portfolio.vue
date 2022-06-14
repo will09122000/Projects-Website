@@ -8,20 +8,20 @@
         outside-arrows
         class="bg-secondary text-white"
       >
-        <q-tab name="ALevel" label="A-Level" />
-        <q-tab name="1st Year" label="1st Year" />
-        <q-tab name="2nd Year" label="2nd Year" />
-        <q-tab name="3rd Year" label="3rd Year" />
-        <q-tab name="Personal" label="Personal" />
+        <q-tab name="alevel" label="A-Level" />
+        <q-tab name="first_year" label="1st Year" />
+        <q-tab name="second_year" label="2nd Year" />
+        <q-tab name="third_year" label="3rd Year" />
+        <q-tab name="personal" label="Personal" />
       </q-tabs>
 
       <q-separator dark inset/>
 
       <q-tab-panels v-model="root" animated class="bg-grey-9 text-white">
 
-        <q-tab-panel name="ALevel">
+        <q-tab-panel name="alevel">
           <q-tabs
-              v-model="ALevel"
+              v-model="alevel"
               no-caps
               mobile-arrows
               outside-arrows
@@ -30,161 +30,161 @@
           <row-data/>
         </q-tab-panel>
 
-        <q-tab-panel name="1st Year">
+        <q-tab-panel name="first_year">
           <q-tabs
             v-model="first_year"
             no-caps
             mobile-arrows
             outside-arrows
           >
-            <q-tab name="Countdown Simulator" label="Countdown Simulator" />
-            <q-tab name="Smart Alarm Clock" label="Smart Alarm Clock" />
-            <q-tab name="Barnaby's Brewhouse" label="Barnaby's Brewhouse" />
-            <q-tab name="Beanbag Store" label="Beanbag Store" />
-            <q-tab name="Task Manager" label="Task Manager" />
-            <q-tab name="Lift Algorithm" label="Lift Algorithm" />
+            <q-tab name="countdown_simulator" label="Countdown Simulator" />
+            <q-tab name="smart_alarm_clock" label="Smart Alarm Clock" />
+            <q-tab name="barnabys_brewhouse" label="Barnaby's Brewhouse" />
+            <q-tab name="beanbag_store" label="Beanbag Store" />
+            <q-tab name="task_manager" label="Task Manager" />
+            <q-tab name="lift_algorithm" label="Lift Algorithm" />
           </q-tabs>
           <q-separator />
           <q-tab-panels v-model="first_year" animated class="bg-purple-1 text-center">
 
-            <q-tab-panel name="Countdown Simulator" class="bg-grey-8">
+            <q-tab-panel name="countdown_simulator" class="bg-grey-8">
               <countdown-simulator/>
             </q-tab-panel>
 
-            <q-tab-panel name="Smart Alarm Clock" class="bg-grey-8">
+            <q-tab-panel name="smart_alarm_clock" class="bg-grey-8">
               <smart-alarm-clock/>
             </q-tab-panel>
 
-            <q-tab-panel name="Barnaby's Brewhouse" class="bg-grey-8">
+            <q-tab-panel name="barnabys_brewhouse" class="bg-grey-8">
               <barnabys-brewhouse/>
             </q-tab-panel>
 
-            <q-tab-panel name="Beanbag Store" class="bg-grey-8">
+            <q-tab-panel name="beanbag_store" class="bg-grey-8">
               <beanbag-store/>
             </q-tab-panel>
 
-            <q-tab-panel name="Task Manager" class="bg-grey-8">
+            <q-tab-panel name="task_manager" class="bg-grey-8">
               <task-manager/>
             </q-tab-panel>
 
-            <q-tab-panel name="Lift Algorithm" class="bg-grey-8">
+            <q-tab-panel name="lift_algorithm" class="bg-grey-8">
               <lift-algorithm/>
             </q-tab-panel>
 
           </q-tab-panels>
         </q-tab-panel>
 
-        <q-tab-panel name="2nd Year">
+        <q-tab-panel name="second_year">
           <q-tabs
             v-model="second_year"
             no-caps
             mobile-arrows
             outside-arrows
           >
-            <q-tab name="Card Game" label="Card Game" />
-            <q-tab name="Functional Programming" label="Functional Programming" />
-            <q-tab name="Logic Programming" label="Logic Programming" />
-            <q-tab name="Unite" label="Unite"/>
-            <q-tab name="8-Puzzle Problem" label="8-Puzzle Problem" />
-            <q-tab name="Post Office Queues" label="Post Office Queues" />
-            <q-tab name="Vaccine Ordering" label="Vaccine Ordering" />
+            <q-tab name="card_game" label="Card Game" />
+            <q-tab name="functional_programming" label="Functional Programming" />
+            <q-tab name="logic_programming" label="Logic Programming" />
+            <q-tab name="unite" label="Unite"/>
+            <q-tab name="8_puzzle_problem" label="8-Puzzle Problem" />
+            <q-tab name="post_office_queues" label="Post Office Queues" />
+            <q-tab name="vaccine_ordering" label="Vaccine Ordering" />
           </q-tabs>
           <q-separator />
           <q-tab-panels v-model="second_year" animated class="bg-purple-1 text-center">
 
-            <q-tab-panel name="Card Game" class="bg-grey-8">
+            <q-tab-panel name="card_game" class="bg-grey-8">
               <card-game/>
             </q-tab-panel>
 
-            <q-tab-panel name="Functional Programming" class="bg-grey-8">
+            <q-tab-panel name="functional_programming" class="bg-grey-8">
               <functional-programming/>
             </q-tab-panel>
 
-            <q-tab-panel name="Logic Programming" class="bg-grey-8">
+            <q-tab-panel name="logic_programming" class="bg-grey-8">
               <logic-programming/>
             </q-tab-panel>
 
-            <q-tab-panel name="Unite" class="bg-grey-8">
+            <q-tab-panel name="unite" class="bg-grey-8">
               <unite/>
             </q-tab-panel>
 
-            <q-tab-panel name="8-Puzzle Problem" class="bg-grey-8">
+            <q-tab-panel name="8_puzzle_problem" class="bg-grey-8">
               <eight-puzzle-problem/>
             </q-tab-panel>
 
-            <q-tab-panel name="Post Office Queues" class="bg-grey-8">
+            <q-tab-panel name="post_office_queues" class="bg-grey-8">
               <post-office-queues/>
             </q-tab-panel>
 
-            <q-tab-panel name="Vaccine Ordering" class="bg-grey-8">
+            <q-tab-panel name="vaccine_ordering" class="bg-grey-8">
               <vaccine-ordering/>
             </q-tab-panel>
 
           </q-tab-panels>
         </q-tab-panel>
 
-        <q-tab-panel name="3rd Year">
+        <q-tab-panel name="third_year">
           <q-tabs
             v-model="third_year"
             no-caps
             mobile-arrows
             outside-arrows
           >
-            <q-tab name="Workout Planner" label="Workout Planner" />
-            <q-tab name="Street Scene" label="Street Scene" />
-            <q-tab name="Spotify Hit Predictor" label="Spotify Hit Predictor" />
-            <q-tab name="Quickhull Algorithm" label="Quickhull Algorithm" />
-            <q-tab name="Ant Colony Optimisation" label="Ant Colony Optimisation"/>
+            <q-tab name="workout_planner" label="Workout Planner" />
+            <q-tab name="street_scene" label="Street Scene" />
+            <q-tab name="spotify_hit_predictor" label="Spotify Hit Predictor" />
+            <q-tab name="quickhull_algorithm" label="Quickhull Algorithm" />
+            <q-tab name="ant_colony_optimisation" label="Ant Colony Optimisation"/>
           </q-tabs>
           <q-separator />
           <q-tab-panels v-model="third_year" animated class="bg-purple-1 text-center">
 
-            <q-tab-panel name="Workout Planner" class="bg-grey-8">
+            <q-tab-panel name="workout_planner" class="bg-grey-8">
               <workout-planner/>
             </q-tab-panel>
 
-            <q-tab-panel name="Street Scene" class="bg-grey-8">
+            <q-tab-panel name="street_scene" class="bg-grey-8">
               <street-scene/>
             </q-tab-panel>
 
-            <q-tab-panel name="Spotify Hit Predictor" class="bg-grey-8">
+            <q-tab-panel name="spotify_hit_predictor" class="bg-grey-8">
               <spotify-hit-predictor/>
             </q-tab-panel>
 
-            <q-tab-panel name="Quickhull Algorithm" class="bg-grey-8">
+            <q-tab-panel name="quickhull_algorithm" class="bg-grey-8">
               <quickhull-algorithm/>
             </q-tab-panel>
 
-            <q-tab-panel name="Ant Colony Optimisation" class="bg-grey-8">
+            <q-tab-panel name="ant_colony_optimisation" class="bg-grey-8">
               <ant-colony-optimisation/>
             </q-tab-panel>
 
           </q-tab-panels>
         </q-tab-panel>
 
-        <q-tab-panel name="Personal">
+        <q-tab-panel name="personal">
           <q-tabs
             v-model="personal"
             no-caps
             mobile-arrows
             outside-arrows
           >
-            <q-tab name="Discord Bot" label="Discord Bot" />
-            <q-tab name="Rally Results Reader" label="Rally Results Reader" />
-            <q-tab name="This Website" label="This Website" />
+            <q-tab name="discord_bot" label="Discord Bot" />
+            <q-tab name="rally_results_reader" label="Rally Results Reader" />
+            <q-tab name="this_website" label="This Website" />
           </q-tabs>
           <q-separator />
           <q-tab-panels v-model="personal" animated class="bg-purple-1 text-center">
 
-            <q-tab-panel name="Discord Bot" class="bg-grey-8">
+            <q-tab-panel name="discord_bot" class="bg-grey-8">
               <discord-bot/>
             </q-tab-panel>
 
-            <q-tab-panel name="Rally Results Reader" class="bg-grey-8">
+            <q-tab-panel name="rally_results_reader" class="bg-grey-8">
               <rally-results-reader/>
             </q-tab-panel>
 
-            <q-tab-panel name="This Website" class="bg-grey-8">
+            <q-tab-panel name="this_website" class="bg-grey-8">
               <this-website/>
             </q-tab-panel>
 
@@ -197,7 +197,6 @@
 </template>
 
 <script>
-import openURL from 'quasar'
 import TextJson from '../text.json'
 
 import rowData from './portfolio/alevel/rowData.vue'
@@ -229,16 +228,8 @@ import thisWebsite from './portfolio/personal/thisWebsite.vue'
 
 export default {
   methods: {
-    redirect: function (text) {
-      openURL(text)
-    },
-    getPic (index) {
-      return `../assets/${String(index)}.png`
-    },
     handleResize () {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       this.window.width = `${window.innerWidth}px`
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       this.window.height = `${window.innerHeight}px`
     }
   },
@@ -272,19 +263,17 @@ export default {
         width: '0px',
         height: '0px'
       },
-      root: 'ALevel',
-      ALevel: 'RowData',
-      personal: 'Discord Bot',
-      first_year: 'Countdown Simulator',
-      second_year: 'Card Game',
-      third_year: 'Workout Planner',
-      smart_alarm_clock_code: null,
+      root: 'alevel',
+      alevel: 'RowData',
+      first_year: 'countdown_simulator',
+      second_year: 'card_game',
+      third_year: 'workout_planner',
+      personal: 'discord_bot',
       text: TextJson
     }
   },
   created () {
     window.addEventListener('resize', this.handleResize)
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     this.handleResize()
   },
   destroyed () {
@@ -295,6 +284,28 @@ export default {
       this.navPos = val === true
         ? 'right'
         : 'bottom'
+    },
+    '$route.query': {
+      immediate: true,
+      handler (params) {
+        if (params.category) {
+          this.root = params.category.toString()
+        }
+        if (params.project) {
+          switch (this.root) {
+            case 'first_year':
+              this.first_year = params.project.toString()
+              break
+            case 'second_year':
+              this.second_year = params.project.toString()
+              break
+            case 'third_year':
+              this.third_year = params.project.toString()
+              break
+          }
+        }
+        this.$router.replace('/portfolio')
+      }
     }
   }
 }

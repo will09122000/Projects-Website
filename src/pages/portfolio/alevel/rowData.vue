@@ -8,7 +8,8 @@
 
   <div class="row justify-center">
     <div class="col q-pa-md text-body1" style="max-width: 1000px">
-    {{text.ALevel.RowData.Main}}
+      <div>{{text.ALevel.RowData.Main}}</div>
+      <q-img src="../../../assets/rowing_monitor.jpg" spinner-color="white" width="300px" class="q-mt-md"/>
     </div>
   </div>
 

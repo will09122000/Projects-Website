@@ -10,9 +10,11 @@
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
         />
+        <!--
         <q-avatar square>
           <img src="../assets/Will.png">
         </q-avatar>
+        -->
 
         <q-toolbar-title>
           Will Coates

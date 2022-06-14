@@ -3,9 +3,9 @@
     <div class="text-h3 q-mb-sm">
       <q-img src="../../assets/unite_logo.png" spinner-color="white" width="100px" class="q-mt-sm" />
     </div>
-    <div v-resize-text="{maxFontSize: '80px', minFontSize: '35px'}">Unite</div>
+    <div v-resize-text="{maxFontSize: '70px', minFontSize: '35px'}">Unite</div>
     <div v-resize-text="{maxFontSize: '40px'}">Second Year</div>
-    <q-icon name="fab fa-react" size="80px" />
+    <q-icon name="fab fa-react" size="70px" />
     <div class="row justify-center q-mt-md q-mb-md text-body1">
       <div style="max-width: 1000px" >
         {{ text.Second_Year.Unite.Main }}
@@ -37,15 +37,15 @@
     </q-dialog>
     <q-img
       src="../../assets/unite_poster.png"
-      style="max-width: 350px"
+      style="max-width: 500px"
       spinner-color="white"
       class="rounded-borders"
     >
-      <q-btn class="q-ma-md absolute-bottom-right" dense icon="open_in_full" color="secondary" @click="dialog = true" />
+      <q-btn class="q-ma-lg absolute-bottom-right" icon="open_in_full" color="secondary" @click="dialog = true" />
     </q-img>
 
     <div class="row justify-evenly q-gutter-md q-pa-md">
-        <q-btn color="primary" icon="fas fa-align-justify" label="More Details" to="portfolio"/>
+        <q-btn color="primary" icon="fas fa-align-justify" label="More Details"  to="portfolio?category=second_year&project=unite"/>
         <q-btn class="redirect" color="primary" icon="open_in_new" label="GitHub" v-on:click="redirect('https://github.com/will09122000/Unite')"/>
     </div>
   </div>
@@ -69,7 +69,6 @@ export default {
       navigation: true,
       slide: 'Unite',
       autoplay: true,
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       text: TextJson,
       dialog: false,
       maximizedToggle: true
@@ -77,7 +76,6 @@ export default {
   },
   created () {
     window.addEventListener('resize', this.handleResize)
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     this.handleResize()
   },
   destroyed () {
@@ -85,9 +83,7 @@ export default {
   },
   methods: {
     handleResize () {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       this.window.width = `${window.innerWidth}px`
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       this.window.height = `${window.innerHeight - 81}px`
     },
     redirect: function (text) {
@@ -102,7 +98,6 @@ export default {
     }
   },
   directives: {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     ResizeText
   }
 }

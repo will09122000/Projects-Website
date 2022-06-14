@@ -13,7 +13,15 @@
     </q-item-section>
 
     <q-item-section>
-      <q-item-label>{{ title }}</q-item-label>
+      <div class="row q-pr-md q-gutter-md">
+        <q-item-label>{{ title }}</q-item-label>
+            <q-item-section
+          v-if="icon"
+          avatar
+        >
+          <q-icon name="open_in_new" size="medium"/>
+        </q-item-section>
+      </div>
       <q-item-label caption>
         {{ caption }}
       </q-item-label>
