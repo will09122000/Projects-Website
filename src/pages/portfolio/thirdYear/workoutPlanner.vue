@@ -5,7 +5,7 @@
   </div>
   <div class="text-h3 q-mb-sm">Workout Planner</div>
   <div class="text-h5 q-mt-sm">Module: Individual Literature Review and Project</div>
-  <div class="text-h5 q-mt-sm">Grade: x%</div>
+  <div class="text-h5 q-mt-sm">Grade: 83%</div>
   <q-icon name="fab fa-swift" size="80px" class="q-pa-sm"/>
   <q-icon name="fab fa-python" size="80px" class="q-pa-sm" />
   <q-separator dark class="q-mt-sm" />
