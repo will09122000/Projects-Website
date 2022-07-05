@@ -12,6 +12,7 @@
         <q-tab name="first_year" label="1st Year" />
         <q-tab name="second_year" label="2nd Year" />
         <q-tab name="third_year" label="3rd Year" />
+        <q-tab name="freelance" label="Freelance" />
         <q-tab name="personal" label="Personal" />
       </q-tabs>
 
@@ -162,6 +163,25 @@
           </q-tab-panels>
         </q-tab-panel>
 
+        <q-tab-panel name="freelance">
+          <q-tabs
+            v-model="freelance"
+            no-caps
+            mobile-arrows
+            outside-arrows
+          >
+            <q-tab name="tread_cadence" label="Tread Cadence" />
+          </q-tabs>
+          <q-separator />
+          <q-tab-panels v-model="freelance" animated class="bg-purple-1 text-center">
+
+            <q-tab-panel name="tread_cadence" class="bg-grey-8">
+              <tread-cadence/>
+            </q-tab-panel>
+
+          </q-tab-panels>
+        </q-tab-panel>
+
         <q-tab-panel name="personal">
           <q-tabs
             v-model="personal"
@@ -222,6 +242,7 @@ import spotifyHitPredictor from './portfolio/thirdYear/spotifyHitPredictor.vue'
 import quickhullAlgorithm from './portfolio/thirdYear/quickhullAlgorithm.vue'
 import AntColonyOptimisation from './portfolio/thirdYear/antColonyOptimisation.vue'
 
+import treadCadence from './portfolio/freelance/treadCadence.vue'
 import discordBot from './portfolio/personal/discordBot.vue'
 import rallyResultsReader from './portfolio/personal/rallyResultsReader.vue'
 import thisWebsite from './portfolio/personal/thisWebsite.vue'
@@ -235,6 +256,7 @@ export default {
   },
   components: {
     rowData,
+    treadCadence,
     discordBot,
     thisWebsite,
     rallyResultsReader,
@@ -268,6 +290,7 @@ export default {
       first_year: 'countdown_simulator',
       second_year: 'card_game',
       third_year: 'workout_planner',
+      freelance: 'tread_cadence',
       personal: 'discord_bot',
       text: TextJson
     }

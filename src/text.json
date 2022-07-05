@@ -10,6 +10,11 @@
         "Pb": "If a user selects 'CUSTOM ROW' from the main menu, they are prompted to select a set distance or time. If the user has complete this set distance or time before, their personal best is displayed at the bottom of the screen along with their current row. Enabling them to effectively race against their personal best."
       }
     },
+    "Freelance": {
+      "Tread_Cadence": {
+        "Main": "Tread Cadence is an iPhone with companion Apple Watch app to view your running cadence while running on a treadmill. A metric that most treadmills cannot display. Using acceleration, rotation rate, and attitude data from the Apple Watch, the cadence is calculated using Apple's CMPedometer API and sent to the iPhone to be displayed in real-time. Additional features include the ability to set a target cadence with an acceptable range, and automatic detection of rest, walking, and running activity."
+      }
+    },
     "Personal": {
       "Discord_Bot": {
         "a": "Discord is a free communication platform that lets you chat in both text and voice calls. It also provides an API allowing you to create Discord server bots. These bots are automated users that perform actions assigned to them by the developer.",

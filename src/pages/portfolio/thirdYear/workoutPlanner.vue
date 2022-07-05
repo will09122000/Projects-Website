@@ -71,11 +71,6 @@
     </q-card>
   </div>
 
-  <div class="row">
-    <customImage filename="workout_planner_1.png" imageDescription="Manhattan Distance Heuristic" />
-    <customImage filename="workout_planner_2.png" imageDescription="Euclidean Distance Heuristic" />
-  </div>
-
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">
       <div class="text-left text-body2 q-mr-sm">
