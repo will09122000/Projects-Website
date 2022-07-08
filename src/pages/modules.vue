@@ -1,52 +1,187 @@
 <template>
   <div class="q-pa-md">
     <q-table
-      title="Modules & Grades"
-      :rows="rows"
+      class="my-sticky-header-table"
+      title="Modules & Results"
+      :data="data"
       :columns="columns"
       row-key="name"
+      virtual-scroll
+      :pagination.sync="pagination"
+      :rows-per-page-options="[0]"
+      dark
+      bordered
     />
   </div>
 </template>
 
 <script>
-const columns = [
-  {
-    name: 'name',
-    required: true,
-    label: 'Dessert (100g serving)',
-    align: 'left',
-    field: row => row.name,
-    format: val => `${val}`,
-    sortable: true
-  },
-  { name: 'calories', align: 'center', label: 'Calories', field: 'calories', sortable: true },
-  { name: 'fat', label: 'Fat (g)', field: 'fat', sortable: true },
-  { name: 'carbs', label: 'Carbs (g)', field: 'carbs' },
-  { name: 'protein', label: 'Protein (g)', field: 'protein' },
-  { name: 'sodium', label: 'Sodium (mg)', field: 'sodium' },
-  { name: 'calcium', label: 'Calcium (%)', field: 'calcium', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
-  { name: 'iron', label: 'Iron (%)', field: 'iron', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) }
-]
-
-const rows = [
-  {
-    name: 'Frozen Yogurt',
-    calories: 159,
-    fat: 6.0,
-    carbs: 24,
-    protein: 4.0,
-    sodium: 87,
-    calcium: '14%',
-    iron: '1%'
-  }
-]
-
 export default {
-  setup () {
+  data () {
     return {
-      columns,
-      rows
+      columns: [
+        { label: 'Year', name: 'year', field: row => row.year, sortable: true, align: 'left' },
+        { label: 'Module', name: 'module', field: row => row.module, sortable: true, align: 'left' },
+        { label: 'Mark (%)', name: 'mark', field: row => row.mark, sortable: true, align: 'left' },
+        { label: 'Grade', name: 'grade', field: row => row.grade, sortable: true, align: 'left' },
+        { label: 'Result', name: 'result', field: row => row.result, sortable: true, align: 'left' }
+      ],
+      data: [
+        {
+          year: '1',
+          module: 'Programming',
+          mark: 86,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '1',
+          module: 'Object-Oriented Programming',
+          mark: 71,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '1',
+          module: 'Computers and the Internet',
+          mark: 69,
+          grade: '2:1',
+          result: 'Passed'
+        },
+        {
+          year: '1',
+          module: 'Data Structures and Algorithms',
+          mark: 89,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '1',
+          module: 'Discrete Mathematics for Computer Science',
+          mark: 70,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '1',
+          module: 'Computational Mathematics',
+          mark: 60,
+          grade: '2:1',
+          result: 'Passed'
+        },
+        {
+          year: '1',
+          module: 'Web Development',
+          mark: 61,
+          grade: '2:1',
+          result: 'Passed'
+        },
+        {
+          year: '1',
+          module: 'Social and Professional Issues of the Information Age',
+          mark: 55,
+          grade: '2:2',
+          result: 'Passed'
+        },
+        {
+          year: '2',
+          module: 'Software Development',
+          mark: 72,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '2',
+          module: 'Computer Languages and Representations',
+          mark: 63,
+          grade: '2:1',
+          result: 'Passed'
+        },
+        {
+          year: '2',
+          module: 'Database Theory and Design ',
+          mark: 77,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '2',
+          module: 'Artificial Intelligence and Applications',
+          mark: 63,
+          grade: '2:1',
+          result: 'Passed'
+        },
+        {
+          year: '2',
+          module: 'Network and Computer Security',
+          mark: 73,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '2',
+          module: 'Outside the box: Computer Science Research and Applications',
+          mark: 64,
+          grade: '2:1',
+          result: 'Passed'
+        },
+        {
+          year: '2',
+          module: 'The C Family',
+          mark: 80,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '2',
+          module: 'Group Software Engineering Project',
+          mark: 74,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '3',
+          module: 'Individual Literature Review and Project ',
+          mark: 83,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '3',
+          module: 'Enterprise Computing',
+          mark: 61,
+          grade: '2:1',
+          result: 'Passed'
+        },
+        {
+          year: '3',
+          module: 'Nature-Inspired Computation ',
+          mark: 69,
+          grade: '2:1',
+          result: 'Passed'
+        },
+        {
+          year: '3',
+          module: 'Learning from Data',
+          mark: 77,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '3',
+          module: 'Computer Graphics',
+          mark: 88,
+          grade: '1',
+          result: 'Passed'
+        },
+        {
+          year: '3',
+          module: 'Algorithms that Changed the World',
+          mark: 69,
+          grade: '2:1',
+          result: 'Passed'
+        }
+      ]
     }
   }
 }
