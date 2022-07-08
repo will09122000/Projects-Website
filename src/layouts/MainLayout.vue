@@ -85,13 +85,18 @@ const linksData = [
   },
   {
     title: 'Curriculum Vitae',
-    icon: 'school',
+    icon: 'article',
     link: '/cv'
   },
   {
     title: 'Portfolio',
-    icon: 'assignment',
+    icon: 'code',
     link: '/portfolio'
+  },
+  {
+    title: 'Modules & Grades',
+    icon: 'school',
+    link: '/modules'
   },
   {
     title: 'Contact',
@@ -103,7 +108,7 @@ const linksData = [
 const linksDataExternal = [
   {
     title: 'GitHub',
-    icon: 'code',
+    icon: 'source',
     link: 'https://github.com/will09122000'
   }
 ]

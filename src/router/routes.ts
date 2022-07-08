@@ -8,6 +8,7 @@ const routes: RouteConfig[] = [
       { path: '', component: () => import('pages/Index.vue') },
       { path: 'cv', component: () => import('pages/cv.vue') },
       { path: 'portfolio', component: () => import('pages/portfolio.vue') },
+      { path: 'modules', component: () => import('pages/modules.vue') },
       { path: 'contact', component: () => import('pages/contact.vue') }
     ]
   },

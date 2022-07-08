@@ -4,6 +4,7 @@
       <q-img src="../../assets/workout_planner_logo.png" spinner-color="black" width="100px" />
     </div>
     <div v-resize-text="{maxFontSize: '70px', minFontSize: '35px'}">Workout Planner</div>
+    <div v-resize-text="{maxFontSize: '50px'}">Real-Time Analysis of Resistance Training using Wearable Computing</div>
     <div v-resize-text="{maxFontSize: '40px'}">Third Year</div>
     <q-icon name="fab fa-swift" size="70px" class="q-pa-sm"/>
     <q-icon name="fab fa-python" size="70px" class="q-pa-sm"/>

@@ -4,6 +4,7 @@
     <q-img src="../../../assets/workout_planner_logo.png" spinner-color="white" width="16%" class="q-mt-sm" />
   </div>
   <div class="text-h3 q-mb-sm">Workout Planner</div>
+  <div class="text-h4 q-mb-sm">Real-Time Analysis of Resistance Training using Wearable Computing</div>
   <div class="text-h5 q-mt-sm">Module: Individual Literature Review and Project</div>
   <div class="text-h5 q-mt-sm">Grade: 83%</div>
   <q-icon name="fab fa-swift" size="80px" class="q-pa-sm"/>
