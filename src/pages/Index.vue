@@ -25,7 +25,7 @@
         infinite
         padding
         arrows
-        height="1330px"
+        height="1500px"
         class="bg-secondary text-black shadow-1 rounded-borders"
       >
 
