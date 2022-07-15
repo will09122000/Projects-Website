@@ -99,6 +99,11 @@ const linksData = [
     link: '/modules'
   },
   {
+    title: 'Apps',
+    icon: 'apps',
+    link: '/apps'
+  },
+  {
     title: 'Contact',
     icon: 'contact_mail',
     link: '/contact'

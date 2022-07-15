@@ -9,7 +9,9 @@ const routes: RouteConfig[] = [
       { path: 'cv', component: () => import('pages/cv.vue') },
       { path: 'portfolio', component: () => import('pages/portfolio.vue') },
       { path: 'modules', component: () => import('pages/modules.vue') },
-      { path: 'contact', component: () => import('pages/contact.vue') }
+      { path: 'contact', component: () => import('pages/contact.vue') },
+      { path: 'apps', component: () => import('pages/apps.vue') },
+      { path: 'apps/treadCadence', component: () => import('pages/treadCadence.vue') }
     ]
   },
 

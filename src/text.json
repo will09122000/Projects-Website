@@ -12,7 +12,8 @@
     },
     "Freelance": {
       "Tread_Cadence": {
-        "Main": "Tread Cadence is an iPhone with companion Apple Watch app to view your running cadence while running on a treadmill. A metric that most treadmills cannot display. Using acceleration, rotation rate, and attitude data from the Apple Watch, the cadence is calculated using Apple's CMPedometer API and sent to the iPhone to be displayed in real-time. Additional features include the ability to set a target cadence with an acceptable range, and automatic detection of rest, walking, and running activity."
+        "Main": "Tread Cadence is an iPhone with companion Apple Watch app to view your running cadence while running on a treadmill. A metric that most treadmills cannot display. Using acceleration, rotation rate, and attitude data from the Apple Watch, the cadence is calculated using Apple's CMPedometer API and sent to the iPhone to be displayed in real-time. Additional features include the ability to set a target cadence with an acceptable range, and receiving a tap on the wrist when you fall outside of your configured target range.",
+        "PrivacyPolicy": ""
       }
     },
     "Personal": {
