@@ -3,7 +3,7 @@
   <div class="text-h3 q-mb-sm">
     <q-img src="../../../assets/workout_planner_logo.png" spinner-color="white" width="16%" class="q-mt-sm" />
   </div>
-  <div class="text-h3 q-mb-sm">Workout Planner</div>
+  <div class="text-h3 q-mb-sm">LEAN</div>
   <div class="text-h4 q-mb-sm" style="line-height: 100%">Real-Time Analysis of Resistance Training using Wearable Computing</div>
   <div class="text-h5 q-mt-sm">Module: Individual Literature Review and Project</div>
   <div class="text-h5 q-mt-sm">Grade: 83%</div>
@@ -80,7 +80,7 @@
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">
       <div class="text-left text-body2 q-mr-sm">
-        Workout Planner
+        LEAN
       </div>
       <q-separator dark vertical inset />
       <q-icon name="fab fa-swift" size="30px" class="q-pa-sm" />

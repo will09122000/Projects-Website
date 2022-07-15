@@ -131,7 +131,7 @@
             mobile-arrows
             outside-arrows
           >
-            <q-tab name="workout_planner" label="Workout Planner" />
+            <q-tab name="workout_planner" label="LEAN" />
             <q-tab name="street_scene" label="Street Scene" />
             <q-tab name="spotify_hit_predictor" label="Spotify Hit Predictor" />
             <q-tab name="quickhull_algorithm" label="Quickhull Algorithm" />
