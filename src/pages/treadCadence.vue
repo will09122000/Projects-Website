@@ -14,6 +14,14 @@
   </div>
 
   <div class="row justify-center">
+    Contact:
+    <q-img
+      src="../assets/email.png"
+      style="max-width: 140px; height:25px;"
+    />
+  </div>
+
+  <div class="row justify-center">
     <q-img src="../assets/tread_cadence_1.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-mt-md"/>
     <q-img src="../assets/tread_cadence_2.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-mt-md"/>
   </div>
