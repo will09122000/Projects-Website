@@ -83,11 +83,13 @@ const linksData = [
     icon: 'home',
     link: '/'
   },
+  /*
   {
     title: 'Curriculum Vitae',
     icon: 'article',
     link: '/cv'
   },
+  */
   {
     title: 'Portfolio',
     icon: 'code',
