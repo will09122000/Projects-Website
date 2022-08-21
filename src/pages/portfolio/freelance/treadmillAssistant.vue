@@ -1,15 +1,15 @@
 <template>
 <div class="bg-grey-8 text-center">
   <div class="text-h3 q-mb-sm">
-    <q-img src="../../../assets/tread_cadence_logo.png" spinner-color="white" width="16%" class="q-mt-sm" />
+    <q-img src="../../../assets/tread_assistant_logo.png" spinner-color="white" width="16%" class="q-mt-sm" />
   </div>
-  <div class="text-h3 q-mb-sm">Tread Cadence</div>
+  <div class="text-h3 q-mb-sm">Treadmill Assistant</div>
   <q-icon name="fab fa-swift" size="80px" class="q-pa-sm"/>
   <q-separator dark class="q-mt-sm" />
 
   <div class="row justify-center">
     <div class="col q-pa-md text-body1" style="max-width: 1000px">
-      {{text.Freelance.Tread_Cadence.Main}}
+      {{text.Freelance.Tread_Assistant.Main}}
     </div>
   </div>
 
@@ -22,10 +22,10 @@
         <q-separator dark inset />
           <div class="row justify-center">
             <div class="col q-pa-md">
-              <customImage filename="tread_cadence_1.png" imageDescription="Workout list" :showButton="false"/>
+              <customImage filename="tread_assistant_1.png" imageDescription="Workout list" :showButton="false"/>
             </div>
             <div class="col q-pa-md">
-              <customImage filename="tread_cadence_2.png" imageDescription="Working Out" :showButton="false"/>
+              <customImage filename="tread_assistant_2.png" imageDescription="Working Out" :showButton="false"/>
             </div>
           </div>
       </q-card>
@@ -37,7 +37,10 @@
         <q-separator dark inset />
           <div class="row justify-center">
             <div class="col q-pa-md">
-              <q-img src="../../../assets/tread_cadence_3.png" spinner-color="white" width="500px" class="q-mt-md"/>
+              <customImage filename="tread_assistant_3.png" imageDescription="Workout list" :showButton="false"/>
+            </div>
+            <div class="col q-pa-md">
+              <customImage filename="tread_assistant_4.png" imageDescription="Workout list" :showButton="false"/>
             </div>
           </div>
       </q-card>
@@ -46,7 +49,7 @@
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">
       <div class="text-left text-body2 q-mr-sm">
-        Tread Cadence
+        Treadmill Assistant
       </div>
       <q-separator dark vertical inset />
       <q-icon name="fab fa-swift" size="30px" class="q-pa-sm" />

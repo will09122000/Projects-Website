@@ -170,13 +170,13 @@
             mobile-arrows
             outside-arrows
           >
-            <q-tab name="tread_cadence" label="Tread Cadence" />
+            <q-tab name="treadmill_assistant" label="Treadmill Assistant" />
           </q-tabs>
           <q-separator />
           <q-tab-panels v-model="freelance" animated class="bg-purple-1 text-center">
 
-            <q-tab-panel name="tread_cadence" class="bg-grey-8">
-              <tread-cadence/>
+            <q-tab-panel name="treadmill_assistant" class="bg-grey-8">
+              <treadmill-assistant/>
             </q-tab-panel>
 
           </q-tab-panels>
@@ -189,12 +189,17 @@
             mobile-arrows
             outside-arrows
           >
+            <q-tab name="measure_area" label="Measure Area" />
             <q-tab name="discord_bot" label="Discord Bot" />
             <q-tab name="rally_results_reader" label="Rally Results Reader" />
             <q-tab name="this_website" label="This Website" />
           </q-tabs>
           <q-separator />
           <q-tab-panels v-model="personal" animated class="bg-purple-1 text-center">
+
+            <q-tab-panel name="measure_area" class="bg-grey-8">
+              <measure-area/>
+            </q-tab-panel>
 
             <q-tab-panel name="discord_bot" class="bg-grey-8">
               <discord-bot/>
@@ -242,7 +247,9 @@ import spotifyHitPredictor from './portfolio/thirdYear/spotifyHitPredictor.vue'
 import quickhullAlgorithm from './portfolio/thirdYear/quickhullAlgorithm.vue'
 import AntColonyOptimisation from './portfolio/thirdYear/antColonyOptimisation.vue'
 
-import treadCadence from './portfolio/freelance/treadCadence.vue'
+import treadmillAssistant from './portfolio/freelance/treadmillAssistant.vue'
+
+import measureArea from './portfolio/personal/measureArea.vue'
 import discordBot from './portfolio/personal/discordBot.vue'
 import rallyResultsReader from './portfolio/personal/rallyResultsReader.vue'
 import thisWebsite from './portfolio/personal/thisWebsite.vue'
@@ -256,7 +263,8 @@ export default {
   },
   components: {
     rowData,
-    treadCadence,
+    treadmillAssistant,
+    measureArea,
     discordBot,
     thisWebsite,
     rallyResultsReader,
@@ -290,8 +298,8 @@ export default {
       first_year: 'countdown_simulator',
       second_year: 'card_game',
       third_year: 'workout_planner',
-      freelance: 'tread_cadence',
-      personal: 'discord_bot',
+      freelance: 'treadmill_assistant',
+      personal: 'measure_area',
       text: TextJson
     }
   },

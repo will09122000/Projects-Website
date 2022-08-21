@@ -1,33 +1,33 @@
 <template>
 <div class="bg-grey-8 text-center">
   <div class="text-h3 q-mb-sm">
-    <q-img src="../assets/tread_cadence_logo.png" spinner-color="white" width="16%" class="q-mt-sm" />
+    <q-img src="../../assets/measure_area_logo.png" spinner-color="white" width="16%" class="q-mt-sm" />
   </div>
-  <div class="text-h3 q-mb-sm">Tread Cadence</div>
+  <div class="text-h3 q-mb-sm">Measure Area</div>
   <q-icon name="fab fa-swift" size="80px" class="q-pa-sm"/>
   <q-separator dark class="q-mt-sm" />
 
   <div class="row justify-center">
     <div class="col q-pa-md text-body1" style="max-width: 1000px">
-      {{text.Freelance.Tread_Cadence.Main}}
+      {{text.Personal.Measure_Area.Main}}
     </div>
   </div>
 
   <div class="row justify-center">
     Contact:
     <q-img
-      src="../assets/email.png"
+      src="../../assets/email.png"
       style="max-width: 140px; height:25px;"
     />
   </div>
 
   <div class="row justify-center">
-    <q-img src="../assets/tread_cadence_1.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-mt-md"/>
-    <q-img src="../assets/tread_cadence_2.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-mt-md"/>
+    <q-img src="../../assets/tread_assistant_1.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-mt-md"/>
+    <q-img src="../../assets/tread_assistant_2.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-mt-md"/>
   </div>
 
   <div class="row justify-center">
-    <q-img src="../assets/tread_cadence_3.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-my-lg"/>
+    <q-img src="../../assets/tread_assistant_3.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-my-lg"/>
   </div>
 
   <q-btn push color="primary" label="Privacy Policy" class="q-py-sm q-mb-md">
@@ -37,7 +37,7 @@
           <q-icon name="policy" color="primary" />
         </template>
             <strong>Privacy Policy</strong> <p>
-                  William Coates built the Tread Cadence app as
+                  William Coates built the Measure Area app as
                   a Free app. This SERVICE is provided by
                   William Coates at no cost and is intended for use as
                   is.
@@ -54,7 +54,7 @@
                 </p> <p>
                   The terms used in this Privacy Policy have the same meanings
                   as in our Terms and Conditions, which are accessible at
-                  Tread Cadence unless otherwise defined in this Privacy Policy.
+                  Measure Area unless otherwise defined in this Privacy Policy.
                 </p> <p><strong>Information Collection and Use</strong></p> <p>
                   For a better experience, while using our Service, I
                   may require you to provide us with certain personally
@@ -138,7 +138,7 @@
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">
       <div class="text-left text-body2 q-mr-sm">
-        Tread Cadence
+        Measure Area
       </div>
       <q-separator dark vertical inset />
       <q-icon name="fab fa-swift" size="30px" class="q-pa-sm" />
@@ -149,7 +149,7 @@
 </template>
 
 <script>
-import textJson from '../text.json'
+import textJson from '../../text.json'
 
 export default {
   data () {

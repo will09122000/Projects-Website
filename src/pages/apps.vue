@@ -1,11 +1,18 @@
 <template>
   <q-page padding>
 
-    <q-btn square stack to="apps/treadCadence">
+    <q-btn square stack to="apps/treadmillAssistant" class="q-pa-md">
       <q-avatar rounded size="100px">
-        <img src="../assets/tread_cadence_logo.png">
+        <img src="../assets/tread_assistant_logo.png">
       </q-avatar>
-      Tread Cadence
+      Treadmill Assistant
+    </q-btn>
+
+    <q-btn square stack to="apps/measureArea" class="q-pa-md">
+      <q-avatar rounded size="100px">
+        <img src="../assets/measure_area_logo.png">
+      </q-avatar>
+      Measure Area
     </q-btn>
 
     <router-view/>
@@ -14,18 +21,9 @@
 </template>
 
 <script>
-import { openURL, copyToClipboard } from 'quasar'
 
 export default {
-  name: 'PageContact',
-  methods: {
-    copy: async function (text) {
-      await copyToClipboard(text)
-    },
-    redirect: function (text) {
-      openURL(text)
-    }
-  }
+  name: 'PageContact'
 }
 
 </script>

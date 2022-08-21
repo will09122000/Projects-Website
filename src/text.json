@@ -11,11 +11,14 @@
       }
     },
     "Freelance": {
-      "Tread_Cadence": {
-        "Main": "Tread Cadence is an iPhone with companion Apple Watch app to view your cadence while running or walking on a treadmill. A metric that most treadmills cannot display. Using acceleration, rotation rate, and attitude data from the Apple Watch, the cadence is calculated using Apple's CMPedometer API and sent to the iPhone to be displayed in real-time. Additional features include the ability to set a target cadence with an acceptable range, and receiving a tap on the wrist when you fall outside your configured target range."
+      "Tread_Assistant": {
+        "Main": "Treadmill Assistant aims to provide you with metrics that ordinary treadmills cannot provide. The app allows you to view your cadence in steps per minute, while running or walking on a treadmill. Treadmill Assistant can also detect if you are currently standing, walking, or running. Additional features include the ability to set a target cadence with an acceptable range, view your current heart rate and calories burnt, and receiving a tap on the wrist from your Apple Watch when you fall outside your configured target range. This app integrates with the Health App in order to automatically open the Apple Watch app and start counting your cadence when the iPhone app is opened."
       }
     },
     "Personal": {
+      "Measure_Area": {
+        "Main": "Measure Area main."
+      },
       "Discord_Bot": {
         "a": "Discord is a free communication platform that lets you chat in both text and voice calls. It also provides an API allowing you to create Discord server bots. These bots are automated users that perform actions assigned to them by the developer.",
         "b": "This bot provides various commands and features for both admins and users of selected Discord Servers, these Servers are all part of an online sim-racing community known as EERC (European E-Racing Community). It is programmed in JavaScript and runs in Node.js. Below are just a few examples of what this bot is able to do.",
