@@ -14,14 +14,16 @@
   <div class="row q-py-md q-gutter-md justify-center">
 
     <q-card dark bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Reminders</div>
-      </q-card-section>
-      <q-separator dark inset />
-      <q-card-section>{{text.Personal.Discord_Bot.Reminders}}</q-card-section>
-      <customImage filename="Discord_Bot_Reminders.png" imageDescription="Reminders"/>
+      <customImage filename="measure_area_1.png"/>
     </q-card>
 
+    <q-card dark bordered class="my-card">
+      <customImage filename="measure_area_2.png"/>
+    </q-card>
+
+    <q-card dark bordered class="my-card">
+      <customImage filename="measure_area_3.png"/>
+    </q-card>
   </div>
 
   <q-footer elevated>

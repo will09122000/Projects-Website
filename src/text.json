@@ -17,7 +17,7 @@
     },
     "Personal": {
       "Measure_Area": {
-        "Main": "Measure Area main."
+        "Main": "Measure Area allows you to easily measure the area and perimeter of any horizontal shape within your space. You can edit and delete edges as you go, take a picture of the scene, and copy the area and perimeter values to your clipboard. This app is built using ARKit. It is not suited for applications where exact measurements are required, for example, construction."
       },
       "Discord_Bot": {
         "a": "Discord is a free communication platform that lets you chat in both text and voice calls. It also provides an API allowing you to create Discord server bots. These bots are automated users that perform actions assigned to them by the developer.",

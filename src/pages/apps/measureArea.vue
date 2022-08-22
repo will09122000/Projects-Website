@@ -22,12 +22,12 @@
   </div>
 
   <div class="row justify-center">
-    <q-img src="../../assets/tread_assistant_1.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-mt-md"/>
-    <q-img src="../../assets/tread_assistant_2.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-mt-md"/>
+    <q-img src="../../assets/measure_area_1.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-mt-md"/>
+    <q-img src="../../assets/measure_area_2.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-mt-md"/>
   </div>
 
   <div class="row justify-center">
-    <q-img src="../../assets/tread_assistant_3.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-my-lg"/>
+    <q-img src="../../assets/measure_area_3.png" spinner-color="white" width="50%" style="max-width: 500px" class="q-my-lg"/>
   </div>
 
   <q-btn push color="primary" label="Privacy Policy" class="q-py-sm q-mb-md">
