@@ -14,7 +14,7 @@
 
   <div class="row q-py-md q-gutter-md justify-center">
 
-    <q-card dark bordered class="bg-grey-9 my-card">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">Notifications</div>
       </q-card-section>
@@ -27,7 +27,7 @@
       </div>
     </q-card>
 
-    <q-card dark bordered class="bg-grey-9 my-card">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">Alarms</div>
       </q-card-section>
@@ -40,7 +40,7 @@
       </div>
     </q-card>
 
-    <q-card dark bordered class="bg-grey-9 my-card">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">Weather</div>
       </q-card-section>
@@ -53,7 +53,7 @@
       </div>
     </q-card>
 
-    <q-card dark bordered class="bg-grey-9 my-card">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">News</div>
       </q-card-section>
@@ -66,7 +66,7 @@
       </div>
     </q-card>
 
-    <q-card dark bordered class="bg-grey-9 my-card">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">What did I learn?</div>
       </q-card-section>

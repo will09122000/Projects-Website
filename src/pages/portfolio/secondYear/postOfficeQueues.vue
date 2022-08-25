@@ -16,7 +16,7 @@
 
   <div class="row q-py-md q-gutter-md justify-center">
 
-    <q-card dark bordered class="bg-grey-9 my-card">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">Feedback</div>
       </q-card-section>
@@ -26,7 +26,7 @@
       </q-card-section>
     </q-card>
 
-    <q-card dark bordered class="bg-grey-9 my-card">
+    <q-card dark bordered class="my-card">
       <q-card-section>
         <div class="text-h6">What did I learn?</div>
       </q-card-section>

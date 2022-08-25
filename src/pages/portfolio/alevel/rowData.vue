@@ -21,7 +21,7 @@
       </q-card-section>
       <q-separator dark inset />
       <q-card-section>{{text.ALevel.RowData.Login}}</q-card-section>
-      <customImage filename="RowData_login.png" imageDescription="Log In" class="q-pa-sm"/>
+      <customImage filename="RowData_login.png" imageDescription="Log In" class="q-pa-sm absolute-bottom"/>
     </q-card>
 
     <q-card dark bordered class="my-card">
@@ -30,7 +30,7 @@
       </q-card-section>
       <q-separator dark inset />
       <q-card-section>{{text.ALevel.RowData.Menu}}</q-card-section>
-      <customImage filename="RowData_menu.png" imageDescription="Main Menu" class="q-pa-sm"/>
+      <customImage filename="RowData_menu.png" imageDescription="Main Menu" class="q-pa-sm absolute-bottom"/>
     </q-card>
 
     <q-card dark bordered class="my-card">

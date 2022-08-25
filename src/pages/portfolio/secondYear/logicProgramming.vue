@@ -10,7 +10,7 @@
 
   <div class="row q-py-md q-gutter-md justify-center">
 
-      <q-card dark bordered class="bg-grey-9 my-card-wide">
+      <q-card dark bordered class="my-card-wide">
         <q-card-section>
           <div class="text-h6">Question 1</div>
         </q-card-section>
@@ -28,7 +28,7 @@
         </div>
       </q-card>
 
-      <q-card dark bordered class="bg-grey-9 my-card-wide">
+      <q-card dark bordered class="my-card-wide">
         <q-card-section>
           <div class="text-h6">Question 2</div>
         </q-card-section>
@@ -47,7 +47,7 @@
         </div>
       </q-card>
 
-    <q-card dark bordered class="bg-grey-9 my-card-wide">
+    <q-card dark bordered class="my-card-wide">
       <q-card-section>
         <div class="text-h6">What did I learn?</div>
       </q-card-section>

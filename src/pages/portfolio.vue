@@ -352,13 +352,14 @@ div.inline {
 .my-card {
   width: 100%;
   max-width: 300px;
-  background-color: #36393F;
+  min-height: 450px;
+  background-color: #2c2f31;
 }
 
 .my-column {
   float: left;
   width: 50%;
-  background-color: #36393F;
+  background-color: #2c2f31;
   flex: 1;
 }
 
@@ -372,7 +373,7 @@ div.inline {
 .my-card-wide {
   width: 100%;
   max-width: 1000px;
-  background-color: #36393F;
+  background-color: #2c2f31;
 }
 
 .q-img {
