@@ -115,7 +115,7 @@ const linksData = [
 const linksDataExternal = [
   {
     title: 'GitHub',
-    icon: 'source',
+    icon: 'github',
     link: 'https://github.com/will09122000'
   }
 ]

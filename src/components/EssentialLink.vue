@@ -5,12 +5,10 @@
     target="_blank"
     :href="link"
   >
-    <q-item-section
-      v-if="icon"
-      avatar
-    >
-      <q-icon :name="icon" />
+    <q-item-section v-if="icon == 'github'" avatar>
+    <q-img src="../assets/github.png" style="max-width: 24px;"/>
     </q-item-section>
+    <q-item-section v-else avatar><q-icon :name="icon" /></q-item-section>
 
     <q-item-section>
       <div class="row q-pr-md q-gutter-md">

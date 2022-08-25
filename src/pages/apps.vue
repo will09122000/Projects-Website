@@ -1,14 +1,14 @@
 <template>
   <q-page padding>
 
-    <q-btn square stack to="apps/treadmillAssistant" class="q-pa-md">
+    <q-btn square stack to="apps/treadmillAssistant" class="q-pa-md" style="width: 220px">
       <q-avatar rounded size="100px">
         <img src="../assets/tread_assistant_logo.png">
       </q-avatar>
       Treadmill Assistant
     </q-btn>
 
-    <q-btn square stack to="apps/measureArea" class="q-pa-md">
+    <q-btn square stack to="apps/measureArea" class="q-pa-md" style="width: 220px">
       <q-avatar rounded size="100px">
         <img src="../assets/measure_area_logo.png">
       </q-avatar>
