@@ -1,7 +1,7 @@
 <template>
 <div class="bg-grey-8 text-center">
   <div class="text-h3 q-mb-sm">
-    <q-img src="../../../assets/tread_assistant_logo.png" spinner-color="white" width="16%" class="q-mt-sm" />
+    <q-img src="../../../assets/tread_assistant_logo.png" spinner-color="white" width="20%" class="q-mt-sm" />
   </div>
   <div class="text-h3 q-mb-sm">Treadmill Assistant</div>
   <q-icon name="fab fa-swift" size="80px" class="q-pa-sm"/>
@@ -13,37 +13,14 @@
     </div>
   </div>
 
-  <div class="row q-py-md q-gutter-md justify-center">
+  <div class="col justify q-pa-md">
+    <q-img src="../../../assets/tread_assistant_1.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+    <q-img src="../../../assets/tread_assistant_2.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+  </div>
 
-      <q-card dark bordered class="my-card-wide">
-        <q-card-section>
-          <div class="text-h6">iPhone App</div>
-        </q-card-section>
-        <q-separator dark inset />
-          <div class="row justify-center">
-            <div class="col q-pa-md">
-              <customImage filename="tread_assistant_1.png" imageDescription="Workout list" :showButton="false"/>
-            </div>
-            <div class="col q-pa-md">
-              <customImage filename="tread_assistant_2.png" imageDescription="Working Out" :showButton="false"/>
-            </div>
-          </div>
-      </q-card>
-
-      <q-card dark bordered class="my-card-wide">
-        <q-card-section>
-          <div class="text-h6">Apple Watch App</div>
-        </q-card-section>
-        <q-separator dark inset />
-          <div class="row justify-center">
-            <div class="col q-pa-md">
-              <customImage filename="tread_assistant_3.png" imageDescription="Workout list" :showButton="false"/>
-            </div>
-            <div class="col q-pa-md">
-              <customImage filename="tread_assistant_4.png" imageDescription="Workout list" :showButton="false"/>
-            </div>
-          </div>
-      </q-card>
+  <div class="col justify q-pa-md">
+    <q-img src="../../../assets/tread_assistant_3.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+    <q-img src="../../../assets/tread_assistant_4.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
   </div>
 
   <q-footer elevated>
@@ -61,12 +38,8 @@
 
 <script>
 import textJson from '../../../text.json'
-import customImage from '../../../components/image.vue'
 
 export default {
-  components: {
-    customImage
-  },
   data () {
     return {
       text: textJson

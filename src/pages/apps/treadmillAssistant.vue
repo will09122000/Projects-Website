@@ -1,7 +1,7 @@
 <template>
 <div class="bg-grey-8 text-center">
   <div class="text-h3 q-mb-sm">
-    <q-img src="../../assets/tread_assistant_logo.png" spinner-color="white" width="16%" class="q-mt-sm" />
+    <q-img src="../../assets/tread_assistant_logo.png" spinner-color="white" width="20%" class="q-mt-sm" />
   </div>
   <div class="text-h3 q-mb-sm">Treadmill Assistant</div>
   <q-icon name="fab fa-swift" size="80px" class="q-pa-sm"/>

@@ -13,6 +13,9 @@
     "Freelance": {
       "Tread_Assistant": {
         "Main": "Treadmill Assistant aims to provide you with metrics that ordinary treadmills cannot provide. The app allows you to view your cadence in steps per minute, while running or walking on a treadmill. Treadmill Assistant can also detect if you are currently standing, walking, or running. Additional features include the ability to set a target cadence with an acceptable range, view your current heart rate and calories burnt, and receiving a tap on the wrist from your Apple Watch when you fall outside your configured target range. This app integrates with the Health App in order to automatically open the Apple Watch app and start counting your cadence when the iPhone app is opened."
+      },
+      "Wonky_Notes": {
+        "Main": "Access and read notes in situations you cannot move your wrist. For example, playing a musical instrument. Notes can be created, edited, and deleted on iPhone and are synced to Apple Watch. The list of notes can be sorted by the title, data last modified, or the date the note was created. Settings allow you to set the note orientation on Apple Watch at 90 degree intervals. Additionally, enabling you to set the background and text colour of notes viewed on Apple Watch."
       }
     },
     "Personal": {

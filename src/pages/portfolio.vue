@@ -171,12 +171,17 @@
             outside-arrows
           >
             <q-tab name="treadmill_assistant" label="Treadmill Assistant" />
+            <q-tab name="wonky_notes" label="Wonky Notes" />
           </q-tabs>
           <q-separator />
           <q-tab-panels v-model="freelance" animated class="bg-purple-1 text-center">
 
             <q-tab-panel name="treadmill_assistant" class="bg-grey-8">
               <treadmill-assistant/>
+            </q-tab-panel>
+
+            <q-tab-panel name="wonky_notes" class="bg-grey-8">
+              <wonky-notes/>
             </q-tab-panel>
 
           </q-tab-panels>
@@ -248,6 +253,7 @@ import quickhullAlgorithm from './portfolio/thirdYear/quickhullAlgorithm.vue'
 import AntColonyOptimisation from './portfolio/thirdYear/antColonyOptimisation.vue'
 
 import treadmillAssistant from './portfolio/freelance/treadmillAssistant.vue'
+import wonkyNotes from './portfolio/freelance/wonkyNotes.vue'
 
 import measureArea from './portfolio/personal/measureArea.vue'
 import discordBot from './portfolio/personal/discordBot.vue'
@@ -264,6 +270,7 @@ export default {
   components: {
     rowData,
     treadmillAssistant,
+    wonkyNotes,
     measureArea,
     discordBot,
     thisWebsite,

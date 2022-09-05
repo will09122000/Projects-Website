@@ -1,7 +1,7 @@
 <template>
 <div class="bg-grey-8 text-center">
   <div class="text-h3 q-mb-sm">
-    <q-img src="../../../assets/workout_planner_logo.png" spinner-color="white" width="16%" class="q-mt-sm" />
+    <q-img src="../../../assets/workout_planner_logo.png" spinner-color="white" width="20%" class="q-mt-sm" />
   </div>
   <div class="text-h3 q-mb-sm">LEAN</div>
   <div class="text-h4 q-mb-sm" style="line-height: 100%">Real-Time Analysis of Resistance Training using Wearable Computing</div>

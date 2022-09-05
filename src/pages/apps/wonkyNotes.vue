@@ -1,15 +1,15 @@
 <template>
 <div class="bg-grey-8 text-center">
   <div class="text-h3 q-mb-sm">
-    <q-img src="../../assets/measure_area_logo.png" spinner-color="white" width="20%" class="q-mt-sm" />
+    <q-img src="../../assets/wonky_notes_logo.png" spinner-color="white" width="20%" class="q-mt-sm" />
   </div>
-  <div class="text-h3 q-mb-sm">Measure Area</div>
+  <div class="text-h3 q-mb-sm">Wonky Notes</div>
   <q-icon name="fab fa-swift" size="80px" class="q-pa-sm"/>
   <q-separator dark class="q-mt-sm" />
 
   <div class="row justify-center">
     <div class="col q-pa-md text-body1" style="max-width: 1000px">
-      {{text.Personal.Measure_Area.Main}}
+      {{text.Freelance.Wonky_Notes.Main}}
     </div>
   </div>
 
@@ -22,9 +22,14 @@
   </div>
 
   <div class="col justify q-pa-md">
-    <q-img src="../../assets/measure_area_1.png" style="max-width: 300px" spinner-color="black" />
-    <q-img src="../../assets/measure_area_2.png" style="max-width: 300px" spinner-color="black" />
-    <q-img src="../../assets/measure_area_3.png" style="max-width: 300px" spinner-color="black" />
+    <q-img src="../../assets/wonky_notes_1.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+    <q-img src="../../assets/wonky_notes_2.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+  </div>
+
+  <div class="col justify q-pa-md">
+    <q-img src="../../assets/wonky_notes_3.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+    <q-img src="../../assets/wonky_notes_4.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+    <q-img src="../../assets/wonky_notes_5.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
   </div>
 
   <q-btn push color="primary" label="Privacy Policy" class="q-py-sm q-mb-md">
@@ -34,7 +39,7 @@
           <q-icon name="policy" color="primary" />
         </template>
             <strong>Privacy Policy</strong> <p>
-                  William Coates built the Measure Area app as
+                  William Coates built the Wonky Notes app as
                   a Free app. This SERVICE is provided by
                   William Coates at no cost and is intended for use as
                   is.
@@ -51,7 +56,7 @@
                 </p> <p>
                   The terms used in this Privacy Policy have the same meanings
                   as in our Terms and Conditions, which are accessible at
-                  Measure Area unless otherwise defined in this Privacy Policy.
+                  Wonky Notes unless otherwise defined in this Privacy Policy.
                 </p> <p><strong>Information Collection and Use</strong></p> <p>
                   For a better experience, while using our Service, I
                   may require you to provide us with certain personally
@@ -135,7 +140,7 @@
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">
       <div class="text-left text-body2 q-mr-sm">
-        Measure Area
+        Wonky Notes
       </div>
       <q-separator dark vertical inset />
       <q-icon name="fab fa-swift" size="30px" class="q-pa-sm" />
