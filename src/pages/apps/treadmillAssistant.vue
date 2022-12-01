@@ -3,7 +3,7 @@
   <div class="text-h3 q-mb-sm">
     <q-img src="../../assets/tread_assistant_logo.png" spinner-color="white" width="20%" class="q-mt-sm" />
   </div>
-  <div class="text-h3 q-mb-sm">Treadmill Assistant</div>
+  <div class="text-h3 q-mb-sm">Tread Assist</div>
   <q-icon name="fab fa-swift" size="80px" class="q-pa-sm"/>
   <q-separator dark class="q-mt-sm" />
 
@@ -22,13 +22,14 @@
   </div>
 
   <div class="col justify q-pa-md">
-    <q-img src="../../assets/tread_assistant_1.png" style="max-width: 300px" spinner-color="black" />
-    <q-img src="../../assets/tread_assistant_2.png" style="max-width: 300px" spinner-color="black" />
+    <q-img src="../../assets/tread_assist_1.png" style="max-width: 300px" spinner-color="black" />
+    <q-img src="../../assets/tread_assist_2.png" style="max-width: 300px" spinner-color="black" />
+    <q-img src="../../assets/tread_assist_3.png" style="max-width: 300px" spinner-color="black" />
   </div>
 
   <div class="col justify q-pa-md">
-    <q-img src="../../assets/tread_assistant_3.png" style="max-width: 300px" spinner-color="black" />
-    <q-img src="../../assets/tread_assistant_4.png" style="max-width: 300px" spinner-color="black" />
+    <q-img src="../../assets/tread_assist_4.png" style="max-width: 300px" spinner-color="black" />
+    <q-img src="../../assets/tread_assist_5.png" style="max-width: 300px" spinner-color="black" />
   </div>
 
   <q-btn push color="primary" label="Privacy Policy" class="q-py-sm q-mb-md">
@@ -38,7 +39,7 @@
           <q-icon name="policy" color="primary" />
         </template>
             <strong>Privacy Policy</strong> <p>
-                  William Coates built the Treadmill Assistant app as
+                  William Coates built the Tread Assist app as
                   a Free app. This SERVICE is provided by
                   William Coates at no cost and is intended for use as
                   is.
@@ -55,7 +56,7 @@
                 </p> <p>
                   The terms used in this Privacy Policy have the same meanings
                   as in our Terms and Conditions, which are accessible at
-                  Treadmill Assistant unless otherwise defined in this Privacy Policy.
+                  Tread Assist unless otherwise defined in this Privacy Policy.
                 </p> <p><strong>Information Collection and Use</strong></p> <p>
                   For a better experience, while using our Service, I
                   may require you to provide us with certain personally
@@ -139,7 +140,7 @@
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">
       <div class="text-left text-body2 q-mr-sm">
-        Treadmill Assistant
+        Tread Assist
       </div>
       <q-separator dark vertical inset />
       <q-icon name="fab fa-swift" size="30px" class="q-pa-sm" />

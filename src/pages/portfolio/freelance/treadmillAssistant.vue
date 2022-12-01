@@ -3,7 +3,7 @@
   <div class="text-h3 q-mb-sm">
     <q-img src="../../../assets/tread_assistant_logo.png" spinner-color="white" width="20%" class="q-mt-sm" />
   </div>
-  <div class="text-h3 q-mb-sm">Treadmill Assistant</div>
+  <div class="text-h3 q-mb-sm">Tread Assist</div>
   <q-icon name="fab fa-swift" size="80px" class="q-pa-sm"/>
   <q-separator dark class="q-mt-sm" />
 
@@ -14,19 +14,20 @@
   </div>
 
   <div class="col justify q-pa-md">
-    <q-img src="../../../assets/tread_assistant_1.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
-    <q-img src="../../../assets/tread_assistant_2.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+    <q-img src="../../../assets/tread_assist_1.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+    <q-img src="../../../assets/tread_assist_2.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+    <q-img src="../../../assets/tread_assist_3.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
   </div>
 
   <div class="col justify q-pa-md">
-    <q-img src="../../../assets/tread_assistant_3.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
-    <q-img src="../../../assets/tread_assistant_4.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+    <q-img src="../../../assets/tread_assist_4.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
+    <q-img src="../../../assets/tread_assist_5.png" style="max-width: 300px" class="q-ma-sm" spinner-color="black" />
   </div>
 
   <q-footer elevated>
     <q-toolbar class="bg-secondary text-white">
       <div class="text-left text-body2 q-mr-sm">
-        Treadmill Assistant
+        Tread Assist
       </div>
       <q-separator dark vertical inset />
       <q-icon name="fab fa-swift" size="30px" class="q-pa-sm" />

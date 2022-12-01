@@ -5,7 +5,7 @@
       <q-avatar rounded size="100px" class="q-mb-sm">
         <img src="../assets/tread_assistant_logo.png">
       </q-avatar>
-      Treadmill Assistant
+      Tread Assist
     </q-btn>
 
     <q-btn square stack to="apps/measureArea" class="q-pa-md" style="width: 220px">

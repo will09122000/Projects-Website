@@ -170,7 +170,7 @@
             mobile-arrows
             outside-arrows
           >
-            <q-tab name="treadmill_assistant" label="Treadmill Assistant" />
+            <q-tab name="treadmill_assistant" label="Tread Assist" />
             <q-tab name="wonky_notes" label="Wonky Notes" />
           </q-tabs>
           <q-separator />
