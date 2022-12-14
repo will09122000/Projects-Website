@@ -170,14 +170,14 @@
             mobile-arrows
             outside-arrows
           >
-            <q-tab name="treadmill_assistant" label="Tread Assist" />
+            <q-tab name="tread_assist" label="Tread Assist" />
             <q-tab name="wonky_notes" label="Wonky Notes" />
           </q-tabs>
           <q-separator />
           <q-tab-panels v-model="freelance" animated class="bg-purple-1 text-center">
 
-            <q-tab-panel name="treadmill_assistant" class="bg-grey-8">
-              <treadmill-assistant/>
+            <q-tab-panel name="tread_assist" class="bg-grey-8">
+              <tread-assist/>
             </q-tab-panel>
 
             <q-tab-panel name="wonky_notes" class="bg-grey-8">
@@ -252,7 +252,7 @@ import spotifyHitPredictor from './portfolio/thirdYear/spotifyHitPredictor.vue'
 import quickhullAlgorithm from './portfolio/thirdYear/quickhullAlgorithm.vue'
 import AntColonyOptimisation from './portfolio/thirdYear/antColonyOptimisation.vue'
 
-import treadmillAssistant from './portfolio/freelance/treadmillAssistant.vue'
+import treadAssist from './portfolio/freelance/treadAssist.vue'
 import wonkyNotes from './portfolio/freelance/wonkyNotes.vue'
 
 import measureArea from './portfolio/personal/measureArea.vue'
@@ -269,7 +269,7 @@ export default {
   },
   components: {
     rowData,
-    treadmillAssistant,
+    treadAssist,
     wonkyNotes,
     measureArea,
     discordBot,
@@ -305,7 +305,7 @@ export default {
       first_year: 'countdown_simulator',
       second_year: 'card_game',
       third_year: 'workout_planner',
-      freelance: 'treadmill_assistant',
+      freelance: 'tread_assist',
       personal: 'measure_area',
       text: TextJson
     }

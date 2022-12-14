@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="q-my-sm">
-      <q-img src="../../assets/workout_planner_logo.png" spinner-color="black" width="100px" />
+      <q-img src="../../assets/gymple_logo.png" spinner-color="black" width="100px" />
     </div>
     <div v-resize-text="{maxFontSize: '70px', minFontSize: '35px'}">LEAN</div>
     <div v-resize-text="{maxFontSize: '50px'}" style="line-height: 110%">Real-Time Analysis of Resistance Training using Wearable Computing</div>
@@ -15,9 +15,9 @@
     </div>
 
     <div class="col justify q-pa-md">
-      <q-img src="../../assets/workout_planner_1.png" style="max-width: 300px" spinner-color="black" />
-      <q-img src="../../assets/workout_planner_2.png" style="max-width: 300px" spinner-color="black" />
-      <q-img src="../../assets/workout_planner_4.png" style="max-width: 300px" spinner-color="black" />
+      <q-img src="../../assets/gymple_1.png" style="max-width: 300px" spinner-color="black" />
+      <q-img src="../../assets/gymple_2.png" style="max-width: 300px" spinner-color="black" />
+      <q-img src="../../assets/gymple_4.png" style="max-width: 300px" spinner-color="black" />
     </div>
 
     <div class="row justify-evenly q-gutter-md q-pa-md">

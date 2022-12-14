@@ -1,7 +1,7 @@
 <template>
 <div class="bg-grey-8 text-center">
   <div class="text-h3 q-mb-sm">
-    <q-img src="../../../assets/workout_planner_logo.png" spinner-color="white" width="20%" class="q-mt-sm" />
+    <q-img src="../../../assets/gymple_logo.png" spinner-color="white" width="20%" class="q-mt-sm" />
   </div>
   <div class="text-h3 q-mb-sm">LEAN</div>
   <div class="text-h4 q-mb-sm" style="line-height: 100%">Real-Time Analysis of Resistance Training using Wearable Computing</div>
@@ -28,10 +28,10 @@
         <q-separator dark inset />
           <div class="row justify-center">
             <div class="col q-pa-md">
-              <customImage filename="workout_planner_1.png" imageDescription="Workout list" :showButton="false"/>
+              <customImage filename="gymple_1.png" imageDescription="Workout list" :showButton="false"/>
             </div>
             <div class="col q-pa-md">
-              <customImage filename="workout_planner_2.png" imageDescription="Working Out" :showButton="false"/>
+              <customImage filename="gymple_2.png" imageDescription="Working Out" :showButton="false"/>
             </div>
           </div>
       </q-card>
@@ -43,10 +43,10 @@
         <q-separator dark inset />
           <div class="row justify-center">
             <div class="col q-pa-md">
-              <customImage filename="workout_planner_3.png" imageDescription="Workout list"/>
+              <customImage filename="gymple_3.png" imageDescription="Workout list"/>
             </div>
             <div class="col q-pa-md">
-              <customImage filename="workout_planner_4.png" imageDescription="Working Out"/>
+              <customImage filename="gymple_4.png" imageDescription="Working Out"/>
             </div>
           </div>
       </q-card>

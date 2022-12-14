@@ -11,7 +11,8 @@ const routes: RouteConfig[] = [
       { path: 'modules', component: () => import('pages/modules.vue') },
       { path: 'contact', component: () => import('pages/contact.vue') },
       { path: 'apps', component: () => import('pages/apps.vue') },
-      { path: 'apps/treadmillAssistant', component: () => import('src/pages/apps/treadmillAssistant.vue') },
+      { path: 'apps/gymple', component: () => import('src/pages/apps/gymple.vue') },
+      { path: 'apps/treadAssist', component: () => import('src/pages/apps/treadAssist.vue') },
       { path: 'apps/measureArea', component: () => import('src/pages/apps/measureArea.vue') },
       { path: 'apps/wonkyNotes', component: () => import('src/pages/apps/wonkyNotes.vue') }
     ]

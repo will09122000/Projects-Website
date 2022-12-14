@@ -11,6 +11,9 @@
       }
     },
     "Freelance": {
+      "Gymple": {
+        "Main": "Gymple is a simple, all-in-one resistance training app for your iPhone, iPad and Apple Watch. Create an unlimited number of workouts from a wide range of over 70 exercises that are included. Can't find an exercise? You can an unlimited number of custom exercises and edit existing exercises to suit your needs. Gymple is designed for working out in the gym or at home. With all data synced across devices, you can pick up where you left off no matter where you are. Track your wider progress with statistics over longer periods, or analyse detailed statistics on a per-exercise level. Whether you're a beginner looking to get started with resistance training, or an experienced gym-goer looking for a powerful tool to track your progress, Gymple has you covered."
+      },
       "Tread_Assistant": {
         "Main": "Tread Assist aims to provide you with metrics that ordinary treadmills cannot provide. The app allows you to view your cadence in steps per minute, while running or walking on a treadmill. Workouts can be uploaded to Apple Health and/or Strava automatically. Additional features include: The ability to set a target cadence with an acceptable range - View your current heart rate, heart rate zone, and calories burnt - Receive a tap on the wrist from your Apple Watch when you fall outside your configured target range - Configure a metronome to easily match your target cadence - Analyse your progress with statistics and charts of previous runs."
       },

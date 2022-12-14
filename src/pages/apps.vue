@@ -1,7 +1,14 @@
 <template>
   <q-page padding>
 
-    <q-btn square stack to="apps/treadmillAssistant" class="q-pa-md" style="width: 220px">
+    <q-btn square stack to="apps/gymple" class="q-pa-md" style="width: 220px">
+      <q-avatar rounded size="100px" class="q-mb-sm">
+        <img src="../assets/gymple_logo.png">
+      </q-avatar>
+      Gymple
+    </q-btn>
+
+    <q-btn square stack to="apps/treadAssist" class="q-pa-md" style="width: 220px">
       <q-avatar rounded size="100px" class="q-mb-sm">
         <img src="../assets/tread_assistant_logo.png">
       </q-avatar>

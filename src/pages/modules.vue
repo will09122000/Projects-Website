@@ -2,7 +2,7 @@
   <div class="q-pa-md">
     <q-table
       class="my-sticky-header-table"
-      title="Modules & Results"
+      title="Modules & Grades"
       :data="data"
       :columns="columns"
       row-key="name"
