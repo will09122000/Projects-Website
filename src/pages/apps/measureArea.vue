@@ -4,7 +4,11 @@
     <q-img src="../../assets/measure_area_logo.png" spinner-color="white" width="20%" class="q-mt-sm" />
   </div>
   <div class="text-h3 q-mb-sm">Measure Area</div>
-  <q-icon name="fab fa-swift" size="80px" class="q-pa-sm"/>
+
+  <q-btn round flat class="redirect q-mt-lg" type="a" href="https://apps.apple.com/us/app/measure-area/id1640973302" target="_blank">
+      <img src="../../assets/App_Store.svg">
+  </q-btn>
+
   <q-separator dark class="q-mt-sm" />
 
   <div class="row justify-center">
