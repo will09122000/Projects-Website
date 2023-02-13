@@ -69,7 +69,9 @@
       <q-separator dark vertical inset />
       <q-icon name="fab fa-python" size="30px" class="q-ml-xs" />
       <q-toolbar-title class="text-right"></q-toolbar-title>
+      <!--
       <q-btn class="redirect" type="a" label="GitHub" href="https://github.com/will09122000/RowData" icon="open_in_new" color="primary" target="_blank" />
+      -->
     </q-toolbar>
   </q-footer>
 </div>

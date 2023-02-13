@@ -21,7 +21,7 @@
   <customImage filename="rally_results_reader_2.png" imageDescription="Rally Result CSV File"/>
   <br>
 
-  <div class="text-h6 q-mb-sm">3. CSV File Uploaded to <a href="https://eerc.info/Leagues/DIRT">Website</a></div>
+  <div class="text-h6 q-mb-sm">3. CSV File Uploaded to alternate website</div>
   <customImage filename="rally_results_reader_3.png" imageDescription="Rally Result CSV File"/>
 
   <q-footer elevated>
