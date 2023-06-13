@@ -59,11 +59,12 @@
 
       <q-img class="absolute-top" src="../assets/background.jpg" style="height: 150px">
         <div class="absolute-bottom bg-transparent">
+          <!--
           <q-avatar size="70px" square>
             <img src="../assets/Will.png">
           </q-avatar>
+          -->
           <div class="text-weight-bold">Will Coates</div>
-          <div>University of Exeter</div>
         </div>
       </q-img>
     </q-drawer>
@@ -79,17 +80,16 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksData = [
   {
-    title: 'Home',
-    icon: 'home',
-    link: '/'
-  },
+    title: 'Apps',
+    icon: 'apps',
+    link: '/apps'
+  }
   /*
   {
     title: 'Curriculum Vitae',
     icon: 'article',
     link: '/cv'
   },
-  */
   {
     title: 'Portfolio',
     icon: 'code',
@@ -110,8 +110,9 @@ const linksData = [
     icon: 'contact_mail',
     link: '/contact'
   }
+  */
 ]
-
+/*
 const linksDataExternal = [
   {
     title: 'GitHub',
@@ -119,7 +120,7 @@ const linksDataExternal = [
     link: 'https://github.com/will09122000'
   }
 ]
-
+*/
 import { defineComponent, ref } from '@vue/composition-api'
 
 export default defineComponent({
@@ -133,9 +134,13 @@ export default defineComponent({
   setup () {
     const leftDrawerOpen = ref(false)
     const essentialLinks = ref(linksData)
-    const essentialLinksExternal = ref(linksDataExternal)
+    // const essentialLinksExternal = ref(linksDataExternal)
 
-    return { leftDrawerOpen, essentialLinks, essentialLinksExternal }
+    return {
+      leftDrawerOpen,
+      essentialLinks
+      // essentialLinksExternal
+    }
   },
   data () {
     return {
