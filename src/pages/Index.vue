@@ -1,4 +1,3 @@
-<!--
 <template>
   <q-page>
 
@@ -110,7 +109,7 @@ export default {
   margin-right: auto;
 }
 </style>
--->
+<!--
 <template>
   <q-page padding>
 
@@ -157,3 +156,4 @@ export default {
 
 <style>
 </style>
+-->

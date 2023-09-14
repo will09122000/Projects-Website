@@ -1,5 +1,5 @@
 {
-    "AboutMe": "William Coates received the BSc in Computer Science from the University of Exeter, U.K. in 2022. His current research interest includes biomechanics of resistance training and cardio exercise using wearable computing. Able to adapt and quickly learn new skills providing excellent attention to detail with exceptional multi-tasking and organisational skills.",
+    "AboutMe": "William Coates received the BSc in Computer Science from the University of Exeter, U.K. in 2022, and currently working for a mobile app development company. His current research interest includes biomechanics of resistance training and cardio exercise using wearable computing. Able to adapt and quickly learn new skills providing excellent attention to detail with exceptional multi-tasking and organisational skills.",
     "ALevel": {
       "RowData": {
         "Main": "This program was my A-Level Computer Science Project. The purpose of it was to replace the dated rowing monitor found on most common indoor rowing machines as seen in the picture below. Navigating these clunky screens was a pain with the limited screen space and inputs. My program improved upon this software in many ways and made for an overall better indoor rowing experience. RowData was made using Python with the use of Pygame for the GUI.",

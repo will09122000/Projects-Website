@@ -80,16 +80,17 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksData = [
   {
-    title: 'Apps',
-    icon: 'apps',
-    link: '/apps'
-  }
+    title: 'Home',
+    icon: 'home',
+    link: '/'
+  },
   /*
   {
     title: 'Curriculum Vitae',
     icon: 'article',
     link: '/cv'
   },
+  */
   {
     title: 'Portfolio',
     icon: 'code',
@@ -104,7 +105,8 @@ const linksData = [
     title: 'Apps',
     icon: 'apps',
     link: '/apps'
-  },
+  }
+  /*
   {
     title: 'Contact',
     icon: 'contact_mail',
@@ -112,7 +114,7 @@ const linksData = [
   }
   */
 ]
-/*
+
 const linksDataExternal = [
   {
     title: 'GitHub',
@@ -120,7 +122,7 @@ const linksDataExternal = [
     link: 'https://github.com/will09122000'
   }
 ]
-*/
+
 import { defineComponent, ref } from '@vue/composition-api'
 
 export default defineComponent({
@@ -134,12 +136,12 @@ export default defineComponent({
   setup () {
     const leftDrawerOpen = ref(false)
     const essentialLinks = ref(linksData)
-    // const essentialLinksExternal = ref(linksDataExternal)
+    const essentialLinksExternal = ref(linksDataExternal)
 
     return {
       leftDrawerOpen,
-      essentialLinks
-      // essentialLinksExternal
+      essentialLinks,
+      essentialLinksExternal
     }
   },
   data () {
